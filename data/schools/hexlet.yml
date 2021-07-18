@@ -1,0 +1,27 @@
+---
+
+name: Хекслет
+link: "https://ru.hexlet.io"
+reviewsLink: "https://ru.hexlet.io/testimonials"
+community: "https://slack-ru.hexlet.io/"
+
+professions:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    link: "https://ru.hexlet.io/programs/frontend"
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    tutor:
+      exists: true
+      type: group
+    learning:
+      exists: true
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true

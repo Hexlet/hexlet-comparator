@@ -4,19 +4,19 @@ import Link from 'next/link'
 
 const School = () => {
   const router = useRouter()
-  const { id } = router.query
+  const { schoolId } = router.query
 
   return (
     <>
-      <h1>School: {id}</h1>
+      <h1>School: {schoolId}</h1>
       <ul>
         <li>
-          <Link href="/post/[id]/[comment]" as={`/post/${id}/first-comment`}>
+          <Link href="/post/[schoolId]/[comment]" as={`/post/${schoolId}/first-comment`}>
             <a>First comment</a>
           </Link>
         </li>
         <li>
-          <Link href="/post/[id]/[comment]" as={`/post/${id}/second-comment`}>
+          <Link href="/post/[schoolId]/[comment]" as={`/post/${schoolId}/second-comment`}>
             <a>Second comment</a>
           </Link>
         </li>
