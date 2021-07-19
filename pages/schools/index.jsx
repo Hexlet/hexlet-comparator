@@ -4,7 +4,7 @@
 const SchoolsHome = () => {
   const greeting = 'hay';
   return (
-    <div>{greeting}</div>
+    <h1>{greeting}</h1>
   );
 };
 
