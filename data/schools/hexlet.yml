@@ -8,7 +8,6 @@ community: "https://slack-ru.hexlet.io/"
 professions:
   frontend-developer:
     name: Фронтенд-разработчик
-    canonical_name: Фронтенд-разработчик
     link: "https://ru.hexlet.io/programs/frontend"
     practice:
       exists: true
@@ -20,10 +19,36 @@ professions:
       hasPartners: true
     tutor:
       exists: true
-      type: group
+      types:
+        - group
+        - personal
     learning:
       exists: true
-      type: online
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  php-developer:
+    name: PHP-разработчик
+    link: "https://ru.hexlet.io/programs/php"
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    tutor:
+      exists: true
+      types:
+        - group
+    learning:
+      exists: true
+      types:
+        - online
       hasTexts: true
       hasVideos: true
       hasWebinars: true
