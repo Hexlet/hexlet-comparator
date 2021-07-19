@@ -16,5 +16,8 @@ linter-fix:
 test:
 	npm test
 
+build:
+	npm run build
+
 heroku-logs:
 	heroku logs --tail
