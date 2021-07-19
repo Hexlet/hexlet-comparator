@@ -10,6 +10,9 @@ dev:
 lint:
 	npx eslint .
 
+linter-fix:
+	npx eslint --fix .
+
 test:
 	npm test
 

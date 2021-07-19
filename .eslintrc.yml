@@ -1,0 +1,6 @@
+---
+
+extends:
+  - airbnb
+  - next
+  - next/core-web-vitals

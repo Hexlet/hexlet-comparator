@@ -8,7 +8,7 @@ module.exports = {
         test: /\.ya?ml$/,
         use: 'js-yaml-loader',
       },
-    )
-    return config
-  }
-}
+    );
+    return config;
+  },
+};
