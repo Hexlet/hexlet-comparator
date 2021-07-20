@@ -1,4 +1,6 @@
+import Head from 'next/head';
 import Link from 'next/link';
+import Image from 'next/image';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { getSchools } from 'lib/api.js';
 import routes from 'lib/routes.js';
@@ -9,9 +11,11 @@ const SchoolItem = (props) => {
   const vdom = (
     <div className="col">
       <div className="card border-0 shadow-sm bg-light">
+        <Image src={routes.assetSchoolPath(school.id, 'logo')} width="300" height="300" className="card-img-top" alt={school.name} />
         <div className="card-body">
-          <h2>{ school.name }</h2>
-          <Link href={routes.schoolPath(school.id)}>Подробнее</Link>
+          <h2>
+            <Link href={routes.schoolPath(school.id)}>{ school.name }</Link>
+          </h2>
         </div>
       </div>
     </div>
@@ -24,6 +28,9 @@ const Home = (props) => {
   const { schools } = props;
   return (
     <BaseLayout>
+      <Head>
+        <title>Сравнение школ программирования</title>
+      </Head>
       <h1 className="mb-5">Сравнение школ программирования</h1>
       <div className="row row-cols-2 g-2">
         {schools.map((s) => <SchoolItem key={s.id} school={s} />)}

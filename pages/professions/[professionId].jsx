@@ -4,11 +4,53 @@ import { getProfessions, getSchools } from 'lib/api.js';
 import { getOrError } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
+import { useState } from 'react';
+
+const ComparingRow = (props) => {
+  const { state, profession } = props;
+
+  if (state.length < 2) {
+    return <div className="fs-5 mb-3">Выберите школы для сравнения</div>;
+  }
+
+  const comparingSchoolsLine = state.map((s) => s.name).join(', ');
+  const ids = state.map((s) => s.id);
+
+  return (
+    <div className="fs-5 mb-3">
+      Сравниваем:
+      {comparingSchoolsLine}
+      <Link href={routes.professionCompetitorPath(profession.id, ids)}>
+        <a className="btn btn-success">Поехали</a>
+      </Link>
+    </div>
+  );
+};
+
+const ComparingButton = (props) => {
+  const { setState, selected, school } = props;
+
+  const addForCompare = () => setState((s) => [...s, school]);
+  const removeFromCompare = () => setState((s) => s.filter((sch) => sch.id !== school.id));
+
+  if (selected) {
+    return <button type="button" onClick={removeFromCompare} className="btn btn-sm btn-outline-secondary">Убрать</button>;
+  }
+
+  return <button type="button" onClick={addForCompare} className="btn btn-sm btn-outline-primary">Добавить</button>;
+};
 
 const SchoolItem = (props) => {
-  const { school, profession } = props;
-  // console.log(school);
+  const {
+    school,
+    profession,
+    state,
+    setState,
+  } = props;
+
   const schoolProfession = getOrError(school.professions, profession.id);
+
+  const selected = !!state.find((s) => s.id === school.id);
 
   return (
     <div className="col md-3">
@@ -20,6 +62,9 @@ const SchoolItem = (props) => {
             </Link>
           </h2>
           <div className="text-muted">{schoolProfession.link}</div>
+          <div className="text-end">
+            <ComparingButton school={school} selected={selected} setState={setState} />
+          </div>
         </div>
       </div>
     </div>
@@ -28,11 +73,13 @@ const SchoolItem = (props) => {
 
 const Profession = (props) => {
   const { schools, profession } = props;
+  const [state, setState] = useState([]);
   return (
     <BaseLayout>
       <h1 className="mb-5">{profession.name}</h1>
+      <ComparingRow state={state} schools={schools} profession={profession} />
       <div className="row row-cols-2 g-2">
-        {schools.map((s) => <SchoolItem profession={profession} school={s} key={s.id} />)}
+        {schools.map((s) => <SchoolItem state={state} setState={setState} profession={profession} school={s} key={s.id} />)}
       </div>
     </BaseLayout>
   );
