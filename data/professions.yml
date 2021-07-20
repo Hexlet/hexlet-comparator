@@ -3,7 +3,9 @@
 - id: frontend-developer
   name: Фронтенд-разработчик
   description: Какое-то общее описание профессии frontend
+  programmingLanguage: javascript
 
 - id: php-developer
   name: PHP-разработчик
   description: Какое-то общее описание профессии php
+  programmingLanguage: php
