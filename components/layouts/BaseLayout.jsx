@@ -21,8 +21,8 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link href={routes.schoolsPath()}>
-                <a className="nav-link active" aria-current="page">Школы</a>
+              <Link href={routes.professionsPath()}>
+                <a className="nav-link active" aria-current="page">Профессии</a>
               </Link>
             </li>
           </ul>
