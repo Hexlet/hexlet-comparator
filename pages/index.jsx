@@ -4,6 +4,7 @@ import Image from 'next/image';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { getSchools } from 'lib/api.js';
 import routes from 'lib/routes.js';
+import assetsRouter from 'lib/assetsRouter.js';
 
 const SchoolItem = (props) => {
   const { school } = props;
@@ -11,7 +12,7 @@ const SchoolItem = (props) => {
   const vdom = (
     <div className="col">
       <div className="card border-0 shadow-sm bg-light">
-        <Image src={routes.assetSchoolPath(school.id, 'logo')} width="300" height="300" className="card-img-top" alt={school.name} />
+        <Image src={assetsRouter.logoPath(school)} width="300" height="300" className="card-img-top" alt={school.name} />
         <div className="card-body">
           <h2>
             <Link href={routes.schoolPath(school.id)}>{ school.name }</Link>

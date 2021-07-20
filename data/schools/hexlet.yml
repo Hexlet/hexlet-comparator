@@ -5,11 +5,15 @@ name: Хекслет
 link: "https://ru.hexlet.io"
 reviewsLink: "https://ru.hexlet.io/testimonials"
 community: "https://slack-ru.hexlet.io/"
+images:
+  logo: true
 
 professions:
   frontend-developer:
     name: Фронтенд-разработчик
     link: "https://ru.hexlet.io/programs/frontend"
+    images:
+      simulator: true
     practice:
       exists: true
       hasSimulator: true
