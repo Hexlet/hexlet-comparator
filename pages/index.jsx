@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { getSchools } from 'lib/api.js';
 import routes from 'lib/routes.js';
@@ -42,10 +44,11 @@ const Home = (props) => {
   );
 };
 
-export const getStaticProps = async () => {
+export const getStaticProps = async ({ locale }) => {
   const result = {
     props: {
       schools: await getSchools(),
+      ...(await serverSideTranslations(locale, ['common'])),
     },
   };
   return result;

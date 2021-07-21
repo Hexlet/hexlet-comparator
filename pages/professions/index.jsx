@@ -1,5 +1,7 @@
 import cn from 'classnames';
 import Link from 'next/link';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import { getProfessions } from 'lib/api.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
@@ -41,12 +43,13 @@ const ProfessionsHome = (props) => {
   );
 };
 
-export const getStaticProps = async () => {
+export const getStaticProps = async ({ locale }) => {
   const professions = await getProfessions();
 
   const result = {
     props: {
       professions,
+      ...(await serverSideTranslations(locale, ['common'])),
     },
   };
   return result;
