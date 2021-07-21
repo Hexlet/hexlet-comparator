@@ -40,14 +40,17 @@ const Home = (props) => {
       <div className="row justify-content-center py-5 bg-light rounded mb-5">
         <div className="col-3">
           <div className="fs-1">1</div>
+          <i className="bi bi-chevron-right" />
           Выберите компанию, которая вам интересна
         </div>
         <div className="col-3">
           <div className="fs-1">2</div>
+          <i className="bi bi-chevron-right" />
           Выберите профессию, внутри компании
         </div>
         <div className="col-3">
           <div className="fs-1">3</div>
+          <i className="bi bi-chevron-right" />
           Сравните компании по выбранной профессии
         </div>
       </div>

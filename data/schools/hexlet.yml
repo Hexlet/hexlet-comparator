@@ -20,9 +20,7 @@ professions:
     name: Фронтенд-разработчик
     link: "https://ru.hexlet.io/programs/frontend"
     duration: 8
-    cost_per_month: 14000
-    images:
-      simulator: true
+    cost_per_month: 12250
     practice:
       exists: true
       hasSimulator: true
@@ -36,6 +34,8 @@ professions:
       types:
         - group
         - personal
+    employment:
+      exists: true
     learning:
       exists: true
       types:
@@ -48,6 +48,7 @@ professions:
     name: PHP-разработчик
     link: "https://ru.hexlet.io/programs/php"
     duration: 8
+    cost_per_month: 12250
     practice:
       exists: true
       hasSimulator: true
@@ -60,6 +61,8 @@ professions:
       exists: true
       types:
         - group
+    employment:
+      exists: true
     learning:
       exists: true
       types:
