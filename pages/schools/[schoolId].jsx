@@ -1,3 +1,6 @@
+import { useState } from 'react';
+import Modal from 'react-bootstrap/Modal';
+
 import Head from 'next/head';
 import Link from 'next/link';
 import cn from 'classnames';
@@ -61,12 +64,45 @@ const ProfessionItem = (props) => {
   );
 };
 
+const Screenshot = (props) => {
+  const { name, school, index } = props;
+
+  const [modalShow, setModalShow] = useState(false);
+
+  const modal = (
+    <Modal
+      show={modalShow}
+      onHide={() => setModalShow(false)}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        Скриншот
+      </Modal.Header>
+      <Modal.Body className="text-center">
+        <Image layout="responsive" alt={name} width="800" height="450" src={assetsRouter.screenshotPath(school, name)} />
+      </Modal.Body>
+    </Modal>
+  );
+
+  return (
+    <span className="me-3">
+      <span role="button" tabIndex={index} onKeyDown={() => setModalShow(false)} onClick={() => setModalShow(true)}>
+        <Image layout="fixed" alt={name} width="100" height="70" src={assetsRouter.screenshotPath(school, name)} />
+      </span>
+      {modal}
+    </span>
+  );
+};
+
 const School = (props) => {
   const { school, professions } = props;
   const professionIds = Object.keys(school.professions);
   // console.log(professionIds);
   const schoolProfessionLine = Object.values(school.professions).map((p) => p.name).join(', ');
   const description = `Школа основана в ${school.foundationDate}. Обучает по направлениям: ${schoolProfessionLine}`;
+  const { screenshots = [] } = school.images;
 
   return (
     <BaseLayout>
@@ -74,7 +110,7 @@ const School = (props) => {
         <title>{school.name}</title>
       </Head>
       <div className="mx-5">
-        <div className="card px-5 py-3 mb-5 bg-light border-0 shadow-sm">
+        <div className="card px-5 py-3 mb-4 bg-light border-0 shadow-sm">
           <div className="card-body">
             <div className="row">
               <div className="col-12 col-md-7">
@@ -103,6 +139,10 @@ const School = (props) => {
               </div>
             </div>
           </div>
+        </div>
+
+        <div className="mb-5">
+          {screenshots.map((name, index) => <Screenshot index={index} key={name} school={school} name={name} />)}
         </div>
 
         <h2 className="mb-5">

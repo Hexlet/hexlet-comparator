@@ -13,7 +13,9 @@ communityLink: "https://slack-ru.hexlet.io/"
 instagramLink: "https://www.instagram.com/hexlethq/"
 images:
   logo: true
-  screenshoots: false
+  screenshots:
+    - theory
+    - quiz
 
 professions:
   frontend-developer:
