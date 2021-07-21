@@ -5,13 +5,13 @@ import { cartesian } from 'lib/utils.js';
 
 const Value = (props) => {
   const { school, name, profession } = props;
-  const schoolProfession = school.professions[profession.id];
+  const schoolProfession = school.professions[profession.id] ?? {};
 
   switch (name) {
     case 'link':
-      return schoolProfession.link;
+      return schoolProfession.link || '';
     default:
-      return schoolProfession[name];
+      return schoolProfession[name] || '';
   }
 };
 
