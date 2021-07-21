@@ -36,7 +36,21 @@ const Home = (props) => {
       <Head>
         <title>Сравнение школ программирования</title>
       </Head>
-      <h1 className="mb-5">Сравнение школ программирования</h1>
+      <h1 className="mb-5 text-center">Сравнение школ программирования</h1>
+      <div className="row justify-content-center py-5 bg-light rounded mb-5">
+        <div className="col-3">
+          <div className="fs-1">1</div>
+          Выберите компанию, которая вам интересна
+        </div>
+        <div className="col-3">
+          <div className="fs-1">2</div>
+          Выберите профессию, внутри компании
+        </div>
+        <div className="col-3">
+          <div className="fs-1">3</div>
+          Сравните компании по выбранной профессии
+        </div>
+      </div>
       <div className="row row-cols-4">
         {schools.map((s) => <SchoolItem key={s.id} school={s} />)}
       </div>

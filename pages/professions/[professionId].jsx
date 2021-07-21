@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import Link from 'next/link';
+import Head from 'next/head';
 import { getProfessions, getSchools } from 'lib/api.js';
 import { getOrError } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
@@ -11,18 +12,20 @@ const ComparingRow = (props) => {
   const { state, profession } = props;
 
   if (state.length < 2) {
-    return <div className="fs-5 mb-3">Выберите школы для сравнения</div>;
+    return <div className="fs-5 mb-3">Выберите 2 школы для сравнения</div>;
   }
 
-  const comparingSchoolsLine = state.map((s) => s.name).join(', ');
+  const comparingSchoolsLine = state.map((s) => s.name).join(' и ');
   const ids = state.map((s) => s.id);
 
   return (
     <div className="fs-5 mb-3">
-      Сравниваем:
-      {comparingSchoolsLine}
       <Link href={routes.professionCompetitorPath(profession.id, ids)}>
-        <a className="btn btn-success">Поехали</a>
+        <a className="text-decoration-none">
+          Сравниваем:&nbsp;
+          <span className="me-2">{comparingSchoolsLine}</span>
+          <i className="bi bi-chevron-double-right" />
+        </a>
       </Link>
     </div>
   );
@@ -54,16 +57,15 @@ const SchoolItem = (props) => {
   const selected = !!state.find((s) => s.id === school.id);
 
   return (
-    <div className="col md-3">
+    <div className="col mb-4">
       <div className="card bg-light border-0">
-        <div className="card-body">
+        <div className="card-body d-flex">
           <h2>
             <Link href={routes.schoolPath(school.id)}>
               <a className="link-dark text-decoration-none">{school.name}</a>
             </Link>
           </h2>
-          <div className="text-muted">{schoolProfession.link}</div>
-          <div className="text-end">
+          <div className="text-end ms-auto my-auto">
             <ComparingButton school={school} selected={selected} setState={setState} />
           </div>
         </div>
@@ -77,9 +79,12 @@ const Profession = (props) => {
   const [state, setState] = useState([]);
   return (
     <BaseLayout>
+      <Head>
+        <title>{profession.name}</title>
+      </Head>
       <h1 className="mb-5">{profession.name}</h1>
       <ComparingRow state={state} schools={schools} profession={profession} />
-      <div className="row row-cols-2 g-2">
+      <div className="row row-cols-2">
         {schools.map((s) => <SchoolItem state={state} setState={setState} profession={profession} school={s} key={s.id} />)}
       </div>
     </BaseLayout>
