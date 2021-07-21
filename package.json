@@ -2,6 +2,7 @@
   "name": "hexlet-comparator",
   "version": "0.1.0",
   "private": true,
+  "cacheDirectories": [".next/cache"],
   "scripts": {
     "test": "jest",
     "dev": "next dev",
