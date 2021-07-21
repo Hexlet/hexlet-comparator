@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Link from 'next/link';
 import cn from 'classnames';
 import Image from 'next/image';
@@ -6,6 +7,23 @@ import { getOrError } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
 import assetsRouter from 'lib/assetsRouter.js';
+
+const SocialItem = (props) => {
+  const { link, type } = props;
+  if (!link) {
+    return null;
+  }
+
+  const classLine = `text-secondary bi bi-${type} me-3`;
+
+  return (
+    <Link href={link}>
+      <a target="_blank">
+        <i className={classLine} />
+      </a>
+    </Link>
+  );
+};
 
 const ProfessionItem = (props) => {
   const { school, professionId, professions } = props;
@@ -31,6 +49,7 @@ const ProfessionItem = (props) => {
           <div>
             Продолжительность:&nbsp;
             {schoolProfession.duration}
+            &nbsp;
             месяцев
           </div>
         </div>
@@ -43,17 +62,52 @@ const School = (props) => {
   const { school, professions } = props;
   const professionIds = Object.keys(school.professions);
   // console.log(professionIds);
+  const schoolProfessionLine = Object.values(school.professions).map((p) => p.name).join(', ');
+  const description = `Школа основана в ${school.foundationDate}. Обучает по направлениям: ${schoolProfessionLine}`;
 
   return (
     <BaseLayout>
-      <div className="mb-5">
-        <h1 className="mb-5">{school.name}</h1>
-        <Image layout="fixed" src={assetsRouter.logoPath(school)} width="300" height="300" className="card-img-top" alt={school.name} />
-        { school.reviewsLink && <Link href={school.reviewsLink}><a target="_blank">Отзывы</a></Link> }
-      </div>
-      <h2 className="mb-5">Профессии</h2>
-      <div className="row row-cols-2">
-        {professionIds.map((id) => <ProfessionItem professions={professions} school={school} professionId={id} key={id} />)}
+      <Head>
+        <title>{school.name}</title>
+      </Head>
+      <div className="mx-5">
+        <div className="card px-5 py-3 mb-5 bg-light border-0 shadow-sm">
+          <div className="card-body">
+            <div className="row">
+              <div className="col-12 col-md-7">
+                <h1 className="mb-3">
+                  <span className="me-3">{school.name}</span>
+                  <Link href={school.link}>
+                    <a className="fs-5 align-middle" target="_blank">
+                      <i className="bi bi-box-arrow-up-right" />
+                    </a>
+                  </Link>
+                </h1>
+                <p className="lead">{description}</p>
+                <div className="fs-3 mb-4">
+                  <SocialItem link={school.facebookLink} type="facebook" />
+                  <SocialItem link={school.twitterLink} type="twitter" />
+                  <SocialItem link={school.youtubeLink} type="youtube" />
+                  <SocialItem link={school.instagramLink} type="instagram" />
+                  <SocialItem link={school.communityLink} type="chat-fill" />
+                </div>
+                <Link href="#professions">
+                  <a className="btn btn-primary">Профессии</a>
+                </Link>
+              </div>
+              <div className="d-none d-md-block col-sm-5 text-center">
+                <Image layout="responsive" src={assetsRouter.logoPath(school)} width="200" height="200" alt={school.name} />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2 className="mb-5">
+          <a name="professions" href="#professions" className="text-decoration-none link-dark">Профессии</a>
+        </h2>
+        <div className="row row-cols-2">
+          {professionIds.map((id) => <ProfessionItem professions={professions} school={school} professionId={id} key={id} />)}
+        </div>
       </div>
     </BaseLayout>
   );

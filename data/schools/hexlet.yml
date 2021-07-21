@@ -4,9 +4,16 @@ id: hexlet
 name: Хекслет
 link: "https://ru.hexlet.io"
 reviewsLink: "https://ru.hexlet.io/testimonials"
-community: "https://slack-ru.hexlet.io/"
+foundationDate: 2012
+facebookLink: "https://web.facebook.com/Hexlet/"
+twitterLink: "https://twitter.com/hexlethq"
+vkLink: "https://vk.com/hexlet"
+youtubeLink: "https://www.youtube.com/channel/UCqLPYxuAz-WbdEBLBk_Tb7g"
+communityLink: "https://slack-ru.hexlet.io/"
+instagramLink: "https://www.instagram.com/hexlethq/"
 images:
   logo: true
+  screenshoots: false
 
 professions:
   frontend-developer:

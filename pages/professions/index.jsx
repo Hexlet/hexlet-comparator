@@ -14,12 +14,15 @@ const ProfessionItem = (props) => {
 
   return (
     <div className="col mb-3">
-      <div className="card">
+      <div className="card border-0 bg-light">
         <div className="card-body">
           <i className={iconClassLine} />
-          <h2>{ profession.name }</h2>
+          <h2>
+            <Link href={routes.professionPath(profession.id)}>
+              <a className="link-dark text-decoration-none stretched-link">{profession.name}</a>
+            </Link>
+          </h2>
           <div className="text-muted">{ profession.description }</div>
-          <Link href={routes.professionPath(profession.id)}>{profession.name}</Link>
         </div>
       </div>
     </div>
