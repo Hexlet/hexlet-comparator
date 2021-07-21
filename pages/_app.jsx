@@ -1,3 +1,5 @@
+import { appWithTranslation } from 'next-i18next';
+
 import '../styles/app.scss';
 
 const HexletComparator = ({ Component, pageProps }) => {
@@ -6,4 +8,4 @@ const HexletComparator = ({ Component, pageProps }) => {
   return component;
 };
 
-export default HexletComparator;
+export default appWithTranslation(HexletComparator);

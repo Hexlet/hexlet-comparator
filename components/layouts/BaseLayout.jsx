@@ -9,11 +9,13 @@ import Head from 'next/head';
 // import Image from 'next/image';
 
 const Navbar = () => {
+  const { t } = useTranslation('common');
+
   const vdom = (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <Link href="/">
-          <a className="navbar-brand">Сравниватель</a>
+          <a className="navbar-brand">{t('navbar.brand')}</a>
         </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon" />
@@ -22,7 +24,7 @@ const Navbar = () => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <Link href={routes.professionsPath()}>
-                <a className="nav-link active" aria-current="page">Профессии</a>
+                <a className="nav-link active" aria-current="page">{t('navbar.professions')}</a>
               </Link>
             </li>
           </ul>
@@ -55,14 +57,5 @@ const BaseLayout = (props) => {
     </>
   );
 };
-
-// export const getStaticProps = async ({ locale }) => {
-//   const result = {
-//     props: {
-//       ...(await serverSideTranslations(locale, ['common'])),
-//     },
-//   };
-//   return result;
-// };
 
 export default BaseLayout;

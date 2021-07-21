@@ -1,4 +1,8 @@
 import Link from 'next/link';
+import Head from 'next/head';
+import { useTranslation } from 'next-i18next';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import { getSchools } from 'lib/api.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
@@ -19,9 +23,14 @@ const SchoolItem = (props) => {
 
 const SchoolsHome = (props) => {
   const { schools } = props;
+  const { t } = useTranslation('schools');
+
   return (
     <BaseLayout>
-      <h1 className="mb-5">Школы программирования</h1>
+      <Head>
+        <title>{ t('title') }</title>
+      </Head>
+      <h1 className="mb-5">{ t('title') }</h1>
       <div className="row row-cols-2">
         {schools.map((s) => <SchoolItem school={s} key={s.id} />)}
       </div>
@@ -29,12 +38,13 @@ const SchoolsHome = (props) => {
   );
 };
 
-export const getStaticProps = async () => {
+export const getStaticProps = async ({ locale }) => {
   const schools = await getSchools();
 
   const result = {
     props: {
       schools,
+      ...(await serverSideTranslations(locale, ['common', 'schools'])),
     },
   };
   return result;

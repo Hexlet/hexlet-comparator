@@ -5,6 +5,7 @@ import { getOrError } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
 import { useState } from 'react';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const ComparingRow = (props) => {
   const { state, profession } = props;
@@ -95,7 +96,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  const { params } = context;
+  const { params, locale } = context;
   const allSchools = await getSchools();
   const schools = allSchools.filter((s) => _.has(s.professions, params.professionId));
   const allProfessions = await getProfessions();
@@ -107,6 +108,7 @@ export const getStaticProps = async (context) => {
     props: {
       schools,
       profession,
+      ...(await serverSideTranslations(locale, ['common'])),
     },
   };
   return result;

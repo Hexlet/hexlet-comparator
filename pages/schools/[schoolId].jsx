@@ -2,11 +2,14 @@ import Head from 'next/head';
 import Link from 'next/link';
 import cn from 'classnames';
 import Image from 'next/image';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import { getSchools, getProfessions } from 'lib/api.js';
 import { getOrError } from 'lib/utils.js';
-import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
 import assetsRouter from 'lib/assetsRouter.js';
+
+import BaseLayout from 'components/layouts/BaseLayout.jsx';
 
 const SocialItem = (props) => {
   const { link, type } = props;
@@ -123,7 +126,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  const { params } = context;
+  const { params, locale } = context;
   const allSchools = await getSchools();
   const school = allSchools.find((s) => s.id === params.schoolId);
   const professions = await getProfessions();
@@ -135,6 +138,7 @@ export const getStaticProps = async (context) => {
     props: {
       school,
       professions,
+      ...(await serverSideTranslations(locale, ['common'])),
       // profession,
     },
   };

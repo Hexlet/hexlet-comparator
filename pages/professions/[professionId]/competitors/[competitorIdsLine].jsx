@@ -1,4 +1,6 @@
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+
 import { getSchools, getProfessions } from 'lib/api.js';
 // import routes from 'lib/routes.js';
 import { cartesian } from 'lib/utils.js';
@@ -65,7 +67,7 @@ export const getStaticPaths = async () => {
 };
 
 export const getStaticProps = async (context) => {
-  const { params } = context;
+  const { params, locale } = context;
   const schools = await getSchools();
   const selectedSchools = params.competitorIdsLine.split('-vs-').map((id) => schools.find((s) => s.id === id));
 
@@ -76,6 +78,7 @@ export const getStaticProps = async (context) => {
     props: {
       selectedSchools,
       profession,
+      ...(await serverSideTranslations(locale, ['common'])),
     },
   };
   return result;
