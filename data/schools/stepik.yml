@@ -1,12 +1,11 @@
 ---
 
-id: stepic
-name: Stepic
-link: "https://ru.hexlet.io"
+id: stepik
+name: stepik
+link: "https://stepik.org/"
 reviewsLink: "https://ru.hexlet.io/testimonials"
 community: "https://slack-ru.hexlet.io/"
 images:
   logo: true
 
 professions: []
-
