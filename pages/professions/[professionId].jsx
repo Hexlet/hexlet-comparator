@@ -2,7 +2,7 @@ import _ from 'lodash';
 import Link from 'next/link';
 import Head from 'next/head';
 import { getProfessions, getSchools } from 'lib/api.js';
-import { getOrError } from 'lib/utils.js';
+// import { getOrError } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
 import { useState } from 'react';
@@ -47,12 +47,12 @@ const ComparingButton = (props) => {
 const SchoolItem = (props) => {
   const {
     school,
-    profession,
+    // profession,
     state,
     setState,
   } = props;
 
-  const schoolProfession = getOrError(school.professions, profession.id);
+  // const schoolProfession = getOrError(school.professions, profession.id);
 
   const selected = !!state.find((s) => s.id === school.id);
 

@@ -10,7 +10,8 @@ dev:
 	npm run dev
 
 lint:
-	npx eslint --ext=js,jsx .
+	# npx eslint --ext=js,jsx .
+	npm run lint
 
 linter-fix:
 	npx eslint --ext=js,jsx --fix .
