@@ -10,12 +10,14 @@ const SchoolItem = (props) => {
   const { school } = props;
 
   const vdom = (
-    <div className="col">
+    <div className="col mb-5">
       <div className="card border-0 shadow-sm bg-light">
-        <Image src={assetsRouter.logoPath(school)} width="300" height="300" className="card-img-top" alt={school.name} />
-        <div className="card-body">
-          <h2>
-            <Link href={routes.schoolPath(school.id)}>{ school.name }</Link>
+        <Image layout="responsive" src={assetsRouter.logoPath(school)} width="300" height="300" className="card-img-top" alt={school.name} />
+        <div className="card-body text-center">
+          <h2 className="h4 m-0">
+            <Link href={routes.schoolPath(school.id)}>
+              <a className="link-dark text-decoration-none stretched-link">{ school.name }</a>
+            </Link>
           </h2>
         </div>
       </div>
@@ -33,7 +35,7 @@ const Home = (props) => {
         <title>Сравнение школ программирования</title>
       </Head>
       <h1 className="mb-5">Сравнение школ программирования</h1>
-      <div className="row row-cols-2 g-2">
+      <div className="row row-cols-4">
         {schools.map((s) => <SchoolItem key={s.id} school={s} />)}
       </div>
     </BaseLayout>

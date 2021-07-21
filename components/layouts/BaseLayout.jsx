@@ -47,6 +47,11 @@ const BaseLayout = (props) => {
       <main className="container mt-5">
         {children}
       </main>
+      <footer className="container pt-4 my-md-5 pt-md-5 border-top">
+        <ul className="list-unstyled text-small">
+          <li><a target="_blank" rel="noreferrer" href="https://github.com/Hexlet/hexlet-comparator">Исходный код</a></li>
+        </ul>
+      </footer>
     </>
   );
 };

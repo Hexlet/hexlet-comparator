@@ -5,6 +5,8 @@ name: Stepic
 link: "https://ru.hexlet.io"
 reviewsLink: "https://ru.hexlet.io/testimonials"
 community: "https://slack-ru.hexlet.io/"
+images:
+  logo: true
 
 professions: []
 

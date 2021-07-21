@@ -5,6 +5,8 @@ name: HTML Academy
 link: "https://htmlacademy.ru/"
 # reviewsLink: "https://ru.hexlet.io/testimonials"
 # community: "https://slack-ru.hexlet.io/"
+images:
+  logo: true
 
 professions:
   frontend-developer:
