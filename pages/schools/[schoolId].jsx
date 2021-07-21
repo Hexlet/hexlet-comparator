@@ -10,7 +10,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getSchools, getProfessions } from 'lib/api.js';
 import { getOrError } from 'lib/utils.js';
 import routes from 'lib/routes.js';
-import assetsRouter from 'lib/assetsRouter.js';
+import assetsRoutes from 'lib/assetsRoutes.js';
 
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 
@@ -81,7 +81,7 @@ const Screenshot = (props) => {
         Скриншот
       </Modal.Header>
       <Modal.Body className="text-center">
-        <Image layout="responsive" alt={name} width="800" height="450" src={assetsRouter.screenshotPath(school, name)} />
+        <Image layout="responsive" alt={name} width="800" height="450" src={assetsRoutes.screenshotPath(school, name)} />
       </Modal.Body>
     </Modal>
   );
@@ -89,7 +89,7 @@ const Screenshot = (props) => {
   return (
     <span className="me-3">
       <span role="button" tabIndex={index} onKeyDown={() => setModalShow(false)} onClick={() => setModalShow(true)}>
-        <Image layout="fixed" alt={name} width="100" height="70" src={assetsRouter.screenshotPath(school, name)} />
+        <Image layout="fixed" alt={name} width="100" height="70" src={assetsRoutes.screenshotPath(school, name)} />
       </span>
       {modal}
     </span>
@@ -135,7 +135,7 @@ const School = (props) => {
                 </Link>
               </div>
               <div className="d-none d-md-block col-sm-5 text-center">
-                <Image layout="responsive" src={assetsRouter.logoPath(school)} width="200" height="200" alt={school.name} />
+                <Image layout="responsive" src={assetsRoutes.logoPath(school)} width="200" height="200" alt={school.name} />
               </div>
             </div>
           </div>

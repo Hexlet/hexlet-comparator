@@ -3,12 +3,13 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
+import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import { getSchools, getProfessions } from 'lib/api.js';
 // import routes from 'lib/routes.js';
 import { cartesian } from 'lib/utils.js';
-import assetsRouter from 'lib/assetsRouter.js';
+import assetsRoutes from 'lib/assetsRoutes.js';
 import routes from 'lib/routes.js';
 
 const Value = (props) => {
@@ -56,10 +57,12 @@ const Value = (props) => {
 const ComparingBlock = (props) => {
   const { schools, name, profession } = props;
 
+  const { t } = useTranslation('entities');
+
   const vdom = (
     <div className="row justify-content-center mb-4">
       <div className="col-8 rounded shadow-sm border-1">
-        <h2 className="fs-4 mb-3">{name}</h2>
+        <h2 className="fs-4 mb-3">{t(`school.${name}`)}</h2>
         <div className="border-top row justify-content-center row-cols-2">
           {schools.map((s, index) => <Value index={index} key={`${s.id}-${name}`} profession={profession} school={s} name={name} />)}
         </div>
@@ -75,7 +78,7 @@ const SchoolHeader = (props) => {
 
   return (
     <div className="col-4">
-      <Image layout="fixed" src={assetsRouter.logoPath(school)} width="50" height="50" alt={school.name} />
+      <Image layout="fixed" src={assetsRoutes.logoPath(school)} width="50" height="50" alt={school.name} />
       <h2>
         <Link href={routes.schoolPath(school.id)}>{school.name}</Link>
       </h2>
@@ -85,15 +88,21 @@ const SchoolHeader = (props) => {
 
 const Home = (props) => {
   const { selectedSchools, profession } = props;
+
   const fields = ['existence', 'link', 'duration'];
 
-  const header = `${profession.name} в школах ${selectedSchools.map((s) => s.name).join(' и ')}`;
+  const header = `Выбираю между ${selectedSchools.map((s) => s.name).join(' и ')}`;
 
   return (
     <BaseLayout>
       <Head>
         <title>{header}</title>
       </Head>
+      <div className="lead">
+        <Link href={routes.professionPath(profession.id)}>
+          <a className="link-dark">{profession.name}</a>
+        </Link>
+      </div>
       <h1 className="mb-5">{header}</h1>
       <div className="row justify-content-center text-center row-cols-2 mb-5">
         {selectedSchools.map((s) => <SchoolHeader key={s.id} school={s} />)}
@@ -129,7 +138,7 @@ export const getStaticProps = async (context) => {
     props: {
       selectedSchools,
       profession,
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common', 'entities'])),
     },
   };
   return result;

@@ -6,7 +6,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { getSchools } from 'lib/api.js';
 import routes from 'lib/routes.js';
-import assetsRouter from 'lib/assetsRouter.js';
+import assetsRoutes from 'lib/assetsRoutes.js';
 
 const SchoolItem = (props) => {
   const { school } = props;
@@ -14,7 +14,7 @@ const SchoolItem = (props) => {
   const vdom = (
     <div className="col mb-5">
       <div className="card border-0 shadow-sm bg-light">
-        <Image layout="responsive" src={assetsRouter.logoPath(school)} width="300" height="300" className="card-img-top" alt={school.name} />
+        <Image layout="responsive" src={assetsRoutes.logoPath(school)} width="300" height="300" className="card-img-top" alt={school.name} />
         <div className="card-body text-center">
           <h2 className="h4 m-0">
             <Link href={routes.schoolPath(school.id)}>
