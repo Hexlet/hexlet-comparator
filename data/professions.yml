@@ -9,3 +9,23 @@
   name: PHP-разработчик
   description: Какое-то общее описание профессии php
   programmingLanguage: php
+
+- id: java-developer
+  name: Java-разработчик
+  description: Какое-то общее описание профессии java
+  programmingLanguage: java
+
+- id: go-developer
+  name: Go-разработчик
+  description: Какое-то общее описание профессии go
+  programmingLanguage: go
+
+- id: python-developer
+  name: Python-разработчик
+  description: Какое-то общее описание профессии python
+  programmingLanguage: python
+
+- id: ruby-developer
+  name: Ruby-разработчик
+  description: Какое-то общее описание профессии ruby
+  programmingLanguage: ruby
