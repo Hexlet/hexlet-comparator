@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { getSchools, getProfessions } from 'lib/api.js';
 // import routes from 'lib/routes.js';
