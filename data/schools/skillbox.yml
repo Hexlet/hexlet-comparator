@@ -8,5 +8,30 @@ community: "https://slack-ru.hexlet.io/"
 images:
   logo: true
 
-professions: []
-
+professions:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    link: "https://skillbox.ru/course/frontend-pro/"
+    duration: 8
+    images:
+      simulator: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - group
+        - personal
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true

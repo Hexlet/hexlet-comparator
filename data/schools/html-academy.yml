@@ -20,7 +20,7 @@ professions:
       exists: true
       hasInternal: true
       hasPartners: true
-    tutor:
+    mentoring:
       exists: true
       types:
         - personal

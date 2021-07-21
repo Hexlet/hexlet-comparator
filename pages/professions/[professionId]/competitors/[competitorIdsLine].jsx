@@ -1,33 +1,51 @@
 import Link from 'next/link';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { getSchools, getProfessions } from 'lib/api.js';
-import routes from 'lib/routes.js';
+// import routes from 'lib/routes.js';
 import { cartesian } from 'lib/utils.js';
 
-const SchoolItem = (props) => {
-  const { school } = props;
+const Value = (props) => {
+  const { school, name, profession } = props;
+  const schoolProfession = school.professions[profession.id];
+
+  switch (name) {
+    case 'link':
+      return schoolProfession.link;
+    default:
+      return schoolProfession[name];
+  }
+};
+
+const Item = (props) => {
+  const { schools, name, profession } = props;
 
   const vdom = (
-    <div className="col">
-      <div className="card border-0 shadow-sm bg-light">
-        <div className="card-body">
-          <h2>{ school.name }</h2>
-          <Link href={routes.schoolPath(school.id)}>Подробнее</Link>
-        </div>
-      </div>
-    </div>
+    <tr>
+      <td>{name}</td>
+      {schools.map((s) => <td key={`${s.id}-${name}`}><Value profession={profession} school={s} name={name} /></td>)}
+    </tr>
   );
 
   return vdom;
 };
 
 const Home = (props) => {
-  const { selectedSchools } = props;
+  const { selectedSchools, profession } = props;
+  const fields = ['link', 'duration'];
+
+  const header = `${profession.name} в школах ${selectedSchools.map((s) => s.name).join(' и ')}`;
+
   return (
     <BaseLayout>
-      <h1 className="mb-5">Сравнение</h1>
+      <h1 className="mb-5">{header}</h1>
       <div className="row row-cols-2 g-2">
-        {selectedSchools.map((s) => <SchoolItem key={s.id} school={s} />)}
+        <table className="table table-striped">
+          <tr>
+            <th>&nbsp;</th>
+            {selectedSchools.map((s) => <th key={s.id}>{s.name}</th>)}
+          </tr>
+          {fields.map((name) => <Item profession={profession} schools={selectedSchools} name={name} key={name} />)}
+        </table>
       </div>
     </BaseLayout>
   );
@@ -51,10 +69,14 @@ export const getStaticProps = async (context) => {
   const { params } = context;
   const schools = await getSchools();
   const selectedSchools = params.competitorIdsLine.split('-vs-').map((id) => schools.find((s) => s.id === id));
-  console.log(selectedSchools);
+
+  const professions = await getProfessions();
+  const profession = professions.find((s) => s.id === params.professionId);
+
   const result = {
     props: {
       selectedSchools,
+      profession,
     },
   };
   return result;

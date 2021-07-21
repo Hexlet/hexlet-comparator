@@ -30,7 +30,7 @@ const ProfessionsHome = (props) => {
   const { professions } = props;
   return (
     <BaseLayout>
-      <h1 className="mb-5">Школы программирования</h1>
+      <h1 className="mb-5">Профессии</h1>
       <div className="row row-cols-2">
         {professions.map((s) => <ProfessionItem profession={s} key={s.id} />)}
       </div>
