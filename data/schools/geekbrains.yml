@@ -12,17 +12,14 @@ youtubeLink: "https://www.youtube.com/channel/UCN6geF_MsLDEp5ISxXKgAFQ"
 communityLink: "https://gb.ru/topics"
 images:
   logo: true
-  screenshots:
-    - base
-    - main
 
 programs:
   frontend-developer:
-    name: Факультет frontend-разработки
+    name: frontend-разработчик
     trial: false
     link: "https://gb.ru/geek_university/frontend"
     duration: 12
-    price: 58164
+    price: 174,492
     practice:
       exists: true
       hasSimulator: false
@@ -44,11 +41,11 @@ programs:
       hasWebinars: true
 
   python-developer:
-    name: Факультет Python-разработки
+    name: python-разработчик
     trial: false
     link: "https://gb.ru/geek_university/python"
     duration: 16
-    price: 83172
+    price: 174,636
     practice:
       exists: true
       hasSimulator: false
@@ -70,7 +67,7 @@ programs:
       hasWebinars: true
 
   java-developer:
-    name: Факультет Java-разработки
+    name: Java--разработчик
     trial: false
     link: "https://gb.ru/geek_university/java"
     duration: 12
@@ -96,7 +93,7 @@ programs:
       hasWebinars: true
 
   ruby-developer:
-    name: Факультет Ruby on Rails
+    name: Ruby-разработчик
     trial: false
     link: "https://gb.ru/geek_university/ruby-on-rails"
     duration: 36
