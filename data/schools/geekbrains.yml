@@ -12,18 +12,21 @@ youtubeLink: "https://www.youtube.com/channel/UCN6geF_MsLDEp5ISxXKgAFQ"
 communityLink: "https://gb.ru/topics"
 images:
   logo: true
-  screenshoots: false
+  screenshots:
+    - base
+    - main
 
 programs:
   frontend-developer:
     name: Факультет frontend-разработки
+    trial: false
     link: "https://gb.ru/geek_university/frontend"
     duration: 12
-    cost_per_month: 4847
+    price: 58164
     practice:
       exists: true
-      hasSimulator: true
-      hasAutomaticCheck: true
+      hasSimulator: false
+      hasAutomaticCheck: false
     internship:
       exists: true
       hasInternal: true
@@ -39,4 +42,83 @@ programs:
       hasTexts: true
       hasVideos: true
       hasWebinars: true
+
+  python-developer:
+    name: Факультет Python-разработки
+    trial: false
+    link: "https://gb.ru/geek_university/python"
+    duration: 16
+    price: 83172
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - personal
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  java-developer:
+    name: Факультет Java-разработки
+    trial: false
+    link: "https://gb.ru/geek_university/java"
+    duration: 12
+    price: 139644
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - personal
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  ruby-developer:
+    name: Факультет Ruby on Rails
+    trial: false
+    link: "https://gb.ru/geek_university/ruby-on-rails"
+    duration: 36
+    price: 159588
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - personal
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
 
