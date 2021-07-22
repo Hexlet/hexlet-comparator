@@ -14,7 +14,7 @@ images:
   logo: true
   screenshoots: false
 
-professions:
+programs:
   frontend-developer:
     name: Факультет frontend-разработки
     link: "https://gb.ru/geek_university/frontend"
