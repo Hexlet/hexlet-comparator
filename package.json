@@ -12,6 +12,9 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "simple-git-hooks": {
+    "pre-commit": "npm run lint"
+  },
   "dependencies": {
     "@jest/globals": "^27.0.6",
     "bootstrap": "^5.0.2",
@@ -45,6 +48,7 @@
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-next": "11.0.1",
     "jest": "^27.0.6",
-    "jest-dom": "^4.0.0"
+    "jest-dom": "^4.0.0",
+    "simple-git-hooks": "^2.5.1"
   }
 }
