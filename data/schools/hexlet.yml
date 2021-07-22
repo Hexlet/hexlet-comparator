@@ -74,3 +74,88 @@ programs:
       hasTexts: true
       hasVideos: true
       hasWebinars: true
+
+  python-developer:
+    name: Python-разработчик
+    trial: true
+    link: "https://ru.hexlet.io/programs/python"
+    duration: 8
+    price: 98000
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - group
+        - personal
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  ruby-developer:
+    name: Разработчик на Ruby on Rails
+    trial: true
+    link: "https://ru.hexlet.io/programs/rails"
+    duration: 5
+    price: 62000
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - group
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  java-developer:
+    name: Java-разработчик
+    trial: true
+    link: "https://ru.hexlet.io/programs/java"
+    duration: 10
+    price: 124000
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - group
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
