@@ -1,5 +1,6 @@
 setup:
 	npm ci
+	npx simple-git-hooks
 
 check: test lint build
 
