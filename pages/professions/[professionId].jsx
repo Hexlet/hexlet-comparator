@@ -32,16 +32,20 @@ const ComparingRow = (props) => {
 };
 
 const ComparingButton = (props) => {
-  const { setState, selected, school } = props;
+  const {
+    setState, selected, school, state,
+  } = props;
 
   const addForCompare = () => setState((s) => [...s, school]);
   const removeFromCompare = () => setState((s) => s.filter((sch) => sch.id !== school.id));
+
+  const disabled = state.length >= 2;
 
   if (selected) {
     return <button type="button" onClick={removeFromCompare} className="btn btn-sm btn-outline-secondary">Убрать</button>;
   }
 
-  return <button type="button" onClick={addForCompare} className="btn btn-sm btn-outline-primary">Добавить</button>;
+  return <button type="button" onClick={addForCompare} disabled={disabled} className="btn btn-sm btn-outline-primary">Добавить</button>;
 };
 
 const SchoolItem = (props) => {
@@ -66,7 +70,7 @@ const SchoolItem = (props) => {
             </Link>
           </h2>
           <div className="text-end ms-auto my-auto">
-            <ComparingButton school={school} selected={selected} setState={setState} />
+            <ComparingButton school={school} selected={selected} state={state} setState={setState} />
           </div>
         </div>
       </div>
