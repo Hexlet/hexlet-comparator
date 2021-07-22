@@ -8,7 +8,7 @@ link: "https://htmlacademy.ru/"
 images:
   logo: true
 
-professions:
+programs:
   frontend-developer:
     name: Фронтенд-разработчик
     link: "https://htmlacademy.ru/profession/frontender"

@@ -1,3 +1,6 @@
+import Popover from 'react-bootstrap/Popover';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import _ from 'lodash';
 import cn from 'classnames';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -20,39 +23,33 @@ const Value = (props) => {
     index,
   } = props;
 
-  const schoolProfession = school.professions[profession.id];
-
-  if (!schoolProfession) {
-    if (name === 'existence') {
-      return <span>Нет такой профессии</span>;
-    }
-
-    return '';
-  }
+  const program = school.programs[profession.id];
 
   let children;
 
   switch (name) {
     case 'link':
-      children = schoolProfession.link;
+      children = program.link;
       break;
     case 'trial':
-      children = schoolProfession.trial ? 'Есть' : 'Нет';
+      children = program.trial ? 'Есть' : 'Нет';
       break;
     case 'duration':
-      children = `${schoolProfession.duration} месяцев`;
+      children = `${program.duration} месяцев`;
       break;
     case 'learning': {
-      const { learning } = schoolProfession;
+      const { learning } = program;
       children = (
-        <ul>
+        <ul className="mb-0">
           <li>{learning.hasWebinars && 'Вебинары'}</li>
+          <li>{learning.hasTexts && 'Текстовые уроки'}</li>
+          <li>{learning.hasVideos && 'Записанное видео'}</li>
         </ul>
       );
       break;
     }
     case 'employment': {
-      const { employment = {} } = schoolProfession;
+      const { employment = {} } = program;
       children = (
         <ul>
           <li>{employment.exists ? 'Есть' : 'Нет'}</li>
@@ -60,23 +57,53 @@ const Value = (props) => {
       );
       break;
     }
-    case 'internship':
-      children = `${schoolProfession.duration} месяцев`;
+    case 'internship': {
+      const { internship } = program;
+      if (!internship.exists) {
+        return 'Стажировка отсутствует';
+      }
+      children = (
+        <ul className="list-unstyled mb-0">
+          <li>
+            Внутренняя:
+            {' '}
+            {internship.hasInternal ? 'Есть' : 'Нет'}
+          </li>
+          <li>
+            У партнеров:
+            {' '}
+            {internship.hasPartners ? 'Есть' : 'Нет'}
+          </li>
+        </ul>
+      );
       break;
+    }
     case 'price':
-      children = `${schoolProfession.price} рублей`;
+      children = `${program.price} рублей`;
       break;
     case 'practice': {
-      const { practice } = schoolProfession;
+      const { practice } = program;
+      if (!practice.exists) {
+        return 'Практика отсутствует';
+      }
       children = (
-        <ul>
-          <li>{practice.exists ? 'Есть' : 'Нет'}</li>
+        <ul className="list-unstyled mb-0">
+          <li>
+            Тренажер:
+            {' '}
+            {practice.hasSimulator ? 'Есть' : 'Нет'}
+          </li>
+          <li>
+            Автопроверки:
+            {' '}
+            {practice.hasAutomaticCheck ? 'Есть' : 'Нет'}
+          </li>
         </ul>
       );
       break;
     }
     case 'mentoring': {
-      const { mentoring } = schoolProfession;
+      const { mentoring } = program;
       children = (
         <ul>
           <li>{mentoring.exists ? 'Есть' : 'Нет'}</li>
@@ -85,16 +112,16 @@ const Value = (props) => {
       break;
     }
     default:
-      children = schoolProfession[name] || '';
+      children = program[name] || '';
   }
 
-  const classLine = cn('col p-3', {
+  const classLine = cn('col p-3 d-flex', {
     'border-end': index === 0,
   });
 
   return (
     <div className={classLine}>
-      {children}
+      <div className="mx-auto">{children}</div>
     </div>
   );
 };
@@ -102,14 +129,32 @@ const Value = (props) => {
 const ComparingBlock = (props) => {
   const { schools, name, profession } = props;
 
-  const { t } = useTranslation('entities');
+  const entities = useTranslation('entities');
+  const common = useTranslation('common');
+
+  const popover = (
+    <Popover>
+      <Popover.Body>
+        {common.t(`school.descriptions.${name}`)}
+      </Popover.Body>
+    </Popover>
+  );
 
   const vdom = (
-    <div className="row justify-content-center mb-4">
-      <div className="col-8 rounded shadow-sm border-1">
-        <h2 className="fs-4 mb-3">{t(`school.${name}`)}</h2>
-        <div className="border-top row justify-content-center row-cols-2">
-          {schools.map((s, index) => <Value index={index} key={`${s.id}-${name}`} profession={profession} school={s} name={name} />)}
+    <div className="row justify-content-center mb-5">
+      <div className="col-8">
+        <div className="card">
+          <div className="card-header d-flex">
+            <h2 className="fs-4 m-0 my-1">{entities.t(`school.${name}`)}</h2>
+            <OverlayTrigger trigger="click" placement="top" overlay={popover}>
+              <i role="button" aria-label="Справка" className="fs-5 my-auto ms-auto bi bi-question-circle text-muted" />
+            </OverlayTrigger>
+          </div>
+          <div className="card-body p-0">
+            <div className="row g-0 lead">
+              {schools.map((s, index) => <Value index={index} key={`${s.id}-${name}`} profession={profession} school={s} name={name} />)}
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -119,13 +164,22 @@ const ComparingBlock = (props) => {
 };
 
 const SchoolHeader = (props) => {
-  const { school } = props;
+  const { school, profession } = props;
+
+  const program = school.programs[profession.id];
 
   return (
     <div className="col-4">
       <Image layout="fixed" src={assetsRoutes.logoPath(school)} width="50" height="50" alt={school.name} />
       <h2>
-        <Link href={routes.schoolPath(school.id)}>{school.name}</Link>
+        <span className="me-3">
+          <Link href={routes.schoolPath(school.id)}>{school.name}</Link>
+        </span>
+        {program && (
+          <Link href={program.link}>
+            <a target="_blank" className="fs-4"><i className="bi bi-box-arrow-up-right" /></a>
+          </Link>
+        ) }
       </h2>
     </div>
   );
@@ -134,9 +188,11 @@ const SchoolHeader = (props) => {
 const Home = (props) => {
   const { selectedSchools, profession } = props;
 
-  const fields = ['existence', 'link', 'duration', 'trial', 'price', 'learning', 'practice', 'internship', 'mentoring', 'employment'];
+  const fields = ['duration', 'trial', 'price', 'learning', 'practice', 'internship', 'mentoring', 'employment'];
 
   const header = `Выбираю между ${selectedSchools.map((s) => s.name).join(' и ')}`;
+
+  const canBeCompared = selectedSchools.every((s) => _.has(s.programs, profession.id));
 
   return (
     <BaseLayout>
@@ -150,9 +206,10 @@ const Home = (props) => {
       </div>
       <h1 className="mb-5">{header}</h1>
       <div className="row justify-content-center text-center row-cols-2 mb-5">
-        {selectedSchools.map((s) => <SchoolHeader key={s.id} school={s} />)}
+        {selectedSchools.map((s) => <SchoolHeader key={s.id} profession={profession} school={s} />)}
       </div>
-      {fields.map((name) => <ComparingBlock profession={profession} schools={selectedSchools} name={name} key={name} />)}
+      {!canBeCompared && <div className="lead text-center">Как минимум в одной из школ нет такой профессии. Сравнивать нечего</div>}
+      {canBeCompared && fields.map((name) => <ComparingBlock profession={profession} schools={selectedSchools} name={name} key={name} />)}
     </BaseLayout>
   );
 };

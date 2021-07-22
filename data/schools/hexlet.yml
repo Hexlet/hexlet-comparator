@@ -17,7 +17,7 @@ images:
     - theory
     - quiz
 
-professions:
+programs:
   frontend-developer:
     name: Фронтенд-разработчик
     trial: true

@@ -103,7 +103,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const { params, locale } = context;
   const allSchools = await getSchools();
-  const schools = allSchools.filter((s) => _.has(s.professions, params.professionId));
+  const schools = allSchools.filter((s) => _.has(s.programs, params.professionId));
   const allProfessions = await getProfessions();
   const profession = allProfessions.find((s) => s.id === params.professionId);
   // console.log(allProfessions);

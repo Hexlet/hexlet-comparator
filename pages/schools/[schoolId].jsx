@@ -33,8 +33,8 @@ const SocialItem = (props) => {
 
 const ProfessionItem = (props) => {
   const { school, professionId, professions } = props;
-  const schoolProfession = getOrError(school.professions, professionId);
 
+  const program = getOrError(school.programs, professionId);
   const profession = professions.find((p) => p.id === professionId);
   const iconClassLine = cn(
     'colored fs-2',
@@ -48,13 +48,13 @@ const ProfessionItem = (props) => {
           <i className={iconClassLine} />
           <h3>
             <Link href={routes.professionPath(professionId)}>
-              <a className="text-decoration-none link-dark stretched-link">{schoolProfession.name}</a>
+              <a className="text-decoration-none link-dark stretched-link">{program.name}</a>
             </Link>
           </h3>
           <div className="text-muted">{ profession.description }</div>
           <div>
             Продолжительность:&nbsp;
-            {schoolProfession.duration}
+            {program.duration}
             &nbsp;
             месяцев
           </div>
@@ -98,10 +98,10 @@ const Screenshot = (props) => {
 
 const School = (props) => {
   const { school, professions } = props;
-  const professionIds = Object.keys(school.professions);
+  const professionIds = Object.keys(school.programs);
   // console.log(professionIds);
-  const schoolProfessionLine = Object.values(school.professions).map((p) => p.name).join(', ');
-  const description = `Школа основана в ${school.foundationDate}. Обучает по направлениям: ${schoolProfessionLine}`;
+  const schoolProgramLine = Object.values(school.programs).map((p) => p.name).join(', ');
+  const description = `Школа основана в ${school.foundationDate}. Обучает по направлениям: ${schoolProgramLine}`;
   const { screenshots = [] } = school.images;
 
   return (
