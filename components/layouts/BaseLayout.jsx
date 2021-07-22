@@ -23,7 +23,7 @@ const CustomNavbar = () => {
       </Container>
     </Navbar>
   );
-}
+};
 
 const BaseLayout = (props) => {
   const { children } = props;
