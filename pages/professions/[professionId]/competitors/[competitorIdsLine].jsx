@@ -36,11 +36,56 @@ const Value = (props) => {
     case 'link':
       children = schoolProfession.link;
       break;
+    case 'trial':
+      children = schoolProfession.trial ? 'Есть' : 'Нет';
+      break;
     case 'duration':
       children = `${schoolProfession.duration} месяцев`;
       break;
+    case 'learning': {
+      const { learning } = schoolProfession;
+      children = (
+        <ul>
+          <li>{learning.hasWebinars && 'Вебинары'}</li>
+        </ul>
+      );
+      break;
+    }
+    case 'employment': {
+      const { employment = {} } = schoolProfession;
+      children = (
+        <ul>
+          <li>{employment.exists ? 'Есть' : 'Нет'}</li>
+        </ul>
+      );
+      break;
+    }
+    case 'internship':
+      children = `${schoolProfession.duration} месяцев`;
+      break;
+    case 'price':
+      children = `${schoolProfession.price} рублей`;
+      break;
+    case 'practice': {
+      const { practice } = schoolProfession;
+      children = (
+        <ul>
+          <li>{practice.exists ? 'Есть' : 'Нет'}</li>
+        </ul>
+      );
+      break;
+    }
+    case 'mentoring': {
+      const { mentoring } = schoolProfession;
+      children = (
+        <ul>
+          <li>{mentoring.exists ? 'Есть' : 'Нет'}</li>
+        </ul>
+      );
+      break;
+    }
     default:
-      children = schoolProfession[name];
+      children = schoolProfession[name] || '';
   }
 
   const classLine = cn('col p-3', {
@@ -89,7 +134,7 @@ const SchoolHeader = (props) => {
 const Home = (props) => {
   const { selectedSchools, profession } = props;
 
-  const fields = ['existence', 'link', 'duration'];
+  const fields = ['existence', 'link', 'duration', 'trial', 'price', 'learning', 'practice', 'internship', 'mentoring', 'employment'];
 
   const header = `Выбираю между ${selectedSchools.map((s) => s.name).join(' и ')}`;
 

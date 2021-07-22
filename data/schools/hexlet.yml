@@ -23,7 +23,7 @@ professions:
     trial: true
     link: "https://ru.hexlet.io/programs/frontend"
     duration: 8
-    cost_per_month: 12250
+    price: 98000
     practice:
       exists: true
       hasSimulator: true
@@ -52,7 +52,7 @@ professions:
     trial: true
     link: "https://ru.hexlet.io/programs/php"
     duration: 8
-    cost_per_month: 12250
+    price: 98000
     practice:
       exists: true
       hasSimulator: true
@@ -61,7 +61,7 @@ professions:
       exists: true
       hasInternal: true
       hasPartners: true
-    tutor:
+    mentoring:
       exists: true
       types:
         - group
