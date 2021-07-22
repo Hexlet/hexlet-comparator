@@ -20,27 +20,23 @@ programs:
     link: "https://gb.ru/geek_university/frontend"
     duration: 12
     cost_per_month: 4847
-    images:
-      simulator: true
-      pracice:
-        exists: true
-        hasSimulator: false
-        hasAutomaticCheckL: false
-      internship:
-        exists: true
-        hasInternal: true
-        hasPartners: true
-      mentoring:
-        exists: true
-        types:
-          - group
-          - personal
-      employment:
-        exists: true
-        learning:
-          exists: true
-          types:
-            - online
-          hasTexts: true
-          hasVideos: true
-          hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - personal
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
