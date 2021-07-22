@@ -3,14 +3,8 @@
 id: html-academy
 name: HTML Academy
 link: "https://htmlacademy.ru/"
-reviewsLink: "https://forum.academy/search?q=отзывы"
-foundationDate: 2013
-facebookLink: "https://www.facebook.com/htmlacademy/"
-twitterLink: "https://twitter.com/htmlacademy_ru"
-vkLink: "https://vk.com/htmlacademy"
-youtubeLink: "https://www.youtube.com/c/HTMLAcademyRUS"
-communityLink: "https://telegram.me/htmlacademy"
-instagramLink: "https://www.instagram.com/htmlacademy/"
+# reviewsLink: "https://ru.hexlet.io/testimonials"
+# community: "https://slack-ru.hexlet.io/"
 images:
   logo: true
 
@@ -18,8 +12,6 @@ programs:
   frontend-developer:
     name: Фронтенд-разработчик
     link: "https://htmlacademy.ru/profession/frontender"
-    duration: 15
-    price: 159000
     practice:
       exists: true
       hasSimulator: true
@@ -31,7 +23,7 @@ programs:
     mentoring:
       exists: true
       types:
-        - group
+        - personal
     employment:
       exists: true
     learning:

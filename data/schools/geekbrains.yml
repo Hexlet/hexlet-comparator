@@ -19,7 +19,7 @@ programs:
     trial: false
     link: "https://gb.ru/geek_university/frontend"
     duration: 12
-    price: 174,492
+    price: 174492
     practice:
       exists: true
       hasSimulator: false
