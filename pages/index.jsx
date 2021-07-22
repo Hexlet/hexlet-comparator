@@ -54,7 +54,7 @@ const Home = (props) => {
           Сравните компании по выбранной профессии
         </div>
       </div>
-      <div className="row row-cols-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-6 gx-2 g-sm-4">
+      <div className="row row-cols-2 row-cols-sm-3 row-cols-md-4 gx-2 g-sm-4">
         {schools.map((s) => <SchoolItem key={s.id} school={s} />)}
       </div>
     </BaseLayout>
