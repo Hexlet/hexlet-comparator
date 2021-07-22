@@ -4,7 +4,12 @@ id: stepik
 name: stepik
 link: "https://stepik.org/"
 reviewsLink: "https://ru.hexlet.io/testimonials"
-community: "https://slack-ru.hexlet.io/"
+foundationDate: 2013
+facebookLink: "https://www.facebook.com/rustepik"
+twitterLink: "https://twitter.com/rustepik"
+vkLink: "https://vk.com/rustepik"
+instagramLink: "https://www.instagram.com/stepik.education/"
+communityLink: "https://welcome.stepik.org/ru/contacts"
 images:
   logo: true
 
