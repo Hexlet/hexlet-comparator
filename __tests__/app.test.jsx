@@ -24,8 +24,8 @@ describe('App', () => {
     const schemaPath = path.join(process.cwd(), 'data', 'schemas', 'profession.json');
     const schema = await fsp.readFile(schemaPath, 'utf-8');
     const validate = ajv.compile(JSON.parse(schema));
-    const proffesions = await getProfessions();
-    expect(validate(proffesions)).toBeTruthy();
+    const professions = await getProfessions();
+    expect(validate(professions)).toBeTruthy();
   });
   // it('/professions', async () => {
   //   const professions = await getProfessions();
