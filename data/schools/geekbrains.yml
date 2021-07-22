@@ -3,9 +3,47 @@
 id: geekbrains
 name: Гикбрейнс
 link: "https://ru.hexlet.io"
-reviewsLink: "https://ru.hexlet.io/testimonials"
-community: "https://slack-ru.hexlet.io/"
+reviewsLink: "https://gb.ru/feedbacks"
+foundationDate: 2010
+facebookLink: "https://www.facebook.com/geekbrains.ru/"
+twitterLink: "https://twitter.com/geekbrains__ru"
+vkLink: "https://vk.com/geekbrainsru"
+youtubeLink: "https://www.youtube.com/channel/UCN6geF_MsLDEp5ISxXKgAFQ"
+communityLink: "https://gb.ru/topics"
 images:
   logo: true
+  screenshoots: false
 
+professions:
+  frontend-developer:
+    name: Факультет frontend-разработки
+    link: "https://gb.ru/geek_university/frontend"
+    duration: 12
+    cost_per_month: 4 847
+    images:
+      simulator: true
+      pracice:
+        exists: true
+        hasSimulator: false
+        hasAutomaticCheckL: false
+      internship:
+        exists: true
+        hasInternal: true
+        hasPartners: true
+      mentoring:
+        exists: true
+        types:
+          -group
+          -personal
+      learning:
+        exists: true
+        types:
+          -online
+        hasTexts: true
+        hasVideos: true
+        hasWebinars: true
+
+<<<<<<< HEAD
 programs: []
+=======
+>>>>>>> 3736b1c (add: tests schema for proffesions)
