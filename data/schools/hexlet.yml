@@ -14,6 +14,7 @@ instagramLink: "https://www.instagram.com/hexlethq/"
 images:
   logo: true
   screenshots:
+    - practice
     - theory
     - quiz
 

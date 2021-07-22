@@ -42,21 +42,23 @@ const ProfessionItem = (props) => {
   );
 
   return (
-    <div className="col">
-      <div className="card border-0 bg-light shadow-sm">
-        <div className="card-body">
-          <i className={iconClassLine} />
-          <h3>
-            <Link href={routes.professionPath(professionId)}>
-              <a className="text-decoration-none link-dark stretched-link">{program.name}</a>
-            </Link>
-          </h3>
-          <div className="text-muted">{ profession.description }</div>
-          <div>
-            Продолжительность:&nbsp;
-            {program.duration}
-            &nbsp;
-            месяцев
+    <div className="row">
+      <div className="col m-2">
+        <div className="card border-0 bg-light shadow-sm">
+          <div className="card-body">
+            <i className={iconClassLine} />
+            <h3>
+              <Link href={routes.professionPath(professionId)}>
+                <a className="text-decoration-none link-dark stretched-link">{program.name}</a>
+              </Link>
+            </h3>
+            <div className="text-muted">{ profession.description }</div>
+            <div>
+              Продолжительность:&nbsp;
+              {program.duration}
+              &nbsp;
+              месяцев
+            </div>
           </div>
         </div>
       </div>

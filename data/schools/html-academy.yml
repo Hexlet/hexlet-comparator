@@ -24,6 +24,8 @@ programs:
       exists: true
       types:
         - personal
+    employment:
+      exists: true
     learning:
       exists: true
       types:
