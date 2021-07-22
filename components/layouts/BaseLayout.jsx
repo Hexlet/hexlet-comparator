@@ -1,38 +1,28 @@
 // @ts-check
-
-import React from 'react';
-import { useTranslation } from 'next-i18next';
-import Link from 'next/link';
 import routes from 'lib/routes.js';
-
+import { useTranslation } from 'next-i18next';
 import Head from 'next/head';
+import Link from 'next/link';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 // import Image from 'next/image';
 
-const Navbar = () => {
+const CustomNavbar = () => {
   const { t } = useTranslation('common');
-
-  const vdom = (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container-fluid">
-        <Link href="/">
-          <a className="navbar-brand">{t('navbar.brand')}</a>
-        </Link>
-        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link href={routes.professionsPath()}>
-                <a className="nav-link active" aria-current="page">{t('navbar.professions')}</a>
-              </Link>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  return (
+    <Navbar bg="light" expand="lg">
+      <Container>
+        <Navbar.Brand href="/">{t('navbar.brand')}</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="me-auto">
+            <Link href={routes.professionsPath()} passHref>
+              <Nav.Link>{t('navbar.professions')}</Nav.Link>
+            </Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-  return vdom;
 };
 
 const BaseLayout = (props) => {
@@ -45,7 +35,7 @@ const BaseLayout = (props) => {
         <title>{ t('title') }</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <Navbar />
+      <CustomNavbar />
       <main className="container mt-5">
         {children}
       </main>
