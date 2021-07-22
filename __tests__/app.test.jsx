@@ -29,6 +29,7 @@ describe('App', () => {
           description: { type: 'string' },
           programmingLanguage: { type: 'string' },
         },
+        required: ['id', 'name', 'description', 'programmingLanguage'],
       },
     };
     const validate = ajv.compile(schema);
