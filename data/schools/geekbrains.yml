@@ -35,10 +35,12 @@ programs:
         types:
           - group
           - personal
-      learning:
+      employment:
         exists: true
-        types:
-          -online
-        hasTexts: true
-        hasVideos: true
-        hasWebinars: true
+        learning:
+          exists: true
+          types:
+            - online
+          hasTexts: true
+          hasVideos: true
+          hasWebinars: true
