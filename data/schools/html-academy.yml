@@ -12,6 +12,89 @@ programs:
   frontend-developer:
     name: Фронтенд-разработчик
     link: "https://htmlacademy.ru/profession/frontender"
+    duration: 15
+    price: 155000
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - personal
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+  
+  react-developer:
+    name: React-разработчик
+    link: "https://htmlacademy.ru/profession/react"
+    duration: 14
+    price: 155000
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - personal
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  backend-developer:
+    name: Бэкенд-разработчик
+    link: "https://htmlacademy.ru/profession/backender"
+    duration: 14
+    price: 192000
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - personal
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  fullstack-developer:
+    name: Фулстек-разработчик
+    link: "https://htmlacademy.ru/profession/fullstack"
+    duration: 17
+    price: 225000
     practice:
       exists: true
       hasSimulator: true
