@@ -12,6 +12,8 @@ programs:
   frontend-developer:
     name: Фронтенд-разработчик
     link: "https://htmlacademy.ru/profession/frontender"
+    duration: 15
+    price: 155000
     practice:
       exists: true
       hasSimulator: true
@@ -33,3 +35,31 @@ programs:
       hasTexts: true
       hasVideos: true
       hasWebinars: true
+
+  php-developer:
+    name: Бэкенд-разработчик PHP
+    link: "https://htmlacademy.ru/profession/backender"
+    duration: 14
+    price: 192000
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      types:
+        - personal
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    
