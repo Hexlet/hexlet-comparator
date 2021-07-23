@@ -52,12 +52,11 @@ const ProfessionItem = (props) => {
                 <a className="text-decoration-none link-dark stretched-link">{program.name}</a>
               </Link>
             </h3>
-            <div className="text-muted">{ profession.description }</div>
+            <div className="text-muted">{profession.description}</div>
             <div>
               Продолжительность:&nbsp;
               {program.duration}
-              &nbsp;
-              месяцев
+              &nbsp;месяцев
             </div>
           </div>
         </div>
@@ -150,7 +149,7 @@ const School = (props) => {
         <h2 className="mb-5">
           <a name="professions" href="#professions" className="text-decoration-none link-dark">Профессии</a>
         </h2>
-        <div className="row row-cols-2">
+        <div className="row row-cols-md-2">
           {professionIds.map((id) => <ProfessionItem professions={professions} school={school} professionId={id} key={id} />)}
         </div>
       </div>

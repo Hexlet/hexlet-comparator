@@ -24,7 +24,7 @@ const ProfessionItem = (props) => {
               <a className="link-dark text-decoration-none stretched-link">{profession.name}</a>
             </Link>
           </h2>
-          <div className="text-muted">{ profession.description }</div>
+          <div className="text-muted">{profession.description}</div>
         </div>
       </div>
     </div>
@@ -36,7 +36,7 @@ const ProfessionsHome = (props) => {
   return (
     <BaseLayout>
       <h1 className="mb-5">Профессии</h1>
-      <div className="row row-cols-2">
+      <div className="row row-cols-md-2">
         {professions.map((s) => <ProfessionItem profession={s} key={s.id} />)}
       </div>
     </BaseLayout>

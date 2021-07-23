@@ -1,5 +1,4 @@
 ---
-
 id: geekbrains
 name: Гикбрейнс
 link: "https://ru.hexlet.io"
@@ -15,7 +14,7 @@ images:
 
 programs:
   frontend-developer:
-    name: frontend-разработчик
+    name: Frontend-разработчик
     trial: false
     link: "https://gb.ru/geek_university/frontend"
     duration: 12
@@ -41,7 +40,7 @@ programs:
       hasWebinars: true
 
   python-developer:
-    name: python-разработчик
+    name: Python-разработчик
     trial: false
     link: "https://gb.ru/geek_university/python"
     duration: 16
@@ -67,7 +66,7 @@ programs:
       hasWebinars: true
 
   java-developer:
-    name: Java--разработчик
+    name: Java-разработчик
     trial: false
     link: "https://gb.ru/geek_university/java"
     duration: 12
@@ -117,5 +116,3 @@ programs:
       hasTexts: true
       hasVideos: true
       hasWebinars: true
-
-
