@@ -1,0 +1,13 @@
+{
+  "school": {
+    "link": "Link",
+    "duration": "Duration",
+    "mentoring": "Mentoring",
+    "learning": "Learning type",
+    "internship": "Internship",
+    "practice": "Practice",
+    "price": "Price",
+    "trial": "Trial access",
+    "employment": "Employment"
+  }
+}

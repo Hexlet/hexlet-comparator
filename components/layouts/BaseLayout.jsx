@@ -15,6 +15,9 @@ const CustomNavbar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+            <Link href={routes.schoolsPath()} passHref>
+              <Nav.Link>{t('navbar.schools')}</Nav.Link>
+            </Link>
             <Link href={routes.professionsPath()} passHref>
               <Nav.Link>{t('navbar.professions')}</Nav.Link>
             </Link>
