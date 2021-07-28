@@ -38,7 +38,11 @@ const CustomFooter = () => (
           <div className="fs-4 mb-2">Hexlet ©</div>
           <ul className="list-unstyled">
             <li>
-              <Link className="link-dark" href={routes.aboutPath()}>О проекте</Link>
+              <Link className="link-dark" href={routes.aboutPath()}>
+                <a className="link-dark">
+                  О проекте
+                </a>
+              </Link>
             </li>
             <li>
               <a className="link-dark" target="_blank" rel="noreferrer" href="https://github.com/Hexlet/hexlet-comparator">Исходный код</a>
@@ -91,7 +95,7 @@ const BaseLayout = (props) => {
   return (
     <>
       <Head>
-        <title>{ t('title') }</title>
+        <title>{t('title')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <CustomNavbar />
