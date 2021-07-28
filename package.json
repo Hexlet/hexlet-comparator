@@ -5,9 +5,6 @@
   "cacheDirectories": [
     ".next/cache"
   ],
-  "simple-git-hooks": {
-    "pre-commit": "make lint"
-  },
   "scripts": {
     "test": "jest",
     "dev": "next dev",
@@ -16,7 +13,7 @@
     "lint": "next lint"
   },
   "simple-git-hooks": {
-    "pre-commit": "npm run lint"
+    "pre-push": "npm run lint"
   },
   "dependencies": {
     "@jest/globals": "^27.0.6",
