@@ -1,7 +1,13 @@
 {
   "title": "Programming school compare",
+  "school": {
+    "descriptions": {
+      "trial": "Trial access to the theory. This usually means a number of free courses or lessons"
+    }
+  },
   "navbar": {
-    "brand": "Comparator",
+    "brand": "Comparator ",
+    "schools": "Schools",
     "professions": "Professions"
   }
 }
