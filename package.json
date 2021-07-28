@@ -5,6 +5,9 @@
   "cacheDirectories": [
     ".next/cache"
   ],
+  "simple-git-hooks": {
+    "pre-commit": "make lint"
+  },
   "scripts": {
     "test": "jest",
     "dev": "next dev",
