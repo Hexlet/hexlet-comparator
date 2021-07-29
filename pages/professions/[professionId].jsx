@@ -82,7 +82,7 @@ const SchoolItem = (props) => {
 const Profession = (props) => {
   const { schools, profession } = props;
   const { query } = useRouter();
-  const initialState = schools.find((s) => s.id === query.id) ?? [];
+  const initialState = schools.find((s) => s.id === query.id) ?? {};
   const [state, setState] = useState([initialState]);
 
   return (
