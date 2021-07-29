@@ -50,7 +50,7 @@ const ProfessionItem = (props) => {
             <h3>
               <Link href={{
                 pathname: routes.professionPath(professionId),
-                query: { id: school.id },
+                query: { school_id: school.id },
               }}
               >
                 <a className="text-decoration-none link-dark stretched-link">{program.name}</a>
