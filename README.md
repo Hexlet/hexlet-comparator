@@ -10,7 +10,7 @@
 
 Картинки школ лежат в */public/assets/schools*
 
-* Логотип – 300x300. Формат png, прозрачный фон.
+* Логотип – Формат svg, прозрачный фон.
 * Скриншот – 960x540. Формат jpg. Добавляем скрины внутренних экранов, в первую очередь связанных с процессом обучения и взаимодействием. Внешние лендинги не нужны, они не несут ценности.
 
 [![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=exercises-javascript)
