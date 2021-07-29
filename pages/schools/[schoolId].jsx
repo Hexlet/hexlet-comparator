@@ -48,7 +48,11 @@ const ProfessionItem = (props) => {
           <div className="card-body">
             <i className={iconClassLine} />
             <h3>
-              <Link href={routes.professionPath(professionId)}>
+              <Link href={{
+                pathname: routes.professionPath(professionId),
+                query: { school_id: school.id },
+              }}
+              >
                 <a className="text-decoration-none link-dark stretched-link">{program.name}</a>
               </Link>
             </h3>

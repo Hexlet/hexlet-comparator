@@ -5,6 +5,7 @@ import { getProfessions, getSchools } from 'lib/api.js';
 // import { getOrError } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
+import { useRouter } from 'next/router.js';
 import { useState } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
@@ -80,7 +81,10 @@ const SchoolItem = (props) => {
 
 const Profession = (props) => {
   const { schools, profession } = props;
-  const [state, setState] = useState([]);
+  const { query } = useRouter();
+  const initialState = schools.find((s) => s.id === query.school_id) ?? {};
+  const [state, setState] = useState([initialState]);
+
   return (
     <BaseLayout>
       <Head>
