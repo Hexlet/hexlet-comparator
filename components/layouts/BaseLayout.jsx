@@ -98,11 +98,13 @@ const BaseLayout = (props) => {
         <title>{t('title')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <CustomNavbar />
-      <main className="container my-5">
-        {children}
-      </main>
-      <CustomFooter />
+      <div className="wrapper">
+        <CustomNavbar />
+        <main className="main container my-5">
+          {children}
+        </main>
+        <CustomFooter />
+      </div>
     </>
   );
 };
