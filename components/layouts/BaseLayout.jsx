@@ -100,7 +100,7 @@ const BaseLayout = (props) => {
       </Head>
       <div className="wrapper min-vh-100 d-flex flex-column">
         <CustomNavbar />
-        <main className="container my-5 flex-grow-1 flex-shrink-1">
+        <main className="container my-5 flex-grow-1">
           {children}
         </main>
         <CustomFooter />
