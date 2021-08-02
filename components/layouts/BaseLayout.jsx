@@ -11,7 +11,7 @@ import {
 const CustomNavbar = () => {
   const { t } = useTranslation('common');
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar className="flex-shrink-0" bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="/">{t('navbar.brand')}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -31,7 +31,7 @@ const CustomNavbar = () => {
 };
 
 const CustomFooter = () => (
-  <footer className="bg-light border-top mt-auto py-5">
+  <footer className="bg-light border-top mt-auto py-5 flex-shrink-0">
     <div className="container-xl">
       <div className="row justify-content-lg-around">
         <div className="col-sm-6 col-md-4 col-lg-auto">
