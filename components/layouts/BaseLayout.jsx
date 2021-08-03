@@ -98,7 +98,7 @@ const BaseLayout = (props) => {
         <title>{t('title')}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <div className="wrapper min-vh-100 d-flex flex-column">
+      <div className="min-vh-100 d-flex flex-column">
         <CustomNavbar />
         <main className="container my-5 flex-grow-1">
           {children}
