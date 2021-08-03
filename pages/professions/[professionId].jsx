@@ -7,6 +7,7 @@ import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
 import { useRouter } from 'next/router.js';
 import { useState } from 'react';
+import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const ComparingRow = (props) => {
@@ -80,6 +81,7 @@ const SchoolItem = (props) => {
 };
 
 const Profession = (props) => {
+  const { t } = useTranslation('common');
   const { schools, profession } = props;
   const { query } = useRouter();
   const initialState = schools.find((s) => s.id === query.school_id) ?? {};
@@ -88,7 +90,14 @@ const Profession = (props) => {
   return (
     <BaseLayout>
       <Head>
-        <title>{profession.name}</title>
+        <title>
+          { t('title_certain_school', { profession: profession.name }) }
+        </title>
+        <meta
+          name="description"
+          content={t('descriptions.description_certain_school', { profession: profession.name })}
+          key="description"
+        />
       </Head>
       <h1 className="mb-5">{profession.name}</h1>
       <ComparingRow state={state} schools={schools} profession={profession} />

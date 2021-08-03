@@ -13,6 +13,7 @@ import routes from 'lib/routes.js';
 import assetsRoutes from 'lib/assetsRoutes.js';
 
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
+import { useTranslation } from 'next-i18next';
 
 const SocialItem = (props) => {
   const { link, type } = props;
@@ -102,6 +103,7 @@ const Screenshot = (props) => {
 };
 
 const School = (props) => {
+  const { t } = useTranslation('common');
   const { school, professions } = props;
   const professionIds = Object.keys(school.programs);
   // console.log(professionIds);
@@ -112,7 +114,12 @@ const School = (props) => {
   return (
     <BaseLayout>
       <Head>
-        <title>{school.name}</title>
+        <title>{t('title_school', { school: school.name })}</title>
+        <meta
+          name="description"
+          content={t('descriptions.description_school', { school: school.name })}
+          key="description"
+        />
       </Head>
       <div className="mx-5">
         <div className="card px-5 py-3 mb-4 bg-light border-0 shadow-sm">

@@ -186,6 +186,7 @@ const SchoolHeader = (props) => {
 };
 
 const Home = (props) => {
+  const { t } = useTranslation('common');
   const { selectedSchools, profession } = props;
 
   const fields = ['duration', 'trial', 'price', 'learning', 'practice', 'internship', 'mentoring', 'employment'];
@@ -197,7 +198,22 @@ const Home = (props) => {
   return (
     <BaseLayout>
       <Head>
-        <title>{header}</title>
+        <title>
+          {t('title_comparison', {
+            profession: profession.name,
+            school_1: selectedSchools[0].name,
+            school_2: selectedSchools[1].name,
+          })}
+        </title>
+        <meta
+          name="description"
+          content={t('descriptions.description_comparison', {
+            profession: profession.name,
+            school_1: selectedSchools[0].name,
+            school_2: selectedSchools[1].name,
+          })}
+          key="description"
+        />
       </Head>
       <div className="lead">
         <Link href={routes.professionPath(profession.id)}>

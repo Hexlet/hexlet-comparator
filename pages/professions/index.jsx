@@ -5,6 +5,8 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getProfessions } from 'lib/api.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
+import Head from 'next/head';
+import { useTranslation } from 'next-i18next';
 
 const ProfessionItem = (props) => {
   const { profession } = props;
@@ -33,13 +35,25 @@ const ProfessionItem = (props) => {
 
 const ProfessionsHome = (props) => {
   const { professions } = props;
+  const { t } = useTranslation('common');
+
   return (
-    <BaseLayout>
-      <h1 className="mb-5">Профессии</h1>
-      <div className="row row-cols-md-2">
-        {professions.map((s) => <ProfessionItem profession={s} key={s.id} />)}
-      </div>
-    </BaseLayout>
+    <>
+      <BaseLayout>
+        <Head>
+          <title>{t('title_professions')}</title>
+          <meta
+            name="description"
+            content={t('descriptions.description_professions')}
+            key="description"
+          />
+        </Head>
+        <h1 className="mb-5">Профессии</h1>
+        <div className="row row-cols-md-2">
+          {professions.map((s) => <ProfessionItem profession={s} key={s.id} />)}
+        </div>
+      </BaseLayout>
+    </>
   );
 };
 
