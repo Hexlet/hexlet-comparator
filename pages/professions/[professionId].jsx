@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import Link from 'next/link';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 import { getProfessions, getSchools } from 'lib/api.js';
 // import { getOrError } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
@@ -89,16 +89,10 @@ const Profession = (props) => {
 
   return (
     <BaseLayout>
-      <Head>
-        <title>
-          { t('title_certain_school', { profession: profession.name }) }
-        </title>
-        <meta
-          name="description"
-          content={t('descriptions.description_certain_school', { profession: profession.name })}
-          key="description"
-        />
-      </Head>
+      <NextSeo
+        title={t('titles.title_certain_school', { profession: profession.name })}
+        description={t('descriptions.description_certain_school', { profession: profession.name })}
+      />
       <h1 className="mb-5">{profession.name}</h1>
       <ComparingRow state={state} schools={schools} profession={profession} />
       <div className="row row-cols-2">

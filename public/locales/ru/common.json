@@ -1,9 +1,11 @@
 {
   "title": "Сравнение школ программирования",
-  "title_professions": "Cравнение онлайн курсов по программированию",
-  "title_certain_school": "{{profession}} - сравнение курсов онлайн-школ",
-  "title_school": "{{school}}: профессии, курсы, обучение в {{school}}",
-  "title_comparison": "{{profession}}: сравнение {{school_1}} и {{school_2}}, что лучше",
+  "titles": {
+    "title_professions": "Cравнение онлайн курсов по программированию",
+    "title_certain_school": "{{profession}} - сравнение курсов онлайн-школ",
+    "title_school": "{{school}}: профессии, курсы, обучение в {{school}}",
+    "title_comparison": "{{profession}}: сравнение {{school_1}} и {{school_2}}, что лучше"
+  },
   "descriptions": {
     "description_professions": "Онлайн сервис для сравнения курсов по программированию от разных школ. Cравнение онлайн курсов по программированию - Hexlet Comparator",
     "description_certain_school": "Обзор курсов по профессии {{profession}} в популярных онлайн-школах - Hexlet Comparator",

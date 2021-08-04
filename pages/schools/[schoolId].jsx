@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import cn from 'classnames';
 import Image from 'next/image';
@@ -113,14 +113,10 @@ const School = (props) => {
 
   return (
     <BaseLayout>
-      <Head>
-        <title>{t('title_school', { school: school.name })}</title>
-        <meta
-          name="description"
-          content={t('descriptions.description_school', { school: school.name })}
-          key="description"
-        />
-      </Head>
+      <NextSeo
+        title={t('titles.title_school', { school: school.name })}
+        description={t('descriptions.description_school', { school: school.name })}
+      />
       <div className="mx-5">
         <div className="card px-5 py-3 mb-4 bg-light border-0 shadow-sm">
           <div className="card-body">
