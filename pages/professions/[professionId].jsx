@@ -1,12 +1,13 @@
 import _ from 'lodash';
 import Link from 'next/link';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 import { getProfessions, getSchools } from 'lib/api.js';
 // import { getOrError } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
 import { useRouter } from 'next/router.js';
 import { useState } from 'react';
+import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const ComparingRow = (props) => {
@@ -80,6 +81,7 @@ const SchoolItem = (props) => {
 };
 
 const Profession = (props) => {
+  const { t } = useTranslation('common');
   const { schools, profession } = props;
   const { query } = useRouter();
   const initialState = schools.find((s) => s.id === query.school_id) ?? {};
@@ -87,9 +89,10 @@ const Profession = (props) => {
 
   return (
     <BaseLayout>
-      <Head>
-        <title>{profession.name}</title>
-      </Head>
+      <NextSeo
+        title={t('titles.title_certain_school', { profession: profession.name })}
+        description={t('descriptions.description_certain_school', { profession: profession.name })}
+      />
       <h1 className="mb-5">{profession.name}</h1>
       <ComparingRow state={state} schools={schools} profession={profession} />
       <div className="row row-cols-2">

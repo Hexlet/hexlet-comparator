@@ -2,7 +2,7 @@ import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import _ from 'lodash';
 import cn from 'classnames';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import Image from 'next/image';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
@@ -186,6 +186,7 @@ const SchoolHeader = (props) => {
 };
 
 const Home = (props) => {
+  const { t } = useTranslation('common');
   const { selectedSchools, profession } = props;
 
   const fields = ['duration', 'trial', 'price', 'learning', 'practice', 'internship', 'mentoring', 'employment'];
@@ -196,9 +197,18 @@ const Home = (props) => {
 
   return (
     <BaseLayout>
-      <Head>
-        <title>{header}</title>
-      </Head>
+      <NextSeo
+        title={t('titles.title_comparison', {
+          profession: profession.name,
+          school_1: selectedSchools[0].name,
+          school_2: selectedSchools[1].name,
+        })}
+        description={t('descriptions.description_comparison', {
+          profession: profession.name,
+          school_1: selectedSchools[0].name,
+          school_2: selectedSchools[1].name,
+        })}
+      />
       <div className="lead">
         <Link href={routes.professionPath(profession.id)}>
           <a className="link-dark">{profession.name}</a>
