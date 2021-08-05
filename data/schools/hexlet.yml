@@ -14,9 +14,20 @@ instagramLink: "https://www.instagram.com/hexlethq/"
 images:
   logo: true
   screenshots:
-    - practice
+    - cabinet
     - theory
     - quiz
+    - practice_1
+    - practice_2
+    - practice_linter_errors
+    - practice_3
+    - practice_4
+    - finished_course
+    - course_landing
+    - topics
+    - my_lasted_progress
+    - my_courses
+    - progress_in_programs
 
 programs:
   frontend-developer:
