@@ -84,8 +84,8 @@ const Profession = (props) => {
   const { t } = useTranslation('common');
   const { schools, profession } = props;
   const { query } = useRouter();
-  const initialState = schools.find((s) => s.id === query.school_id) ?? {};
-  const [state, setState] = useState([initialState]);
+  const initialState = schools.find((s) => s.id === query.school_id) ?? [];
+  const [state, setState] = useState([].concat(initialState));
 
   return (
     <BaseLayout>
