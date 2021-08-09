@@ -44,10 +44,10 @@ const ComparingButton = (props) => {
   const disabled = state.length >= 2;
 
   if (selected) {
-    return <button type="button" onClick={removeFromCompare} className="btn btn-sm btn-outline-secondary">Убрать</button>;
+    return <button type="button" onClick={removeFromCompare} className="btn btn-sm btn-outline-secondary" data-testid={school.id}>Убрать</button>;
   }
 
-  return <button type="button" onClick={addForCompare} disabled={disabled} className="btn btn-sm btn-outline-primary">Добавить</button>;
+  return <button type="button" onClick={addForCompare} disabled={disabled} className="btn btn-sm btn-outline-primary" data-testid={school.id}>Добавить</button>;
 };
 
 const SchoolItem = (props) => {
@@ -84,8 +84,8 @@ const Profession = (props) => {
   const { t } = useTranslation('common');
   const { schools, profession } = props;
   const { query } = useRouter();
-  const initialState = schools.find((s) => s.id === query.school_id) ?? {};
-  const [state, setState] = useState([initialState]);
+  const initialState = schools.find((s) => s.id === query.school_id) ?? [];
+  const [state, setState] = useState([].concat(initialState));
 
   return (
     <BaseLayout>
