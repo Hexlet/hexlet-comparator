@@ -1,3 +1,6 @@
+// @ts-check
+
+import React from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head.js';
 import { Container, Row } from 'react-bootstrap';

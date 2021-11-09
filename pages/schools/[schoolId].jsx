@@ -1,4 +1,6 @@
-import { useState } from 'react';
+// @ts-check
+
+import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
 
 import { NextSeo } from 'next-seo';

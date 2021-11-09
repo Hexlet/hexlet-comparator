@@ -1,4 +1,6 @@
 /* eslint-disable react/jsx-props-no-spreading */
+// @ts-check
+
 import { appWithTranslation } from 'next-i18next';
 import { DefaultSeo } from 'next-seo';
 

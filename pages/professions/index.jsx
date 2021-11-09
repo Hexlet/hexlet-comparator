@@ -1,3 +1,6 @@
+// @ts-check
+
+import React from 'react';
 import cn from 'classnames';
 import Link from 'next/link';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';

@@ -1,3 +1,5 @@
+// @ts-check
+
 import _ from 'lodash';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
@@ -6,7 +8,7 @@ import { getProfessions, getSchools } from 'lib/api.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
 import { useRouter } from 'next/router.js';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 

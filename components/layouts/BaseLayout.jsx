@@ -1,4 +1,6 @@
 // @ts-check
+
+import React from 'react';
 import routes from 'lib/routes.js';
 import { useTranslation } from 'next-i18next';
 import Head from 'next/head';
@@ -38,7 +40,7 @@ const CustomFooter = () => (
           <div className="fs-4 mb-2">Hexlet ©</div>
           <ul className="list-unstyled">
             <li>
-              <Link className="link-dark" href={routes.aboutPath()}>
+              <Link href={routes.aboutPath()}>
                 <a className="link-dark">
                   О проекте
                 </a>
