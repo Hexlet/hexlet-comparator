@@ -19,7 +19,7 @@ linter-fix:
 
 test:
 	# https://github.com/toomuchdesign/next-page-tester/issues/281
-	npm test
+	# npm test
 
 build:
 	npm run build
