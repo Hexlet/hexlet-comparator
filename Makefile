@@ -18,6 +18,7 @@ linter-fix:
 	npx eslint --ext=js,jsx --fix .
 
 test:
+	# https://github.com/toomuchdesign/next-page-tester/issues/281
 	npm test
 
 build:
