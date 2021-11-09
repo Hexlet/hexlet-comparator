@@ -156,7 +156,7 @@ const School = (props) => {
         </div>
 
         <h2 className="mb-5">
-          <a name="professions" href="#professions" className="text-decoration-none link-dark">Профессии</a>
+          <a href="#professions" className="text-decoration-none link-dark">Профессии</a>
         </h2>
         <div className="row row-cols-md-2">
           {professionIds.map((id) => <ProfessionItem professions={professions} school={school} professionId={id} key={id} />)}
