@@ -17,21 +17,49 @@ import assetsRoutes from 'lib/assetsRoutes.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { useTranslation } from 'next-i18next';
 
-const SocialItem = (props) => {
-  const { link, type } = props;
-  if (!link) {
-    return null;
-  }
+const descriptionFields = [
+  'link', 'blog', 'email', 'ceo',
+];
 
-  const classLine = `text-secondary bi bi-${type} me-3`;
+const SocialItem = (props) => {
+  const { profile } = props;
+  const classLine = `text-secondary bi bi-${profile.type} me-3`;
 
   return (
-    <Link href={link}>
+    <Link href={profile.link}>
       <a target="_blank">
         <i className={classLine} />
       </a>
     </Link>
   );
+};
+
+const DescriptionField = (props) => {
+  const { t } = useTranslation('entities');
+  const { name, school } = props;
+  const value = school[name];
+
+  if (!value) {
+    return null;
+  }
+
+  let renderedValue;
+  switch (name) {
+    case 'ceo':
+      renderedValue = <Link href={value.facebook}>{value.name}</Link>;
+      break;
+    default:
+      renderedValue = value;
+  }
+
+  const vdom = (
+    <div className="row lead justify-content-center col-rows-2 mb-2">
+      <div className="col-4">{t(`school.${name}`)}</div>
+      <div className="col-4">{renderedValue}</div>
+    </div>
+  );
+
+  return vdom;
 };
 
 const ProfessionItem = (props) => {
@@ -134,14 +162,13 @@ const School = (props) => {
                 </h1>
                 <p className="lead">{description}</p>
                 <div className="fs-3 mb-4">
-                  <SocialItem link={school.facebookLink} type="facebook" />
-                  <SocialItem link={school.twitterLink} type="twitter" />
-                  <SocialItem link={school.youtubeLink} type="youtube" />
-                  <SocialItem link={school.instagramLink} type="instagram" />
-                  <SocialItem link={school.communityLink} type="chat-fill" />
+                  {school.profiles.map((p) => <SocialItem profile={p} key={p.type} />)}
                 </div>
                 <Link href="#professions">
-                  <a className="btn btn-primary">Профессии</a>
+                  <a className="btn btn-primary me-3">Профессии</a>
+                </Link>
+                <Link href="#description">
+                  <a className="btn btn-outline-dark">Описание</a>
                 </Link>
               </div>
               <div className="d-none d-md-block col-sm-5 text-center">
@@ -155,11 +182,22 @@ const School = (props) => {
           {screenshots.map((name, index) => <Screenshot index={index} key={name} school={school} name={name} />)}
         </div>
 
-        <h2 className="mb-5">
-          <a href="#professions" className="text-decoration-none link-dark">Профессии</a>
-        </h2>
-        <div className="row row-cols-md-2">
-          {professionIds.map((id) => <ProfessionItem professions={professions} school={school} professionId={id} key={id} />)}
+        <div className="mb-5">
+          <h2 className="mb-3">
+            <a href="#description" className="text-decoration-none link-dark">Описание</a>
+          </h2>
+
+          {descriptionFields.map((f) => <DescriptionField key={f} school={school} name={f} />)}
+        </div>
+
+        <div>
+          <h2 className="mb-3">
+            <a href="#professions" className="text-decoration-none link-dark">Профессии</a>
+          </h2>
+
+          <div className="row row-cols-md-2">
+            {professionIds.map((id) => <ProfessionItem professions={professions} school={school} professionId={id} key={id} />)}
+          </div>
         </div>
       </div>
     </BaseLayout>
@@ -188,7 +226,7 @@ export const getStaticProps = async (context) => {
     props: {
       school,
       professions,
-      ...(await serverSideTranslations(locale, ['common'])),
+      ...(await serverSideTranslations(locale, ['common', 'entities'])),
       // profession,
     },
   };

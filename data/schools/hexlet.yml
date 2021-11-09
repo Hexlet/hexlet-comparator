@@ -2,15 +2,105 @@
 
 id: hexlet
 name: Хекслет (Hexlet)
+address: ""
+legal:
+  name: Hexlet Oy
+  address:
 link: "https://ru.hexlet.io"
-reviewsLink: "https://ru.hexlet.io/testimonials"
+email: support@hexlet.io
 foundationDate: 2012
-facebookLink: "https://web.facebook.com/Hexlet/"
-twitterLink: "https://twitter.com/hexlethq"
-vkLink: "https://vk.com/hexlet"
-youtubeLink: "https://www.youtube.com/channel/UCqLPYxuAz-WbdEBLBk_Tb7g"
-communityLink: "https://slack-ru.hexlet.io/"
-instagramLink: "https://www.instagram.com/hexlethq/"
+
+ceo:
+  name: Кирилл Мокевнин
+  facebook: "https://www.facebook.com/mokevnin/"
+
+support_variants:
+  - name: Справочный Центр
+    link: "https://help.hexlet.io"
+
+freezing: true
+
+access_by_payment_types:
+  - free
+  - paid
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areas_of_study:
+  - Программирование
+
+learning_variants:
+  - individual
+
+age_restriction:
+
+owner:
+  name: mail.ru
+  link: "https://mail.ru"
+
+subscription: true
+
+moneyback:
+  exists: true
+  description: Полный возврат в течении первых двух недель
+
+installment:
+  exists: true
+  variants:
+    - Тинькофф
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship: true
+career_consultation: true
+preparing_resume: true
+
+code_review: true
+mentoring: true
+
+phones:
+  - value: 8 800 333 57 04
+    description: Бесплатный звонок по России
+
+languages:
+  - russian
+
+resources:
+  - name: Отзывы
+    link: "https://ru.hexlet.io/testimonials"
+  - name: Комьюнити
+    link: "https://slack-ru.hexlet.io/"
+
+payment_methods:
+  - Банковские карты
+  - Банковская рассрочка
+  - Apple Pay
+  - Google Pay
+
+profiles:
+  - link: "https://facebook.com/Hexlet/"
+    type: facebook
+  - link: "https://twitter.com/hexlethq"
+    type: twitter
+  - link: "https://vk.com/hexlet"
+    type: vk
+  - link: "https://www.youtube.com/channel/UCqLPYxuAz-WbdEBLBk_Tb7g"
+    type: youtube
+  - link: "https://www.instagram.com/hexlethq/"
+    type: instagram
+
 images:
   logo: true
   screenshots:
@@ -32,32 +122,38 @@ images:
 programs:
   frontend-developer:
     name: Фронтенд-разработчик
-    trial: true
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
     link: "https://ru.hexlet.io/programs/frontend"
+    lessonsCount: 134
     duration: 8
     price: 98000
+    installments:
+      - amount: 6433
+        months: 12
+    schedule: |
+      В своем темпе. Дополнительные вебинары 1-2 раза в неделю по желанию
+    format: online
+    learning:
+      - text
+      - video
+      - webinars
     practice:
-      exists: true
-      hasSimulator: true
-      hasAutomaticCheck: true
+      - simulator
+      - local
     internship:
       exists: true
-      hasInternal: true
-      hasPartners: true
-    mentoring:
-      exists: true
       types:
-        - group
-        - personal
+        - internal
+        - partners
     employment:
       exists: true
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
+    mentoring:
+      - group
+      - personal
 
   php-developer:
     name: PHP-разработчик
