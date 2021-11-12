@@ -1,118 +1,262 @@
 ---
+
 id: geekbrains
 name: Гикбрейнс (GeekBrains)
-link: "https://ru.hexlet.io"
-reviewsLink: "https://gb.ru/feedbacks"
+address: "Москва, Ленинградский просп., 39, стр. 79"
+legal:
+  name: ООО «ГикБреинс»
+  address:
+link: "https://gb.ru/"
+email: support@geekbrains.ru
 foundationDate: 2010
-facebookLink: "https://www.facebook.com/geekbrains.ru/"
-twitterLink: "https://twitter.com/geekbrains__ru"
-vkLink: "https://vk.com/geekbrainsru"
-youtubeLink: "https://www.youtube.com/channel/UCN6geF_MsLDEp5ISxXKgAFQ"
-communityLink: "https://gb.ru/topics"
+
+ceo:
+  name: Волчек Александр Игоревич
+  facebook: "https://www.facebook.com/alexander.volchek.1"
+
+support_variants:
+  - name: База знаний
+    link: "https://geekbrains.usedocs.com/"
+
+freezing: true
+
+access_by_payment_types:
+  - free
+  - paid
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areas_of_study:
+  - Программирование
+
+learning_variants:
+  - individual
+
+age_restriction:
+
+owner:
+  name: Skillbox holding limited (Cyprus) 
+  link: ""
+
+subscription: false
+
+moneyback:
+  exists: true
+  description: Полный возврат в течении первых двух недель
+
+installment:
+  exists: true
+  variants:
+    - Тинькофф
+	- Альфа-Банк 
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship: true
+career_consultation: true
+preparing_resume: true
+
+code_review: true
+mentoring: true
+
+phones:
+  - value: 8 800 700-68-41
+    description: Бесплатный звонок по России
+
+languages:
+  - russian
+
+resources:
+  - name: Отзывы
+    link: "https://gb.ru/feedbacks"
+
+
+payment_methods:
+  - Банковские карты
+  - Банковская рассрочка
+  - Apple Pay
+  - Google Pay
+
+profiles:
+  - link: "https://www.facebook.com/geekbrains.ru"
+    type: facebook
+  - link: "https://telegram.me/geekbrains_ru"
+    type: telegram
+  - link: "https://vk.com/geekbrainsru"
+    type: vk
+  - link: "https://youtube.com/user/progliveru"
+    type: youtube
+  - link: "https://www.instagram.com/geekbrains.ru"
+    type: instagram
+
 images:
   logo: true
+  screenshots:
+    - cabinet
+    - theory
+    - quiz
+    - practice_1
+    - practice_2
+    - practice_linter_errors
+    - practice_3
+    - practice_4
+    - finished_course
+    - course_landing
+    - topics
+    - my_lasted_progress
+    - my_courses
+    - progress_in_programs
 
 programs:
   frontend-developer:
-    name: Frontend-разработчик
-    trial: false
+    name: Фронтенд-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
     link: "https://gb.ru/geek_university/frontend"
+    lessonsCount: 134
     duration: 12
     price: 174492
+    installments:
+      - amount: 6433
+        months: 12
+    schedule: |
+      В группе, несколько занятий в неделю
+    format: online
+    learning:
+      - text
+      - video
+      - webinars
     practice:
-      exists: true
-      hasSimulator: false
-      hasAutomaticCheck: false
+      - simulator
+      - local
     internship:
       exists: true
-      hasInternal: true
-      hasPartners: true
+      types:
+        - internal
+        - partners
+    employment:
+      exists: true
     mentoring:
-      exists: true
-      types:
-        - personal
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
+      - group
+      - personal
 
   python-developer:
     name: Python-разработчик
-    trial: false
-    link: "https://gb.ru/geek_university/python"
-    duration: 16
-    price: 174,636
-    practice:
+    syllabus: |
+      Программа курса
+    trial:
       exists: true
-      hasSimulator: false
-      hasAutomaticCheck: false
+      comment: 4 курса бесплатно
+    link: "https://gb.ru/geek_university/python"
+    lessonsCount: 134
+    duration: 16
+    price: 174636
+    installments:
+      - amount: 6433
+        months: 12
+    schedule: |
+      В группе, несколько занятий в неделю
+    format: online
+    learning:
+      - text
+      - video
+      - webinars
+    practice:
+      - simulator
+      - local
     internship:
       exists: true
-      hasInternal: true
-      hasPartners: true
+      types:
+        - internal
+        - partners
+    employment:
+      exists: true
     mentoring:
-      exists: true
-      types:
-        - personal
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
-
+      - group
+      - personal
+	  
   java-developer:
     name: Java-разработчик
-    trial: false
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
     link: "https://gb.ru/geek_university/java"
+    lessonsCount: 134
     duration: 12
     price: 139644
+    installments:
+      - amount: 6433
+        months: 12
+    schedule: |
+      В группе, несколько занятий в неделю
+    format: online
+    learning:
+      - text
+      - video
+      - webinars
     practice:
-      exists: true
-      hasSimulator: false
-      hasAutomaticCheck: false
+      - simulator
+      - local
     internship:
       exists: true
-      hasInternal: true
-      hasPartners: true
+      types:
+        - internal
+        - partners
+    employment:
+      exists: true
     mentoring:
-      exists: true
-      types:
-        - personal
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
-
+      - group
+      - personal
+	  
+	  
   ruby-developer:
     name: Ruby-разработчик
-    trial: false
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
     link: "https://gb.ru/geek_university/ruby-on-rails"
+    lessonsCount: 134
     duration: 36
     price: 159588
+    installments:
+      - amount: 6433
+        months: 12
+    schedule: |
+      В группе, несколько занятий в неделю
+    format: online
+    learning:
+      - text
+      - video
+      - webinars
     practice:
-      exists: true
-      hasSimulator: false
-      hasAutomaticCheck: false
+      - simulator
+      - local
     internship:
       exists: true
-      hasInternal: true
-      hasPartners: true
+      types:
+        - internal
+        - partners
+    employment:
+      exists: true
     mentoring:
-      exists: true
-      types:
-        - personal
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
+      - group
+      - personal
