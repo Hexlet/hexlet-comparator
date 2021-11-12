@@ -1,75 +1,199 @@
 ---
 
 id: html-academy
-name: HTML Academy
+name: HTML Академия (HTML Academy)
+address: "Санкт-Петербург, наб. Pеки Карповки, 5 корпус П"
+legal:
+  name: |
+    ООО «Интерактивные обучающие технологии»
+  address:
 link: "https://htmlacademy.ru/"
-reviewsLink: "https://forum.academy/search?q=отзывы"
+email: support@htmlacademy.ru
 foundationDate: 2013
-facebookLink: "https://www.facebook.com/htmlacademy/"
-twitterLink: "https://twitter.com/htmlacademy_ru"
-vkLink: "https://vk.com/htmlacademy"
-youtubeLink: "https://www.youtube.com/c/HTMLAcademyRUS"
-communityLink: "https://telegram.me/htmlacademy"
-instagramLink: "https://www.instagram.com/htmlacademy/"
+
+ceo:
+  name: Першин Александр Александрович
+  facebook: "https://www.facebook.com/sasha.pershin"
+  vk: "https://vk.com/pershin_alexander"
+
+support_variants:
+  - name: Форум студентов
+    link: "https://forum.academy/"
+
+freezing: true
+
+access_by_payment_types:
+  - free
+  - paid
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areas_of_study:
+  - Программирование
+
+learning_variants:
+  - individual
+
+age_restriction:
+
+owner:
+  name: |
+	ООО «Интерактивные обучающие технологии»
+  link: ""
+
+subscription: false
+
+moneyback:
+  exists: true
+  description: Полный возврат в течении первых двух недель
+
+installment:
+  exists: true
+  variants:
+    - Тинькофф
+	   - Альфа-Банк 
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship: true
+career_consultation: true
+preparing_resume: true
+
+code_review: true
+mentoring: true
+
+phones:
+  - value: 8 800 555-86-28
+    description: Бесплатный звонок по России
+
+languages:
+  - russian
+
+resources:
+  - name: Отзывы
+    link: "https://htmlacademy.ru/blog/academy/course"
+  - name: Форум
+    link: "https://forum.academy/"	
+	
+
+payment_methods:
+  - Банковские карты
+  - Банковская рассрочка
+  - Apple Pay
+  - Google Pay
+
+profiles:
+  - link: "https://www.facebook.com/htmlacademy"
+    type: facebook
+  - link: "https://telegram.me/htmlacademy"
+    type: telegram
+  - link: "https://vk.com/htmlacademy"
+    type: vk
+  - link: "https://www.youtube.com/user/htmlacademyru"
+    type: youtube
+  - link: "https://www.instagram.com/htmlacademy/"
+    type: instagram
+  - link: "https://twitter.com/htmlacademy_ru"
+    type: twitter	
+	
+
 images:
- logo: true
- screenshots:
-   - practice
-   - practice-2
+  logo: true
+  screenshots:
+    - cabinet
+    - theory
+    - quiz
+    - practice_1
+    - practice_2
+    - practice_linter_errors
+    - practice_3
+    - practice_4
+    - finished_course
+    - course_landing
+    - topics
+    - my_lasted_progress
+    - my_courses
+    - progress_in_programs
 
 programs:
   frontend-developer:
     name: Фронтенд-разработчик
-    trial: true
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
     link: "https://htmlacademy.ru/profession/frontender"
+    lessonsCount: 134
     duration: 15
     price: 155000
+    installments:
+      - amount: 6433
+        months: 12
+    schedule: |
+      В группе, несколько занятий в неделю
+    format: online
+    learning:
+      - text
+      - video
+      - webinars
     practice:
-      exists: true
-      hasSimulator: true
-      hasAutomaticCheck: true
+      - simulator
+      - local
     internship:
       exists: true
-      hasInternal: true
-      hasPartners: true
-    mentoring:
-      exists: true
       types:
-        - personal
+        - internal
+        - partners
     employment:
       exists: true
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
+    mentoring:
+      - group
+      - personal
 
   php-developer:
     name: Бэкенд-разработчик PHP
-    link: "https://htmlacademy.ru/profession/backender"
-    duration: 14
-    price: 192000
-    practice:
+    syllabus: |
+      Программа курса
+    trial:
       exists: true
-      hasSimulator: true
-      hasAutomaticCheck: true
+      comment: 4 курса бесплатно
+    link: "https://htmlacademy.ru/profession/backender"
+    lessonsCount: 134
+    duration: 14
+    price: 19200
+    installments:
+      - amount: 6433
+        months: 12
+    schedule: |
+      В группе, несколько занятий в неделю
+    format: online
+    learning:
+      - text
+      - video
+      - webinars
+    practice:
+      - simulator
+      - local
     internship:
       exists: true
-      hasInternal: true
-      hasPartners: true
-    mentoring:
-      exists: true
       types:
-        - personal
+        - internal
+        - partners
     employment:
       exists: true
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
-    
+    mentoring:
+      - group
+      - personal
