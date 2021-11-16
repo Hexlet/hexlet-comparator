@@ -1,12 +1,165 @@
 ---
 
 id: jetbrains-academy
-name: Jetbrains Academy
-link: "https://ru.hexlet.io"
-reviewsLink: "https://ru.hexlet.io/testimonials"
-community: "https://slack-ru.hexlet.io/"
+name: Джетбрейнс Академия (Jetbrains Academy)
+address: "Санкт-Петербург, Приморский проспект 70, строение 1"
+legal:
+  name: |
+    JetBrains s.r.o.
+  address:
+link: "https://www.jetbrains.com/ru-ru/academy/"
+email: support@jetbrains.com
+foundationDate: 2000
+
+ceo:
+  name: ""
+  facebook: ""
+  vk: ""
+
+support_variants:
+  - name: ""
+    link: ""
+
+freezing: true
+
+access_by_payment_types:
+  - free
+  - paid
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areas_of_study:
+  - Программирование
+
+learning_variants:
+  - individual
+
+age_restriction:
+
+owner:
+  name: |
+	JetBrains s.r.o.
+  link: ""
+
+subscription: false
+
+moneyback:
+  exists: false
+  description: Полный возврат в течении первых двух недель
+
+installment:
+  exists: false
+  variants:
+    - Тинькофф
+	- Альфа-Банк 
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship: true
+career_consultation: true
+preparing_resume: true
+
+code_review: true
+mentoring: true
+
+phones:
+  - value: 8 (812) 331-15-74
+    description: 
+
+languages:
+  - russian
+
+resources:
+  - name: Отзывы
+    link: "https://www.jetbrains.com/ru-ru/academy/"
+
+	
+
+payment_methods:
+  - Банковские карты
+  - Банковская рассрочка
+  - Apple Pay
+  - Google Pay
+
+profiles:
+  - link: "https://www.facebook.com/JetBrains"
+    type: facebook
+#  - link: "https://telegram.me/htmlacademy"
+#    type: telegram
+#  - link: "https://vk.com/htmlacademy"
+#    type: vk
+  - link: "https://www.youtube.com/user/JetBrainsTV"
+    type: youtube
+  - link: "https://www.instagram.com/jetbrains/"
+    type: instagram
+  - link: "https://twitter.com/jetbrains"
+    type: twitter	
+	
+
 images:
   logo: true
+  screenshots:
+    - cabinet
+    - theory
+    - quiz
+    - practice_1
+    - practice_2
+    - practice_linter_errors
+    - practice_3
+    - practice_4
+    - finished_course
+    - course_landing
+    - topics
+    - my_lasted_progress
+    - my_courses
+    - progress_in_programs
 
-programs: []
+programs:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
+    link: ""
+    lessonsCount: 134
+    duration: 15
+    price: 155000
+    installments:
+      - amount: 6433
+        months: 12
+    schedule: |
+      В группе, несколько занятий в неделю
+    format: online
+    learning:
+      - text
+      - video
+      - webinars
+    practice:
+      - simulator
+      - local
+    internship:
+      exists: true
+      types:
+        - internal
+        - partners
+    employment:
+      exists: true
+    mentoring:
+      - group
+      - personal
 
+ 
