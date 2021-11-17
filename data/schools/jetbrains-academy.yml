@@ -58,7 +58,7 @@ installment:
   exists: false
   variants:
     - Тинькофф
-	- Альфа-Банк 
+    - Альфа-Банк 
 
 mobile:
   exists: false
