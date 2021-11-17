@@ -5,10 +5,10 @@ name: Mkdev (Mkdev)
 address: "Fodoj UG, 81539 Munich, Germany"
 legal:
   name: |
-    mkdev 
+    mkdev
   address:
 link: "https://mkdev.me/"
-email: team@mkdev.me 
+email: team@mkdev.me
 foundationDate: 2014
 
 ceo:
@@ -45,7 +45,7 @@ age_restriction:
 
 owner:
   name: |
-	Mkdev
+    Mkdev
   link: ""
 
 subscription: false
@@ -58,7 +58,7 @@ installment:
   exists: false
   variants:
     - Тинькофф
-	- Альфа-Банк 
+    - Альфа-Банк
 
 mobile:
   exists: false
@@ -76,7 +76,7 @@ mentoring: true
 
 phones:
   - value: 8 (812) 000 00 00
-    description: 
+    description:
 
 languages:
   - russian
@@ -85,7 +85,7 @@ resources:
   - name: Отзывы
     link: ""
 
-	
+
 
 payment_methods:
   - Банковские карты
@@ -105,8 +105,8 @@ profiles:
 #  - link: "https://www.instagram.com/jetbrains/"
 #    type: instagram
   - link: "https://twitter.com/mkdev_me"
-    type: twitter	
-	
+    type: twitter
+
 
 images:
   logo: true
@@ -161,5 +161,3 @@ programs:
     mentoring:
       - group
       - personal
-
- 

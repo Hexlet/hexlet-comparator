@@ -45,7 +45,7 @@ age_restriction:
 
 owner:
   name: |
-	ООО «Интерактивные обучающие технологии»
+    ООО «Интерактивные обучающие технологии»
   link: ""
 
 subscription: false
@@ -58,7 +58,7 @@ installment:
   exists: true
   variants:
     - Тинькофф
-    - Альфа-Банк 
+    - Альфа-Банк
 
 mobile:
   exists: false
@@ -85,8 +85,8 @@ resources:
   - name: Отзывы
     link: "https://htmlacademy.ru/blog/academy/course"
   - name: Форум
-    link: "https://forum.academy/"	
-	
+    link: "https://forum.academy/"
+
 
 payment_methods:
   - Банковские карты
@@ -106,8 +106,8 @@ profiles:
   - link: "https://www.instagram.com/htmlacademy/"
     type: instagram
   - link: "https://twitter.com/htmlacademy_ru"
-    type: twitter	
-	
+    type: twitter
+
 
 images:
   logo: true

@@ -42,7 +42,7 @@ learning_variants:
 age_restriction:
 
 owner:
-  name: Skillbox holding limited (Cyprus) 
+  name: Skillbox holding limited (Cyprus)
   link: ""
 
 subscription: false
@@ -55,7 +55,7 @@ installment:
   exists: true
   variants:
     - Тинькофф
-    - Альфа-Банк 
+    - Альфа-Банк
 
 mobile:
   exists: false
@@ -189,7 +189,7 @@ programs:
     mentoring:
       - group
       - personal
-	  
+
   java-developer:
     name: Java-разработчик
     syllabus: |
@@ -224,8 +224,8 @@ programs:
     mentoring:
       - group
       - personal
-	  
-	  
+
+
   ruby-developer:
     name: Ruby-разработчик
     syllabus: |

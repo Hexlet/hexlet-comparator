@@ -8,7 +8,7 @@ legal:
     ООО «СКИЛБОКС»
   address:
 link: "https://skillbox.ru"
-email: hello@skillbox.ru 
+email: hello@skillbox.ru
 foundationDate: 2015
 
 ceo:
@@ -45,7 +45,7 @@ age_restriction:
 
 owner:
   name: |
-	Skillbox Holding Limited 
+    Skillbox Holding Limited
   link: "https://skillbox.ru/contacts/"
 
 subscription: false
@@ -58,7 +58,7 @@ installment:
   exists: false
   variants:
     - Тинькофф
-	- Альфа-Банк 
+    - Альфа-Банк
 
 mobile:
   exists: false
@@ -85,7 +85,7 @@ resources:
   - name: Отзывы
     link: "https://skillbox.ru/otzyvy/"
 
-	
+
 
 payment_methods:
   - Банковские карты
@@ -105,8 +105,8 @@ profiles:
 #  - link: "https://www.instagram.com/jetbrains/"
 #    type: instagram
 #  - link: "https://twitter.com/mkdev_me"
-#    type: twitter	
-	
+#    type: twitter
+
 
 images:
   logo: true
@@ -161,5 +161,3 @@ programs:
     mentoring:
       - group
       - personal
-
- 

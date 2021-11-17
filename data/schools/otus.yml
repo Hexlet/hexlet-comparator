@@ -5,10 +5,10 @@ name: Отус (Otus)
 address: "Москва, аллея Нарышкинская, дом 5, строение 2, этаж 2, помещение IV, комната 54"
 legal:
   name: |
-    ООО «Отус онлайн-образование» 
+    ООО «Отус онлайн-образование»
   address:
 link: "https://otus.ru/"
-email: help@otus.ru 
+email: help@otus.ru
 foundationDate: 2015
 
 ceo:
@@ -45,7 +45,7 @@ age_restriction:
 
 owner:
   name: |
-	ООО «Отус онлайн-образование»
+    ООО «Отус онлайн-образование»
   link: "https://otus.ru/legal/main_info/"
 
 subscription: false
@@ -58,7 +58,7 @@ installment:
   exists: false
   variants:
     - Тинькофф
-	- Альфа-Банк 
+    - Альфа-Банк
 
 mobile:
   exists: false
@@ -76,7 +76,7 @@ mentoring: true
 
 phones:
   - value: +7 499 938-92-02
-    description: 
+    description:
 
 languages:
   - russian
@@ -85,7 +85,7 @@ resources:
   - name: Отзывы
     link: "https://otus.ru/reviews"
 
-	
+
 
 payment_methods:
   - Банковские карты
@@ -105,8 +105,8 @@ profiles:
 #  - link: "https://www.instagram.com/jetbrains/"
 #    type: instagram
 #  - link: "https://twitter.com/mkdev_me"
-#    type: twitter	
-	
+#    type: twitter
+
 
 images:
   logo: true
@@ -161,5 +161,3 @@ programs:
     mentoring:
       - group
       - personal
-
- 

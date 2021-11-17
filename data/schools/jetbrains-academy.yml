@@ -45,7 +45,7 @@ age_restriction:
 
 owner:
   name: |
-	JetBrains s.r.o.
+    JetBrains s.r.o.
   link: ""
 
 subscription: false
@@ -58,7 +58,7 @@ installment:
   exists: false
   variants:
     - Тинькофф
-    - Альфа-Банк 
+    - Альфа-Банк
 
 mobile:
   exists: false
@@ -76,7 +76,7 @@ mentoring: true
 
 phones:
   - value: 8 (812) 331-15-74
-    description: 
+    description:
 
 languages:
   - russian
@@ -85,7 +85,7 @@ resources:
   - name: Отзывы
     link: "https://www.jetbrains.com/ru-ru/academy/"
 
-	
+
 
 payment_methods:
   - Банковские карты
@@ -105,8 +105,8 @@ profiles:
   - link: "https://www.instagram.com/jetbrains/"
     type: instagram
   - link: "https://twitter.com/jetbrains"
-    type: twitter	
-	
+    type: twitter
+
 
 images:
   logo: true
@@ -161,5 +161,3 @@ programs:
     mentoring:
       - group
       - personal
-
- 

@@ -8,7 +8,7 @@ legal:
     ООО "СКИЛФЭКТОРИ"
   address:
 link: "https://skillfactory.ru"
-email: info@skillfactory.ru 
+email: info@skillfactory.ru
 foundationDate: 2016
 
 ceo:
@@ -45,8 +45,8 @@ age_restriction:
 
 owner:
   name: |
-	Skillbox Holding Limited 
-	link: "https://skillfactory.ru/contacts"
+    Skillbox Holding Limited
+  link: "https://skillfactory.ru/contacts"
 
 subscription: false
 
@@ -58,7 +58,7 @@ installment:
   exists: false
   variants:
     - Тинькофф
-	- Альфа-Банк 
+    - Альфа-Банк
 
 mobile:
   exists: false
@@ -85,7 +85,7 @@ resources:
   - name: Отзывы
     link: "https://skillfactory.ru/cases-n-reviews"
 
-	
+
 
 payment_methods:
   - Банковские карты
@@ -105,8 +105,8 @@ profiles:
   - link: "https://www.instagram.com/skillfactoryschool/"
     type: instagram
   - link: "https://twitter.com/skillfactoryru"
-    type: twitter	
-	
+    type: twitter
+
 
 images:
   logo: true
@@ -161,5 +161,3 @@ programs:
     mentoring:
       - group
       - personal
-
- 
