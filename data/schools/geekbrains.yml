@@ -189,7 +189,7 @@ programs:
     mentoring:
       - group
       - personal
-	  
+
   java-developer:
     name: Java-разработчик
     syllabus: |
@@ -224,8 +224,7 @@ programs:
     mentoring:
       - group
       - personal
-	  
-	  
+
   ruby-developer:
     name: Ruby-разработчик
     syllabus: |

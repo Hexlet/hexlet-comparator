@@ -44,8 +44,7 @@ learning_variants:
 age_restriction:
 
 owner:
-  name: |
-	JetBrains s.r.o.
+  name: JetBrains s.r.o.
   link: ""
 
 subscription: false
@@ -85,7 +84,6 @@ resources:
   - name: Отзывы
     link: "https://www.jetbrains.com/ru-ru/academy/"
 
-	
 
 payment_methods:
   - Банковские карты
@@ -106,7 +104,7 @@ profiles:
     type: instagram
   - link: "https://twitter.com/jetbrains"
     type: twitter	
-	
+
 
 images:
   logo: true
@@ -162,4 +160,3 @@ programs:
       - group
       - personal
 
- 

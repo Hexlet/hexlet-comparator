@@ -44,9 +44,8 @@ learning_variants:
 age_restriction:
 
 owner:
-  name: |
-	Skillbox Holding Limited 
-	link: "https://skillfactory.ru/contacts"
+  name: Skillbox Holding Limited
+  link: "https://skillfactory.ru/contacts"
 
 subscription: false
 
@@ -58,7 +57,7 @@ installment:
   exists: false
   variants:
     - Тинькофф
-	- Альфа-Банк 
+    - Альфа-Банк 
 
 mobile:
   exists: false
@@ -85,7 +84,6 @@ resources:
   - name: Отзывы
     link: "https://skillfactory.ru/cases-n-reviews"
 
-	
 
 payment_methods:
   - Банковские карты
@@ -106,7 +104,7 @@ profiles:
     type: instagram
   - link: "https://twitter.com/skillfactoryru"
     type: twitter	
-	
+
 
 images:
   logo: true

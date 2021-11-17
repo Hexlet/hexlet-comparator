@@ -44,8 +44,7 @@ learning_variants:
 age_restriction:
 
 owner:
-  name: |
-	ООО «Отус онлайн-образование»
+  name: "ООО «Отус онлайн-образование»"
   link: "https://otus.ru/legal/main_info/"
 
 subscription: false
@@ -58,7 +57,7 @@ installment:
   exists: false
   variants:
     - Тинькофф
-	- Альфа-Банк 
+    - Альфа-Банк 
 
 mobile:
   exists: false
@@ -85,7 +84,6 @@ resources:
   - name: Отзывы
     link: "https://otus.ru/reviews"
 
-	
 
 payment_methods:
   - Банковские карты
@@ -105,8 +103,8 @@ profiles:
 #  - link: "https://www.instagram.com/jetbrains/"
 #    type: instagram
 #  - link: "https://twitter.com/mkdev_me"
-#    type: twitter	
-	
+#    type: twitter
+
 
 images:
   logo: true

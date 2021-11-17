@@ -29,3 +29,8 @@
   name: Ruby-разработчик
   description: Какое-то общее описание профессии ruby
   programmingLanguage: ruby
+
+- id: backend-developer
+  name: Backend -разработчик
+  description: Какое-то общее описание профессии ruby
+  programmingLanguage: ruby

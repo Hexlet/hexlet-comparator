@@ -44,8 +44,7 @@ learning_variants:
 age_restriction:
 
 owner:
-  name: |
-	ООО «Интерактивные обучающие технологии»
+  name: "ООО «Интерактивные обучающие технологии»"
   link: ""
 
 subscription: false
@@ -107,7 +106,6 @@ profiles:
     type: instagram
   - link: "https://twitter.com/htmlacademy_ru"
     type: twitter	
-	
 
 images:
   logo: true

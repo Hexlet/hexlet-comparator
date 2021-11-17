@@ -44,8 +44,7 @@ learning_variants:
 age_restriction:
 
 owner:
-  name: |
-	Mkdev
+  name: Mkdev
   link: ""
 
 subscription: false
@@ -58,7 +57,7 @@ installment:
   exists: false
   variants:
     - Тинькофф
-	- Альфа-Банк 
+    - Альфа-Банк 
 
 mobile:
   exists: false
@@ -85,7 +84,6 @@ resources:
   - name: Отзывы
     link: ""
 
-	
 
 payment_methods:
   - Банковские карты
