@@ -1,12 +1,165 @@
 ---
 
 id: skillfactory
-name: Skillfactory
-link: "https://ru.hexlet.io"
-reviewsLink: "https://ru.hexlet.io/testimonials"
-community: "https://slack-ru.hexlet.io/"
+name: Скилфэктори  (Skillfactory)
+address: "Москва, Цветной бульвар, дом 30, строение 1, э 3 пoм 1, к 14, оф 231"
+legal:
+  name: |
+    ООО "СКИЛФЭКТОРИ"
+  address:
+link: "https://skillfactory.ru"
+email: info@skillfactory.ru 
+foundationDate: 2016
+
+ceo:
+  name: "Александр Турилин"
+  facebook: "https://www.facebook.com/aturilin/"
+#  vk: ""
+
+support_variants:
+  - name: ""
+    link: ""
+
+freezing: true
+
+access_by_payment_types:
+  - free
+  - paid
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areas_of_study:
+  - Программирование
+
+learning_variants:
+  - individual
+
+age_restriction:
+
+owner:
+  name: |
+	Skillbox Holding Limited 
+	link: "https://skillfactory.ru/contacts"
+
+subscription: false
+
+moneyback:
+  exists: false
+  description: Полный возврат в течении первых двух недель
+
+installment:
+  exists: false
+  variants:
+    - Тинькофф
+	- Альфа-Банк 
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship: true
+career_consultation: true
+preparing_resume: true
+
+code_review: true
+mentoring: true
+
+phones:
+  - value: +7 495 291 09 12
+    description: Контактный центр
+
+languages:
+  - russian
+
+resources:
+  - name: Отзывы
+    link: "https://skillfactory.ru/cases-n-reviews"
+
+	
+
+payment_methods:
+  - Банковские карты
+  - Банковская рассрочка
+  - Apple Pay
+  - Google Pay
+
+profiles:
+  - link: "https://www.facebook.com/skillfactoryschool/"
+    type: facebook
+  - link: "https://t.me/skillfactory"
+    type: telegram
+  - link: "https://vk.com/skillfactoryschool"
+    type: vk
+  - link: "https://www.youtube.com/channel/UClOTq6XN8g7-16QLGnZ6_EA"
+    type: youtube
+  - link: "https://www.instagram.com/skillfactoryschool/"
+    type: instagram
+  - link: "https://twitter.com/skillfactoryru"
+    type: twitter	
+	
+
 images:
   logo: true
+  screenshots:
+    - cabinet
+    - theory
+    - quiz
+    - practice_1
+    - practice_2
+    - practice_linter_errors
+    - practice_3
+    - practice_4
+    - finished_course
+    - course_landing
+    - topics
+    - my_lasted_progress
+    - my_courses
+    - progress_in_programs
 
-programs: []
+programs:
+   backend-developer:
+    name: Backend-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
+    link: "https://skillfactory.ru/backend-razrabotka"
+    lessonsCount: 134
+    duration: 8
+    price: 155000
+    installments:
+      - amount: 6433
+        months: 12
+    schedule: |
+      В группе, несколько занятий в неделю
+    format: online
+    learning:
+      - text
+      - video
+      - webinars
+    practice:
+      - simulator
+      - local
+    internship:
+      exists: true
+      types:
+        - internal
+        - partners
+    employment:
+      exists: true
+    mentoring:
+      - group
+      - personal
 
+ 
