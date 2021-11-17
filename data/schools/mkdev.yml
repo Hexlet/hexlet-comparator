@@ -1,12 +1,165 @@
 ---
 
 id: mkdev
-name: Mkdev
-link: "https://ru.hexlet.io"
-reviewsLink: "https://ru.hexlet.io/testimonials"
-community: "https://slack-ru.hexlet.io/"
+name: Mkdev (Mkdev)
+address: "Fodoj UG, 81539 Munich, Germany"
+legal:
+  name: |
+    mkdev 
+  address:
+link: "https://mkdev.me/"
+email: team@mkdev.me 
+foundationDate: 2014
+
+ceo:
+  name: ""
+  facebook: ""
+  vk: ""
+
+support_variants:
+  - name: "Портал поддержки"
+    link: "https://help.mkdev.me/ru/"
+
+freezing: true
+
+access_by_payment_types:
+  - free
+  - paid
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areas_of_study:
+  - Программирование
+
+learning_variants:
+  - individual
+
+age_restriction:
+
+owner:
+  name: |
+	Mkdev
+  link: ""
+
+subscription: false
+
+moneyback:
+  exists: false
+  description: Полный возврат в течении первых двух недель
+
+installment:
+  exists: false
+  variants:
+    - Тинькофф
+	- Альфа-Банк 
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship: true
+career_consultation: true
+preparing_resume: true
+
+code_review: true
+mentoring: true
+
+phones:
+  - value: 8 (812) 000 00 00
+    description: 
+
+languages:
+  - russian
+
+resources:
+  - name: Отзывы
+    link: ""
+
+	
+
+payment_methods:
+  - Банковские карты
+  - Банковская рассрочка
+  - Apple Pay
+  - Google Pay
+
+profiles:
+  - link: "https://www.facebook.com/mkdev.me"
+    type: facebook
+  - link: "https://t.me/mkdev_me"
+    type: telegram
+  - link: "https://vk.com/mkdev"
+    type: vk
+  - link: "https://vk.com/mkdev"
+    type: youtube
+#  - link: "https://www.instagram.com/jetbrains/"
+#    type: instagram
+  - link: "https://twitter.com/mkdev_me"
+    type: twitter	
+	
+
 images:
   logo: true
+  screenshots:
+    - cabinet
+    - theory
+    - quiz
+    - practice_1
+    - practice_2
+    - practice_linter_errors
+    - practice_3
+    - practice_4
+    - finished_course
+    - course_landing
+    - topics
+    - my_lasted_progress
+    - my_courses
+    - progress_in_programs
 
-programs: []
+programs:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
+    link: ""
+    lessonsCount: 134
+    duration: 15
+    price: 155000
+    installments:
+      - amount: 6433
+        months: 12
+    schedule: |
+      В группе, несколько занятий в неделю
+    format: online
+    learning:
+      - text
+      - video
+      - webinars
+    practice:
+      - simulator
+      - local
+    internship:
+      exists: true
+      types:
+        - internal
+        - partners
+    employment:
+      exists: true
+    mentoring:
+      - group
+      - personal
 
+ 
