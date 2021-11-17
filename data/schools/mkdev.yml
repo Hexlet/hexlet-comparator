@@ -8,7 +8,7 @@ legal:
     mkdev 
   address:
 link: "https://mkdev.me/"
-email: team@mkdev.me
+email: team@mkdev.me 
 foundationDate: 2014
 
 ceo:
@@ -17,8 +17,8 @@ ceo:
   vk: ""
 
 support_variants:
-  - name: ""
-    link: ""
+  - name: "Портал поддержки"
+    link: "https://help.mkdev.me/ru/"
 
 freezing: true
 
@@ -45,7 +45,7 @@ age_restriction:
 
 owner:
   name: |
-	JetBrains s.r.o.
+	Mkdev
   link: ""
 
 subscription: false
@@ -75,7 +75,7 @@ code_review: true
 mentoring: true
 
 phones:
-  - value: 8 (812) 331-15-74
+  - value: 8 (812) 000 00 00
     description: 
 
 languages:
