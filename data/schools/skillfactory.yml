@@ -127,7 +127,7 @@ images:
     - progress_in_programs
 
 programs:
-   backend-developer:
+   php-developer:
     name: Backend-разработчик
     syllabus: |
       Программа курса
