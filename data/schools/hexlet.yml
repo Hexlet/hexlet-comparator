@@ -5,7 +5,7 @@ name: Хекслет (Hexlet)
 address: ""
 legal:
   name: Hexlet Oy
-  address:
+  address: Legal Address
 link: "https://ru.hexlet.io"
 email: support@hexlet.io
 foundationDate: 2012
@@ -14,32 +14,32 @@ ceo:
   name: Кирилл Мокевнин
   facebook: "https://www.facebook.com/mokevnin/"
 
-support_variants:
+supportVariants:
   - name: Справочный Центр
     link: "https://help.hexlet.io"
 
-freezing: true
+freeze: true
 
-access_by_payment_types:
+accessByPaymentTypes:
   - free
   - paid
 
 # bonuses:
 #   -
 
-# additional_services:
+# additionalServices:
 #   -
 
-# when_courses_start:
+# whenCoursesStart:
 #   -
 
-areas_of_study:
+areasOfStudy:
   - Программирование
 
-learning_variants:
+learningVariants:
   - individual
 
-age_restriction:
+ageRestriction:
 
 owner:
   name: mail.ru
@@ -64,10 +64,10 @@ mobile:
 #   -
 
 internship: true
-career_consultation: true
-preparing_resume: true
+careerConsultation: true
+preparingResume: true
 
-code_review: true
+codeReview: true
 mentoring: true
 
 phones:
@@ -83,7 +83,7 @@ resources:
   - name: Комьюнити
     link: "https://slack-ru.hexlet.io/"
 
-payment_methods:
+paymentMethods:
   - Банковские карты
   - Банковская рассрочка
   - Apple Pay

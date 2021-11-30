@@ -18,7 +18,10 @@ import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { useTranslation } from 'next-i18next';
 
 const descriptionFields = [
-  'link', 'blog', 'email', 'ceo',
+  'link', 'blog', 'email', 'ceo', 'legal', 'address', 'foundationDate', 'support_variants',
+  'freezing', 'accessByPaymentTypes', 'areasOfStudy', 'learningVariants', 'ageRestriction',
+  'owner', 'subscription', 'moneyback', 'installment', 'mobile', 'internship', 'careerConsultation',
+  'preparingResume', 'codeReview', 'mentoring', 'phones', 'languages', 'resources', 'paymentMethods',
 ];
 
 const SocialItem = (props) => {
@@ -34,6 +37,38 @@ const SocialItem = (props) => {
   );
 };
 
+const DescriptionValue = (props) => {
+  const { name, value } = props;
+  switch (name) {
+    case 'owner':
+      return <Link href={value.link}>{value.name}</Link>;
+    case 'ceo':
+      return <Link href={value.facebook}>{value.name}</Link>;
+    case 'phones':
+      return value.map((p) => <div key={p.value}>{p.value}</div>);
+    case 'moneyback':
+      return <div>{value.exists ? value.description : 'нет'}</div>;
+    case 'mobile':
+      return <div>{value.exists ? 'да' : 'нет'}</div>;
+    case 'installment':
+      if (!value.exists) {
+        return 'нет';
+      }
+      return value.variants.join(', ');
+    case 'resources':
+      return value.map((r) => <div key={r.name}><Link href={r.link}>{r.name}</Link></div>);
+    case 'legal':
+      return (
+        <div>
+          <div>{value.name}</div>
+          <div>{value.address}</div>
+        </div>
+      );
+    default:
+      return value.toString();
+  }
+};
+
 const DescriptionField = (props) => {
   const { t } = useTranslation('entities');
   const { name, school } = props;
@@ -43,19 +78,10 @@ const DescriptionField = (props) => {
     return null;
   }
 
-  let renderedValue;
-  switch (name) {
-    case 'ceo':
-      renderedValue = <Link href={value.facebook}>{value.name}</Link>;
-      break;
-    default:
-      renderedValue = value;
-  }
-
   const vdom = (
     <div className="row lead justify-content-center col-rows-2 mb-2">
       <div className="col-4">{t(`school.${name}`)}</div>
-      <div className="col-4">{renderedValue}</div>
+      <div className="col-4"><DescriptionValue name={name} value={value} /></div>
     </div>
   );
 
@@ -73,26 +99,24 @@ const ProfessionItem = (props) => {
   );
 
   return (
-    <div className="row">
-      <div className="col m-2">
-        <div className="card border-0 bg-light shadow-sm">
-          <div className="card-body">
-            <i className={iconClassLine} />
-            <h3>
-              <Link href={{
-                pathname: routes.professionPath(professionId),
-                query: { school_id: school.id },
-              }}
-              >
-                <a className="text-decoration-none link-dark stretched-link">{program.name}</a>
-              </Link>
-            </h3>
-            <div className="text-muted">{profession.description}</div>
-            <div>
-              Продолжительность:&nbsp;
-              {program.duration}
-              &nbsp;месяцев
-            </div>
+    <div className="col mb-4">
+      <div className="card border-0 bg-light shadow-sm h-100">
+        <div className="card-body">
+          <i className={iconClassLine} />
+          <h3>
+            <Link href={{
+              pathname: routes.professionPath(professionId),
+              query: { school_id: school.id },
+            }}
+            >
+              <a className="text-decoration-none link-dark stretched-link">{program.name}</a>
+            </Link>
+          </h3>
+          <div className="text-muted">{profession.description}</div>
+          <div>
+            Продолжительность:&nbsp;
+            {program.duration}
+            &nbsp;месяцев
           </div>
         </div>
       </div>

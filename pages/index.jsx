@@ -16,7 +16,7 @@ const SchoolItem = (props) => {
 
   const vdom = (
     <div className="col mb-5">
-      <div className="card border-0 shadow-sm bg-light">
+      <div className="card border-0 shadow-sm bg-light h-100">
         <div>
           <Image layout="responsive" src={assetsRoutes.logoPath(school)} width="300" height="300" className="card-img-top" alt={school.name} />
         </div>
