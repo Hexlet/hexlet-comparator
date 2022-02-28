@@ -103,7 +103,7 @@ const ProfessionItem = (props) => {
   return (
     <div className="col mb-4">
       <div className="card border-0 bg-light shadow-sm h-100">
-        <div className="card-body">
+        <div className="d-flex flex-column card-body">
           <i className={iconClassLine} />
           <h3>
             <Link href={{
@@ -115,7 +115,7 @@ const ProfessionItem = (props) => {
             </Link>
           </h3>
           <div className="text-muted">{profession.description}</div>
-          <div>
+          <div className="mt-auto">
             {t('period')}
             {t('duration', { duration: program.duration })}
           </div>

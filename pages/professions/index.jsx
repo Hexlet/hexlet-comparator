@@ -21,7 +21,7 @@ const ProfessionItem = (props) => {
 
   return (
     <div className="col mb-3">
-      <div className="card border-0 bg-light">
+      <div className="card border-0 bg-light h-100">
         <div className="card-body">
           <i className={iconClassLine} />
           <h2>
