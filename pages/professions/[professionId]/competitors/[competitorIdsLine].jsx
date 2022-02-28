@@ -63,7 +63,8 @@ const Value = (props) => {
     case 'internship': {
       const { internship } = program;
       if (!internship.exists) {
-        return 'Стажировка отсутствует';
+        children = 'Стажировка отсутствует';
+        break;
       }
       children = (
         <ul className="list-unstyled mb-0">
@@ -87,7 +88,8 @@ const Value = (props) => {
     case 'practice': {
       const { practice } = program;
       if (!practice.exists) {
-        return 'Практика отсутствует';
+        children = 'Практика отсутствует';
+        break;
       }
       children = (
         <ul className="list-unstyled mb-0">
@@ -124,7 +126,7 @@ const Value = (props) => {
 
   return (
     <div className={classLine}>
-      <div className="mx-auto">{children}</div>
+      <div className="mx-auto my-auto">{children}</div>
     </div>
   );
 };
