@@ -101,18 +101,20 @@ const ProfessionItem = (props) => {
   return (
     <div className="col mb-4">
       <div className="card border-0 bg-light shadow-sm h-100">
-        <div className="card-body">
-          <i className={iconClassLine} />
-          <h3>
-            <Link href={{
-              pathname: routes.professionPath(professionId),
-              query: { school_id: school.id },
-            }}
-            >
-              <a className="text-decoration-none link-dark stretched-link">{program.name}</a>
-            </Link>
-          </h3>
-          <div className="text-muted">{profession.description}</div>
+        <div className="d-flex flex-column card-body justify-content-md-between">
+          <div>
+            <i className={iconClassLine} />
+            <h3>
+              <Link href={{
+                pathname: routes.professionPath(professionId),
+                query: { school_id: school.id },
+              }}
+              >
+                <a className="text-decoration-none link-dark stretched-link">{program.name}</a>
+              </Link>
+            </h3>
+            <div className="text-muted">{profession.description}</div>
+          </div>
           <div>
             Продолжительность:&nbsp;
             {program.duration}
