@@ -4,7 +4,9 @@
     "title_professions": "Cравнение онлайн курсов по программированию",
     "title_certain_school": "{{profession}} - сравнение курсов онлайн-школ",
     "title_school": "{{school}}: профессии, курсы, обучение в {{school}}",
-    "title_comparison": "{{profession}}: сравнение {{school_1}} и {{school_2}}, что лучше"
+    "title_comparison": "{{profession}}: сравнение {{school_1}} и {{school_2}}, что лучше",
+    "title_error_404": "Страница не найдена",
+    "title_error_unspecific": "Внутренняя ошибка сервера"
   },
   "descriptions": {
     "description_professions": "Онлайн сервис для сравнения курсов по программированию от разных школ. Cравнение онлайн курсов по программированию - Hexlet Comparator",
@@ -21,5 +23,16 @@
     "brand": "Сравниватель",
     "schools": "Школы",
     "professions": "Профессии"
+  },
+  "error": {
+    "unspecific": {
+      "title": "Ой, похоже, что-то пошло не так!",
+      "message": "Мы уже решаем эту проблему"
+    },
+    "404": {
+      "title": "Ой, похоже, такой страницы нет!",
+      "message": "Но вы можете",
+      "link": "перейти на главную"
+    }
   }
 }
