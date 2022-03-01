@@ -14,9 +14,10 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 const ComparingRow = (props) => {
   const { state, profession } = props;
+  const { t } = useTranslation('common');
 
   if (state.length < 2) {
-    return <div className="fs-5 mb-3">Выберите 2 школы для сравнения</div>;
+    return <div className="fs-5 mb-3">{t('comparing.title')}</div>;
   }
 
   const comparingSchoolsLine = state.map((s) => s.name).join(' и ');
@@ -26,7 +27,7 @@ const ComparingRow = (props) => {
     <div className="fs-5 mb-3">
       <Link href={routes.professionCompetitorPath(profession.id, ids)}>
         <a className="text-decoration-none">
-          Сравниваем:&nbsp;
+          {t('comparing.compare')}
           <span className="me-2">{comparingSchoolsLine}</span>
           <i className="bi bi-chevron-double-right" />
         </a>
@@ -39,6 +40,7 @@ const ComparingButton = (props) => {
   const {
     setState, selected, school, state,
   } = props;
+  const { t } = useTranslation('common');
 
   const addForCompare = () => setState((s) => [...s, school]);
   const removeFromCompare = () => setState((s) => s.filter((sch) => sch.id !== school.id));
@@ -46,10 +48,10 @@ const ComparingButton = (props) => {
   const disabled = state.length >= 2;
 
   if (selected) {
-    return <button type="button" onClick={removeFromCompare} className="btn btn-sm btn-outline-secondary" data-testid={school.id}>Убрать</button>;
+    return <button type="button" onClick={removeFromCompare} className="btn btn-sm btn-outline-secondary" data-testid={school.id}>{t('comparing.button.remove')}</button>;
   }
 
-  return <button type="button" onClick={addForCompare} disabled={disabled} className="btn btn-sm btn-outline-primary" data-testid={school.id}>Добавить</button>;
+  return <button type="button" onClick={addForCompare} disabled={disabled} className="btn btn-sm btn-outline-primary" data-testid={school.id}>{t('comparing.button.add')}</button>;
 };
 
 const SchoolItem = (props) => {

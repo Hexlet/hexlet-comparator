@@ -1,6 +1,6 @@
 {
   "learning": {
-    "video": "Видеоуроки",
+    "video": "Записанное видео",
     "webinars": "Вебинары",
     "text": "Текстовые уроки"
   },
@@ -9,7 +9,21 @@
     "offline": "Оффлайн",
     "hybrid": "Гибридный (Оффлайн + Онлайн)"
   },
-  "mentoring": {
-
+  "response": {
+    "yes": "Есть",
+    "no": "Нет"
+  },
+  "period": "Продолжительность: ",
+  "duration": "{{duration}} месяцев",
+  "internship": {
+    "not_present": "Стажировка отсутствует",
+    "internal": "Внутренняя: ",
+    "partners": "У партнеров: "
+  },
+  "price": "{{price}} рублей",
+  "practice": {
+    "not_present": "Практика отсутствует",
+    "trainer": "Тренажер: ",
+    "auto_cheks": "Автопроверки: "
   }
 }

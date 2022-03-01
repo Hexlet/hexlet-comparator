@@ -41,18 +41,16 @@ const ProfessionsHome = (props) => {
   const { t } = useTranslation('common');
 
   return (
-    <>
-      <BaseLayout>
-        <NextSeo
-          title={t('titles.title_professions')}
-          description={t('descriptions.description_professions')}
-        />
-        <h1 className="mb-5">Профессии</h1>
-        <div className="row row-cols-md-2">
-          {professions.map((s) => <ProfessionItem profession={s} key={s.id} />)}
-        </div>
-      </BaseLayout>
-    </>
+    <BaseLayout>
+      <NextSeo
+        title={t('titles.title_professions')}
+        description={t('descriptions.description_professions')}
+      />
+      <h1 className="mb-5">{t('home.professions')}</h1>
+      <div className="row row-cols-md-2">
+        {professions.map((s) => <ProfessionItem profession={s} key={s.id} />)}
+      </div>
+    </BaseLayout>
   );
 };
 
