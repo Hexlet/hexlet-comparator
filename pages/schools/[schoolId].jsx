@@ -38,6 +38,7 @@ const SocialItem = (props) => {
 };
 
 const DescriptionValue = (props) => {
+  const { t } = useTranslation('dicts');
   const { name, value } = props;
   switch (name) {
     case 'owner':
@@ -47,12 +48,12 @@ const DescriptionValue = (props) => {
     case 'phones':
       return value.map((p) => <div key={p.value}>{p.value}</div>);
     case 'moneyback':
-      return <div>{value.exists ? value.description : 'нет'}</div>;
+      return <div>{value.exists ? value.description : t('response.no')}</div>;
     case 'mobile':
-      return <div>{value.exists ? 'да' : 'нет'}</div>;
+      return <div>{value.exists ? t('response.yes') : t('response.no')}</div>;
     case 'installment':
       if (!value.exists) {
-        return 'нет';
+        return t('response.no');
       }
       return value.variants.join(', ');
     case 'resources':
@@ -89,6 +90,7 @@ const DescriptionField = (props) => {
 };
 
 const ProfessionItem = (props) => {
+  const { t } = useTranslation('dicts');
   const { school, professionId, professions } = props;
 
   const program = getOrError(school.programs, professionId);
@@ -114,9 +116,8 @@ const ProfessionItem = (props) => {
           </h3>
           <div className="text-muted">{profession.description}</div>
           <div>
-            Продолжительность:&nbsp;
-            {program.duration}
-            &nbsp;месяцев
+            {t('period')}
+            {t('duration', { duration: program.duration })}
           </div>
         </div>
       </div>
@@ -125,6 +126,7 @@ const ProfessionItem = (props) => {
 };
 
 const Screenshot = (props) => {
+  const { t } = useTranslation('common');
   const { name, school, index } = props;
 
   const [modalShow, setModalShow] = useState(false);
@@ -138,7 +140,7 @@ const Screenshot = (props) => {
       centered
     >
       <Modal.Header closeButton>
-        Скриншот
+        {t('school.screenshot')}
       </Modal.Header>
       <Modal.Body className="text-center">
         <Image layout="responsive" alt={name} width="800" height="450" src={assetsRoutes.screenshotPath(school, name)} />
@@ -162,7 +164,10 @@ const School = (props) => {
   const professionIds = Object.keys(school.programs);
   // console.log(professionIds);
   const schoolProgramLine = Object.values(school.programs).map((p) => p.name).join(', ');
-  const description = `Школа основана в ${school.foundationDate}. Обучает по направлениям: ${schoolProgramLine}`;
+  const description = t('school.descriptions.info', {
+    foundationDate: school.foundationDate,
+    schoolProgramLine,
+  });
   const { screenshots = [] } = school.images;
 
   return (
@@ -189,10 +194,10 @@ const School = (props) => {
                   {school.profiles.map((p) => <SocialItem profile={p} key={p.type} />)}
                 </div>
                 <Link href="#professions">
-                  <a className="btn btn-primary me-3">Профессии</a>
+                  <a className="btn btn-primary me-3">{t('school.professions')}</a>
                 </Link>
                 <Link href="#description">
-                  <a className="btn btn-outline-dark">Описание</a>
+                  <a className="btn btn-outline-dark">{t('school.describe')}</a>
                 </Link>
               </div>
               <div className="d-none d-md-block col-sm-5 text-center">
@@ -208,7 +213,7 @@ const School = (props) => {
 
         <div className="mb-5">
           <h2 className="mb-3">
-            <a href="#description" className="text-decoration-none link-dark">Описание</a>
+            <a href="#description" className="text-decoration-none link-dark">{t('school.describe')}</a>
           </h2>
 
           {descriptionFields.map((f) => <DescriptionField key={f} school={school} name={f} />)}
@@ -216,7 +221,7 @@ const School = (props) => {
 
         <div>
           <h2 className="mb-3">
-            <a href="#professions" className="text-decoration-none link-dark">Профессии</a>
+            <a href="#professions" className="text-decoration-none link-dark">{t('school.professions')}</a>
           </h2>
 
           <div className="row row-cols-md-2">
@@ -250,7 +255,7 @@ export const getStaticProps = async (context) => {
     props: {
       school,
       professions,
-      ...(await serverSideTranslations(locale, ['common', 'entities'])),
+      ...(await serverSideTranslations(locale, ['common', 'entities', 'dicts'])),
       // profession,
     },
   };
