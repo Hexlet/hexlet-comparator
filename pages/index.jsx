@@ -5,6 +5,7 @@ import Head from 'next/head';
 import Link from 'next/link';
 import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
 
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { getSchools } from 'lib/api.js';
@@ -36,27 +37,29 @@ const SchoolItem = (props) => {
 
 const Home = (props) => {
   const { schools } = props;
+  const { t } = useTranslation('common');
+
   return (
     <BaseLayout>
       <Head>
-        <title>Сравнение школ программирования</title>
+        <title>{t('title')}</title>
       </Head>
-      <h1 className="mb-5 text-center">Сравнение школ программирования</h1>
+      <h1 className="mb-5 text-center">{t('title')}</h1>
       <div className="row justify-content-around py-5 bg-light rounded mb-5">
         <div className="col-3">
           <div className="fs-1">1</div>
           <i className="bi bi-chevron-right" />
-          Выберите компанию, которая вам интересна
+          {t('home.choose_company')}
         </div>
         <div className="col-3">
           <div className="fs-1">2</div>
           <i className="bi bi-chevron-right" />
-          Выберите профессию, внутри компании
+          {t('home.choose_profession')}
         </div>
         <div className="col-3">
           <div className="fs-1">3</div>
           <i className="bi bi-chevron-right" />
-          Сравните компании по выбранной профессии
+          {t('home.compare_company')}
         </div>
       </div>
       <div className="row row-cols-2 row-cols-sm-3 row-cols-md-3 gx-2 g-sm-4">

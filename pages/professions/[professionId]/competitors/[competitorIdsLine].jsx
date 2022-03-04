@@ -19,6 +19,8 @@ import assetsRoutes from 'lib/assetsRoutes.js';
 import routes from 'lib/routes.js';
 
 const Value = (props) => {
+  const dicts = useTranslation('dicts');
+
   const {
     school,
     name,
@@ -35,18 +37,18 @@ const Value = (props) => {
       children = program.link;
       break;
     case 'trial':
-      children = program.trial ? 'Есть' : 'Нет';
+      children = program.trial ? dicts.t('response.yes') : dicts.t('response.no');
       break;
     case 'duration':
-      children = `${program.duration} месяцев`;
+      children = dicts.t('duration', { duration: program.duration });
       break;
     case 'learning': {
       const { learning } = program;
       children = (
         <ul className="mb-0">
-          <li>{learning.hasWebinars && 'Вебинары'}</li>
-          <li>{learning.hasTexts && 'Текстовые уроки'}</li>
-          <li>{learning.hasVideos && 'Записанное видео'}</li>
+          <li>{learning.hasWebinars && dicts.t('learning.webinars')}</li>
+          <li>{learning.hasTexts && dicts.t('learning.text')}</li>
+          <li>{learning.hasVideos && dicts.t('learning.video')}</li>
         </ul>
       );
       break;
@@ -55,7 +57,7 @@ const Value = (props) => {
       const { employment = {} } = program;
       children = (
         <ul>
-          <li>{employment.exists ? 'Есть' : 'Нет'}</li>
+          <li>{employment.exists ? dicts.t('response.yes') : dicts.t('response.no')}</li>
         </ul>
       );
       break;
@@ -63,45 +65,41 @@ const Value = (props) => {
     case 'internship': {
       const { internship } = program;
       if (!internship.exists) {
-        children = 'Стажировка отсутствует';
+        children = dicts.t('internship.not_present');
         break;
       }
       children = (
         <ul className="list-unstyled mb-0">
           <li>
-            Внутренняя:
-            {' '}
-            {internship.hasInternal ? 'Есть' : 'Нет'}
+            {dicts.t('internship.internal')}
+            {internship.hasInternal ? dicts.t('response.yes') : dicts.t('response.no')}
           </li>
           <li>
-            У партнеров:
-            {' '}
-            {internship.hasPartners ? 'Есть' : 'Нет'}
+            {dicts.t('internship.partners')}
+            {internship.hasPartners ? dicts.t('response.yes') : dicts.t('response.no')}
           </li>
         </ul>
       );
       break;
     }
     case 'price':
-      children = `${program.price} рублей`;
+      children = dicts.t('price', { price: program.price });
       break;
     case 'practice': {
       const { practice } = program;
       if (!practice.exists) {
-        children = 'Практика отсутствует';
+        children = dicts.t('practice.not_present');
         break;
       }
       children = (
         <ul className="list-unstyled mb-0">
           <li>
-            Тренажер:
-            {' '}
-            {practice.hasSimulator ? 'Есть' : 'Нет'}
+            {dicts.t('practice.trainer')}
+            {practice.hasSimulator ? dicts.t('response.yes') : dicts.t('response.no')}
           </li>
           <li>
-            Автопроверки:
-            {' '}
-            {practice.hasAutomaticCheck ? 'Есть' : 'Нет'}
+            {dicts.t('practice.auto_cheks')}
+            {practice.hasAutomaticCheck ? dicts.t('response.yes') : dicts.t('response.no')}
           </li>
         </ul>
       );
@@ -111,7 +109,7 @@ const Value = (props) => {
       const { mentoring } = program;
       children = (
         <ul>
-          <li>{mentoring.exists ? 'Есть' : 'Нет'}</li>
+          <li>{mentoring.exists ? dicts.t('response.yes') : dicts.t('response.no')}</li>
         </ul>
       );
       break;
@@ -196,7 +194,7 @@ const Home = (props) => {
 
   const fields = ['duration', 'trial', 'price', 'learning', 'practice', 'internship', 'mentoring', 'employment'];
 
-  const header = `Выбираю между ${selectedSchools.map((s) => s.name).join(' и ')}`;
+  const header = `${t('home.header')} ${selectedSchools.map((s) => s.name).join(' и ')}`;
 
   const canBeCompared = selectedSchools.every((s) => _.has(s.programs, profession.id));
 
@@ -223,7 +221,7 @@ const Home = (props) => {
       <div className="row justify-content-center text-center row-cols-2 mb-5">
         {selectedSchools.map((s) => <SchoolHeader key={s.id} profession={profession} school={s} />)}
       </div>
-      {!canBeCompared && <div className="lead text-center">Как минимум в одной из школ нет такой профессии. Сравнивать нечего</div>}
+      {!canBeCompared && <div className="lead text-center">{t('home.cant_be_compared')}</div>}
       {canBeCompared && fields.map((name) => <ComparingBlock profession={profession} schools={selectedSchools} name={name} key={name} />)}
     </BaseLayout>
   );
@@ -255,7 +253,7 @@ export const getStaticProps = async (context) => {
     props: {
       selectedSchools,
       profession,
-      ...(await serverSideTranslations(locale, ['common', 'entities'])),
+      ...(await serverSideTranslations(locale, ['common', 'entities', 'dicts'])),
     },
   };
   return result;

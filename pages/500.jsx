@@ -17,7 +17,7 @@ const Custom500 = () => {
       <Container>
         <Row>
           <div className="container-sm text-center">
-            <Image layout="fixed" alt="page404" width="300" height="300" src={assetsRoutes.fallbackPath}/>
+            <Image layout="fixed" alt="page404" width="300" height="300" src={assetsRoutes.fallbackPath} />
             <h1 className="h4 text-center">{ t('error.unspecific.title') }</h1>
             <p className="text-center">{ t('error.unspecific.message') }</p>
           </div>
