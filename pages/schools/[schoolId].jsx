@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
+// import { existsSync } from 'fs';
 
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
@@ -9,7 +10,7 @@ import cn from 'classnames';
 import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
-import { getSchools, getProfessions } from 'lib/api.js';
+import { getSchools, getProfessions, getScreenshots } from 'lib/api.js';
 import { getOrError } from 'lib/utils.js';
 import routes from 'lib/routes.js';
 import assetsRoutes from 'lib/assetsRoutes.js';
@@ -41,15 +42,24 @@ const DescriptionValue = (props) => {
   const { t } = useTranslation('dicts');
   const { name, value } = props;
   switch (name) {
+    case 'link':
+      return <Link href={value}>{value}</Link>;
     case 'owner':
       return <Link href={value.link}>{value.name}</Link>;
     case 'ceo':
       return <Link href={value.facebook}>{value.name}</Link>;
     case 'phones':
-      return value.map((p) => <div key={p.value}>{p.value}</div>);
+      return value.map((p) => <a href={p.link} key={p.value}>{p.value}</a>);
     case 'moneyback':
       return <div>{value.exists ? value.description : t('response.no')}</div>;
     case 'mobile':
+    case 'subscription':
+    case 'internship':
+    case 'careerConsultation':
+    case 'preparingResume':
+    case 'codeReview':
+    case 'mentoring':
+    case 'freezing':
       return <div>{value.exists ? t('response.yes') : t('response.no')}</div>;
     case 'installment':
       if (!value.exists) {
@@ -65,6 +75,8 @@ const DescriptionValue = (props) => {
           <div>{value.address}</div>
         </div>
       );
+    case 'support_variants':
+      return <Link href={value.link}>{value.name}</Link>;
     default:
       return value.toString();
   }
@@ -160,7 +172,7 @@ const Screenshot = (props) => {
 
 const School = (props) => {
   const { t } = useTranslation('common');
-  const { school, professions } = props;
+  const { school, professions, screenshots } = props;
   const professionIds = Object.keys(school.programs);
   // console.log(professionIds);
   const schoolProgramLine = Object.values(school.programs).map((p) => p.name).join(', ');
@@ -168,7 +180,6 @@ const School = (props) => {
     foundationDate: school.foundationDate,
     schoolProgramLine,
   });
-  const { screenshots = [] } = school.images;
 
   return (
     <BaseLayout>
@@ -247,6 +258,8 @@ export const getStaticProps = async (context) => {
   const allSchools = await getSchools();
   const school = allSchools.find((s) => s.id === params.schoolId);
   const professions = await getProfessions();
+  const screenshots = await getScreenshots(school);
+
   // const profession = allProfessions.find((s) => s.id === params.professionId);
   // console.log(allProfessions);
   // console.log(params.professionId, profession);
@@ -256,6 +269,7 @@ export const getStaticProps = async (context) => {
       school,
       professions,
       ...(await serverSideTranslations(locale, ['common', 'entities', 'dicts'])),
+      screenshots,
       // profession,
     },
   };

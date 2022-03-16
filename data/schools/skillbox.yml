@@ -4,9 +4,8 @@ id: skillbox
 name: Скиллбокс (Skillbox)
 address: "Москва, Ленинский проспект, дом 6, строение 20"
 legal:
-  name: |
-    ООО «СКИЛБОКС»
-  address:
+  name: ООО «СКИЛБОКС»
+  address: Москва, Территория инновационного центра Сколково, Большой бульвар, д. 42, стр. 1, этаж 0, пом. 150, раб. 3
 link: "https://skillbox.ru"
 email: hello@skillbox.ru
 foundationDate: 2015
@@ -17,10 +16,11 @@ ceo:
 #  vk: ""
 
 support_variants:
-  - name: ""
-    link: ""
+  name: "Центр карьеры"
+  link: "https://skillbox.ru/career/"
 
-freezing: true
+freezing:
+  exists: true
 
 access_by_payment_types:
   - free
@@ -39,23 +39,24 @@ areas_of_study:
   - Программирование
 
 learning_variants:
-  - individual
+  - Индивидуально
+  - В группе
 
 age_restriction:
 
 owner:
-  name: |
-    Skillbox Holding Limited
+  name: Skillbox Holding Limited
   link: "https://skillbox.ru/contacts/"
 
-subscription: false
+subscription:
+  exists: false
 
 moneyback:
-  exists: false
+  exists: true
   description: Полный возврат в течении первых двух недель
 
 installment:
-  exists: false
+  exists: true
   variants:
     - Тинькофф
     - Альфа-Банк
@@ -67,19 +68,25 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
-  - value: 8 (800) 222-12-89
+  - value: 8 800 500 05 22
     description: Контактный центр
+    link: tel:+78005000522
 
 languages:
-  - russian
+  - Русский
 
 resources:
   - name: Отзывы
@@ -133,31 +140,167 @@ programs:
       Программа курса
     trial:
       exists: true
-      comment: 4 курса бесплатно
+      comment: Несколько курсов
     link: "https://skillbox.ru/course/frontend-pro/"
-    lessonsCount: 134
-    duration: 8
-    price: 155000
+    lessonsCount: 130
+    duration: 12
+    price: 225000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 10262
+        months: 22
     schedule: |
       В группе, несколько занятий в неделю
-    format: online
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  php-developer:
+    name: PHP-разработчик
+    trial:
+      exists: true
+      comment: Несколько курсов
+    link: "https://skillbox.ru/course/profession-php-developer/"
+    duration: 12
+    price: 145000
+    installments:
+      - amount: 6556
+        months: 22
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  python-developer:
+    name: Python-разработчик
+    trial:
+      exists: true
+      comment: Несколько курсов
+    link: "https://skillbox.ru/course/profession-python/"
+    duration: 12
+    price: 145000
+    installments:
+      - amount: 6556
+        months: 22
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  go-developer:
+    name: Go-разработчик
+    trial:
+      exists: true
+      comment: Несколько курсов
+    link: "https://skillbox.ru/course/profession-godev/"
+    duration: 12
+    price: 190000
+    installments:
+      - amount: 8734
+        months: 22
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  java-developer:
+    name: Java-разработчик
+    trial:
+      exists: true
+      comment: Несколько курсов
+    link: "https://skillbox.ru/course/profession-java/"
+    duration: 9
+    price: 124000
+    installments:
+      - amount: 7780
+        months: 18
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+

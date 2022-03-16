@@ -14,15 +14,16 @@ ceo:
   name: Кирилл Мокевнин
   facebook: "https://www.facebook.com/mokevnin/"
 
-supportVariants:
-  - name: Справочный Центр
-    link: "https://help.hexlet.io"
+support_variants:
+  name: Справочный Центр
+  link: "https://help.hexlet.io"
 
-freeze: true
+freezing:
+  exists: true
 
 accessByPaymentTypes:
-  - free
-  - paid
+  - free # Бесплатные курсы?
+  - paid # Платные курсы?
 
 # bonuses:
 #   -
@@ -37,7 +38,8 @@ areasOfStudy:
   - Программирование
 
 learningVariants:
-  - individual
+  - Индивидуально
+  - В группе
 
 ageRestriction:
 
@@ -45,7 +47,8 @@ owner:
   name: mail.ru
   link: "https://mail.ru"
 
-subscription: true
+subscription:
+  exists: true
 
 moneyback:
   exists: true
@@ -63,19 +66,26 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-careerConsultation: true
-preparingResume: true
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
 
-codeReview: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
   - value: 8 800 333 57 04
     description: Бесплатный звонок по России
+    link: tel:+78003335704
 
 languages:
-  - russian
+  - Русский
+  - Английский(в процессе перевода)
 
 resources:
   - name: Отзывы
@@ -126,41 +136,49 @@ programs:
       Программа курса
     trial:
       exists: true
-      comment: 4 курса бесплатно
+      comment: 5 курсов бесплатно
     link: "https://ru.hexlet.io/programs/frontend"
     lessonsCount: 134
-    duration: 8
-    price: 98000
+    duration: 10
+    price: 124000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 7780
+        months: 18
     schedule: |
       В своем темпе. Дополнительные вебинары 1-2 раза в неделю по желанию
-    format: online
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: true
 
   php-developer:
     name: PHP-разработчик
-    trial: true
+    trial:
+      exists: true
+      comment: 7 курсов бесплатно
     link: "https://ru.hexlet.io/programs/php"
-    duration: 8
-    price: 98000
+    duration: 10
+    price: 124000
+    installments:
+      - amount: 7780
+        months: 18
     practice:
       exists: true
       hasSimulator: true
@@ -171,8 +189,8 @@ programs:
       hasPartners: true
     mentoring:
       exists: true
-      types:
-        - group
+      hasGroup: true
+      hasPersonal: true
     employment:
       exists: true
     learning:
@@ -185,10 +203,15 @@ programs:
 
   python-developer:
     name: Python-разработчик
-    trial: true
+    trial:
+      exists: true
+      comment: 7 курсов бесплатно
     link: "https://ru.hexlet.io/programs/python"
-    duration: 8
-    price: 98000
+    duration: 10
+    price: 124000
+    installments:
+      - amount: 7780
+        months: 18
     practice:
       exists: true
       hasSimulator: true
@@ -199,9 +222,8 @@ programs:
       hasPartners: true
     mentoring:
       exists: true
-      types:
-        - group
-        - personal
+      hasGroup: true
+      hasPersonal: true
     employment:
       exists: true
     learning:
@@ -214,10 +236,15 @@ programs:
 
   ruby-developer:
     name: Разработчик на Ruby on Rails
-    trial: true
+    trial:
+      exists: true
+      comment: 5 курсов бесплатно
     link: "https://ru.hexlet.io/programs/rails"
     duration: 5
     price: 62000
+    installments:
+      - amount: 5840
+        months: 12
     practice:
       exists: true
       hasSimulator: true
@@ -228,8 +255,8 @@ programs:
       hasPartners: true
     mentoring:
       exists: true
-      types:
-        - group
+      hasGroup: true
+      hasPersonal: true
     employment:
       exists: true
     learning:
@@ -242,10 +269,15 @@ programs:
 
   java-developer:
     name: Java-разработчик
-    trial: true
+    trial:
+      exists: true
+      comment: 5 курсов бесплатно
     link: "https://ru.hexlet.io/programs/java"
     duration: 10
     price: 124000
+    installments:
+      - amount: 7780
+        months: 18
     practice:
       exists: true
       hasSimulator: true
@@ -256,8 +288,8 @@ programs:
       hasPartners: true
     mentoring:
       exists: true
-      types:
-        - group
+      hasGroup: true
+      hasPersonal: true
     employment:
       exists: true
     learning:

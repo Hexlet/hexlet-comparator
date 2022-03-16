@@ -17,10 +17,11 @@ ceo:
   vk: "https://vk.com/pershin_alexander"
 
 support_variants:
-  - name: Форум студентов
-    link: "https://forum.academy/"
+  name: Форум студентов
+  link: "https://forum.academy/"
 
-freezing: true
+freezing:
+  exists: true
 
 access_by_payment_types:
   - free
@@ -39,16 +40,18 @@ areas_of_study:
   - Программирование
 
 learning_variants:
-  - individual
+  - Индивидуально
+  - В группе
 
 age_restriction:
 
 owner:
   name: |
     ООО «Интерактивные обучающие технологии»
-  link: ""
+  link: "https://htmlacademy.ru/"
 
-subscription: false
+subscription:
+  exists: false
 
 moneyback:
   exists: true
@@ -67,19 +70,25 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
-  - value: 8 800 555-86-28
+  - value: 8 800 555 86 28
     description: Бесплатный звонок по России
+    link: tel:+78005558628
 
 languages:
-  - russian
+  - Русский
 
 resources:
   - name: Отзывы
@@ -138,30 +147,33 @@ programs:
     link: "https://htmlacademy.ru/profession/frontender"
     lessonsCount: 134
     duration: 15
-    price: 155000
+    price: 159000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 8830
+        months: 18
     schedule: |
       В группе, несколько занятий в неделю
-    format: online
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: true
 
   php-developer:
     name: Бэкенд-разработчик PHP
@@ -173,27 +185,30 @@ programs:
     link: "https://htmlacademy.ru/profession/backender"
     lessonsCount: 134
     duration: 14
-    price: 19200
+    price: 159000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 8830
+        months: 18
     schedule: |
       В группе, несколько занятий в неделю
-    format: online
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: true

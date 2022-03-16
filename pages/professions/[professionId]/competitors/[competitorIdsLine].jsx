@@ -46,9 +46,9 @@ const Value = (props) => {
       const { learning } = program;
       children = (
         <ul className="mb-0">
-          <li>{learning.hasWebinars && dicts.t('learning.webinars')}</li>
-          <li>{learning.hasTexts && dicts.t('learning.text')}</li>
-          <li>{learning.hasVideos && dicts.t('learning.video')}</li>
+          {learning.hasWebinars ? <li>{dicts.t('learning.webinars')}</li> : null}
+          {learning.hasTexts ? <li>{dicts.t('learning.text')}</li> : null}
+          {learning.hasVideos ? <li>{dicts.t('learning.video')}</li> : null}
         </ul>
       );
       break;
@@ -107,9 +107,20 @@ const Value = (props) => {
     }
     case 'mentoring': {
       const { mentoring } = program;
+      if (!mentoring.exists) {
+        children = dicts.t('mentoring.not_present');
+        break;
+      }
       children = (
-        <ul>
-          <li>{mentoring.exists ? dicts.t('response.yes') : dicts.t('response.no')}</li>
+        <ul className="list-unstyled mb-0">
+          <li>
+            {dicts.t('mentoring.group')}
+            {mentoring.hasGroup ? dicts.t('response.yes') : dicts.t('response.no')}
+          </li>
+          <li>
+            {dicts.t('mentoring.personal')}
+            {mentoring.hasPersonal ? dicts.t('response.yes') : dicts.t('response.no')}
+          </li>
         </ul>
       );
       break;

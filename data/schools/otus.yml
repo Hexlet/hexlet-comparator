@@ -4,23 +4,23 @@ id: otus
 name: Отус (Otus)
 address: "Москва, аллея Нарышкинская, дом 5, строение 2, этаж 2, помещение IV, комната 54"
 legal:
-  name: |
-    ООО «Отус онлайн-образование»
+  name: ООО «Отус онлайн-образование»
   address:
 link: "https://otus.ru/"
 email: help@otus.ru
 foundationDate: 2015
 
 ceo:
-  name: "Дмитрий Волошин"
-  facebook: "https://www.facebook.com/DAVoloshin"
+  name: "Виталий Чибриков"
+  facebook: "https://www.facebook.com/vitaly.chibrikov"
 #  vk: ""
 
 support_variants:
-  - name: ""
-    link: ""
+  name: "FAQ"
+  link: "https://otus.ru/faq/"
 
-freezing: true
+freezing:
+  exists: false
 
 access_by_payment_types:
   - free
@@ -39,26 +39,28 @@ areas_of_study:
   - Программирование
 
 learning_variants:
-  - individual
+  - В группе
 
 age_restriction:
 
 owner:
-  name: |
-    ООО «Отус онлайн-образование»
+  name: ООО «Отус онлайн-образование»
   link: "https://otus.ru/legal/main_info/"
 
-subscription: false
+subscription:
+  exists: false
 
 moneyback:
-  exists: false
-  description: Полный возврат в течении первых двух недель
+  exists: true
+  description: Возврат средств пропорционально оставшимся месяцам обучения.
 
 installment:
-  exists: false
+  exists: true
   variants:
     - Тинькофф
     - Альфа-Банк
+    - Home Credit Bank
+    - Русский Стандарт
 
 mobile:
   exists: false
@@ -67,19 +69,25 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
-  - value: +7 499 938-92-02
+  - value: 8 499 938 92 02
     description:
+    link: tel:+74999389202
 
 languages:
-  - russian
+  - Русский
 
 resources:
   - name: Отзывы
@@ -127,37 +135,107 @@ images:
     - progress_in_programs
 
 programs:
-  frontend-developer:
-    name: Фронтенд-разработчик
-    syllabus: |
-      Программа курса
+  php-developer:
+    name: PHP-разработчик
     trial:
       exists: true
-      comment: 4 курса бесплатно
-    link: ""
-    lessonsCount: 134
-    duration: 15
-    price: 155000
+      comment: Вступительное тестирование
+    link: "https://otus.ru/lessons/php-specialization/"
+    duration: 9
+    price: 120000
     installments:
-      - amount: 6433
+      - amount: 10000
         months: 12
     schedule: |
-      В группе, несколько занятий в неделю
-    format: online
-    learning:
-      - text
-      - video
-      - webinars
+      В группе, два занятия в неделю
     practice:
-      - simulator
-      - local
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
     internship:
       exists: true
-      types:
-        - internal
-        - partners
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
     employment:
       exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  python-developer:
+    name: Python-разработчик
+    trial:
+      exists: true
+      comment: Вступительное тестирование
+    link: "https://otus.ru/lessons/python-specialization/"
+    duration: 10
+    price: 140000
+    installments:
+      - amount: 11670
+        months: 12
+    schedule: |
+      В группе, два занятия в неделю
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  java-developer:
+    name: Java-разработчик
+    trial:
+      exists: true
+      comment: Вступительное тестирование
+    link: "https://otus.ru/lessons/java-specialization/"
+    duration: 15
+    price: 230000
+    installments:
+      - amount: 12780
+        months: 18
+    schedule: |
+      В группе, два занятия в неделю
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true

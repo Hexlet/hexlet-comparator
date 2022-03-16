@@ -12,13 +12,13 @@ email: support@jetbrains.com
 foundationDate: 2000
 
 ceo:
-  name: ""
+  name: "Максим Шафиров"
   facebook: ""
   vk: ""
 
 support_variants:
-  - name: ""
-    link: ""
+  name: "Поддержка"
+  link: "https://support.hyperskill.org/hc/en-us"
 
 freezing: true
 
@@ -39,16 +39,16 @@ areas_of_study:
   - Программирование
 
 learning_variants:
-  - individual
+  - Индивидуально
 
 age_restriction:
 
 owner:
-  name: |
-    JetBrains s.r.o.
-  link: ""
+  name: JetBrains s.r.o.
+  link: "https://www.jetbrains.com/"
 
-subscription: false
+subscription:
+  exists: true
 
 moneyback:
   exists: false
@@ -67,19 +67,25 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: false
+careerConsultation:
+  exists: false
+preparingResume:
+  exists: false
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: false
+mentoring:
+  exists: false
 
 phones:
-  - value: 8 (812) 331-15-74
+  - value: 8 812 380 16 41
     description:
+    link: tel:+78123801641
 
 languages:
-  - russian
+  - Английский
 
 resources:
   - name: Отзывы
@@ -133,31 +139,34 @@ programs:
       Программа курса
     trial:
       exists: true
-      comment: 4 курса бесплатно
-    link: ""
-    lessonsCount: 134
-    duration: 15
-    price: 155000
+      comment: 
+    link: "https://hyperskill.org/tracks/5"
+    lessonsCount: 159
+    duration: Индивидуальное количество
+    price: За месяц 5760
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 
+        months: 
     schedule: |
-      В группе, несколько занятий в неделю
-    format: online
+      В своем темпе.
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
-    employment:
+        - online
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: false
+    practice:
       exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
     mentoring:
-      - group
-      - personal
+      exists: false
+      hasGroup: false
+      hasPersonal: false
