@@ -18,7 +18,7 @@ import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { useTranslation } from 'next-i18next';
 
 const descriptionFields = [
-  'link', 'blog', 'email', 'ceo', 'legal', 'address', 'foundationDate', 'support_variants',
+  'link', 'blog', 'email', 'ceo', 'legal', 'address', 'foundationDate', 'supportOptions',
   'freezing', 'accessByPaymentTypes', 'areasOfStudy', 'learningVariants', 'ageRestriction',
   'owner', 'subscription', 'moneyback', 'installment', 'mobile', 'internship', 'careerConsultation',
   'preparingResume', 'codeReview', 'mentoring', 'phones', 'languages', 'resources', 'paymentMethods',
@@ -41,15 +41,24 @@ const DescriptionValue = (props) => {
   const { t } = useTranslation('dicts');
   const { name, value } = props;
   switch (name) {
+    case 'link':
+      return <Link href={value}>{value}</Link>;
     case 'owner':
       return <Link href={value.link}>{value.name}</Link>;
     case 'ceo':
       return <Link href={value.facebook}>{value.name}</Link>;
     case 'phones':
-      return value.map((p) => <div key={p.value}>{p.value}</div>);
+      return value.map((p) => <a href={p.link} key={p.value}>{p.value}</a>);
     case 'moneyback':
       return <div>{value.exists ? value.description : t('response.no')}</div>;
     case 'mobile':
+    case 'subscription':
+    case 'internship':
+    case 'careerConsultation':
+    case 'preparingResume':
+    case 'codeReview':
+    case 'mentoring':
+    case 'freezing':
       return <div>{value.exists ? t('response.yes') : t('response.no')}</div>;
     case 'installment':
       if (!value.exists) {
@@ -65,6 +74,8 @@ const DescriptionValue = (props) => {
           <div>{value.address}</div>
         </div>
       );
+    case 'supportOptions':
+      return <Link href={value.link}>{value.name}</Link>;
     default:
       return value.toString();
   }

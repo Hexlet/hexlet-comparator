@@ -4,27 +4,27 @@ id: otus
 name: Отус (Otus)
 address: "Москва, аллея Нарышкинская, дом 5, строение 2, этаж 2, помещение IV, комната 54"
 legal:
-  name: |
-    ООО «Отус онлайн-образование»
+  name: ООО «Отус онлайн-образование»
   address:
 link: "https://otus.ru/"
 email: help@otus.ru
 foundationDate: 2015
 
 ceo:
-  name: "Дмитрий Волошин"
-  facebook: "https://www.facebook.com/DAVoloshin"
+  name: "Виталий Чибриков"
+  facebook: "https://www.facebook.com/vitaly.chibrikov"
 #  vk: ""
 
-support_variants:
-  - name: ""
-    link: ""
+supportOptions:
+  name: "FAQ"
+  link: "https://otus.ru/faq/"
 
-freezing: true
+freezing:
+  exists: false
 
-access_by_payment_types:
-  - free
-  - paid
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
 
 # bonuses:
 #   -
@@ -35,30 +35,32 @@ access_by_payment_types:
 # when_courses_start:
 #   -
 
-areas_of_study:
+areasOfStudy:
   - Программирование
 
-learning_variants:
-  - individual
+learningVariants:
+  - В группе
 
 age_restriction:
 
 owner:
-  name: |
-    ООО «Отус онлайн-образование»
+  name: ООО «Отус онлайн-образование»
   link: "https://otus.ru/legal/main_info/"
 
-subscription: false
+subscription:
+  exists: false
 
 moneyback:
-  exists: false
-  description: Полный возврат в течении первых двух недель
+  exists: true
+  description: Возврат средств пропорционально оставшимся месяцам обучения.
 
 installment:
-  exists: false
+  exists: true
   variants:
     - Тинькофф
     - Альфа-Банк
+    - Home Credit Bank
+    - Русский Стандарт
 
 mobile:
   exists: false
@@ -67,27 +69,31 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
-  - value: +7 499 938-92-02
+  - value: 8 499 938 92 02
     description:
+    link: tel:+74999389202
 
 languages:
-  - russian
+  - Русский
 
 resources:
   - name: Отзывы
     link: "https://otus.ru/reviews"
 
-
-
-payment_methods:
+paymentMethods:
   - Банковские карты
   - Банковская рассрочка
   - Apple Pay
@@ -110,21 +116,6 @@ profiles:
 
 images:
   logo: true
-  screenshots:
-    - cabinet
-    - theory
-    - quiz
-    - practice_1
-    - practice_2
-    - practice_linter_errors
-    - practice_3
-    - practice_4
-    - finished_course
-    - course_landing
-    - topics
-    - my_lasted_progress
-    - my_courses
-    - progress_in_programs
 
 programs:
   frontend-developer:

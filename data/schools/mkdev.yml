@@ -12,19 +12,20 @@ email: team@mkdev.me
 foundationDate: 2014
 
 ceo:
-  name: ""
-  facebook: ""
+  name: "Кирилл Ширинкин"
+  facebook: "https://www.linkedin.com/in/kshirinkin/"
   vk: ""
 
-support_variants:
-  - name: "Портал поддержки"
-    link: "https://help.mkdev.me/ru/"
+supportOptions:
+  name: "Портал поддержки"
+  link: "https://help.mkdev.me/ru/"
 
-freezing: true
+freezing:
+  exists: true
 
-access_by_payment_types:
-  - free
-  - paid
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
 
 # bonuses:
 #   -
@@ -35,24 +36,25 @@ access_by_payment_types:
 # when_courses_start:
 #   -
 
-areas_of_study:
+areasOfStudy:
   - Программирование
 
-learning_variants:
-  - individual
+learningVariants:
+  - Индивидуально
 
 age_restriction:
 
 owner:
   name: |
     Mkdev
-  link: ""
+  link: "https://mkdev.me/"
 
-subscription: false
+subscription:
+  exists: true
 
 moneyback:
-  exists: false
-  description: Полный возврат в течении первых двух недель
+  exists: true
+  description: Полный возврат до активирования подписки ментором
 
 installment:
   exists: false
@@ -67,31 +69,35 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: false
+careerConsultation:
+  exists: false
+preparingResume:
+  exists: false
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
-  - value: 8 (812) 000 00 00
+  - value: 8 812 000 00 00
     description:
+    link: tel:+78120000000
 
 languages:
-  - russian
+  - Русский
 
 resources:
   - name: Отзывы
     link: ""
 
-
-
-payment_methods:
+paymentMethods:
   - Банковские карты
-  - Банковская рассрочка
-  - Apple Pay
-  - Google Pay
+  - Яндекс.Деньги
+  - PayPal
+  - WebMoney 
 
 profiles:
   - link: "https://www.facebook.com/mkdev.me"
@@ -110,21 +116,6 @@ profiles:
 
 images:
   logo: true
-  screenshots:
-    - cabinet
-    - theory
-    - quiz
-    - practice_1
-    - practice_2
-    - practice_linter_errors
-    - practice_3
-    - practice_4
-    - finished_course
-    - course_landing
-    - topics
-    - my_lasted_progress
-    - my_courses
-    - progress_in_programs
 
 programs:
   frontend-developer:

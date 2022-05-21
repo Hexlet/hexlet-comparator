@@ -16,15 +16,16 @@ ceo:
   facebook: "https://www.facebook.com/sasha.pershin"
   vk: "https://vk.com/pershin_alexander"
 
-support_variants:
-  - name: Форум студентов
-    link: "https://forum.academy/"
+supportOptions:
+  name: Форум студентов
+  link: "https://forum.academy/"
 
-freezing: true
+freezing:
+  exists: true
 
-access_by_payment_types:
-  - free
-  - paid
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
 
 # bonuses:
 #   -
@@ -35,20 +36,22 @@ access_by_payment_types:
 # when_courses_start:
 #   -
 
-areas_of_study:
+areasOfStudy:
   - Программирование
 
-learning_variants:
-  - individual
+learningVariants:
+  - Индивидуально
+  - В группе
 
 age_restriction:
 
 owner:
   name: |
     ООО «Интерактивные обучающие технологии»
-  link: ""
+  link: "https://htmlacademy.ru/"
 
-subscription: false
+subscription:
+  exists: false
 
 moneyback:
   exists: true
@@ -67,19 +70,25 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
-  - value: 8 800 555-86-28
+  - value: 8 800 555 86 28
     description: Бесплатный звонок по России
+    link: tel:+78005558628
 
 languages:
-  - russian
+  - Русский
 
 resources:
   - name: Отзывы
@@ -87,8 +96,7 @@ resources:
   - name: Форум
     link: "https://forum.academy/"
 
-
-payment_methods:
+paymentMethods:
   - Банковские карты
   - Банковская рассрочка
   - Apple Pay
@@ -108,24 +116,8 @@ profiles:
   - link: "https://twitter.com/htmlacademy_ru"
     type: twitter
 
-
 images:
   logo: true
-  screenshots:
-    - cabinet
-    - theory
-    - quiz
-    - practice_1
-    - practice_2
-    - practice_linter_errors
-    - practice_3
-    - practice_4
-    - finished_course
-    - course_landing
-    - topics
-    - my_lasted_progress
-    - my_courses
-    - progress_in_programs
 
 programs:
   frontend-developer:

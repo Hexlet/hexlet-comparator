@@ -14,15 +14,16 @@ ceo:
   name: Кирилл Мокевнин
   facebook: "https://www.facebook.com/mokevnin/"
 
-supportVariants:
-  - name: Справочный Центр
-    link: "https://help.hexlet.io"
+supportOptions:
+  name: Справочный Центр
+  link: "https://help.hexlet.io"
 
-freeze: true
+freezing:
+  exists: true
 
 accessByPaymentTypes:
-  - free
-  - paid
+  - Бесплатные курсы
+  - Платные курсы
 
 # bonuses:
 #   -
@@ -37,7 +38,8 @@ areasOfStudy:
   - Программирование
 
 learningVariants:
-  - individual
+  - Индивидуально
+  - В группе
 
 ageRestriction:
 
@@ -45,7 +47,8 @@ owner:
   name: mail.ru
   link: "https://mail.ru"
 
-subscription: true
+subscription:
+  exists: true
 
 moneyback:
   exists: true
@@ -63,19 +66,26 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-careerConsultation: true
-preparingResume: true
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
 
-codeReview: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
   - value: 8 800 333 57 04
     description: Бесплатный звонок по России
+    link: tel:+78003335704
 
 languages:
-  - russian
+  - Русский
+  - Английский(в процессе перевода)
 
 resources:
   - name: Отзывы
@@ -103,21 +113,6 @@ profiles:
 
 images:
   logo: true
-  screenshots:
-    - cabinet
-    - theory
-    - quiz
-    - practice_1
-    - practice_2
-    - practice_linter_errors
-    - practice_3
-    - practice_4
-    - finished_course
-    - course_landing
-    - topics
-    - my_lasted_progress
-    - my_courses
-    - progress_in_programs
 
 programs:
   frontend-developer:

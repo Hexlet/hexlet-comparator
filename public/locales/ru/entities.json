@@ -1,13 +1,14 @@
 {
   "school": {
+    "address": "Адрес",
     "link": "Ссылка",
     "legal": "Юридический адрес",
     "foundationDate": "Дата основания",
-    "supportVariants": "Варианты поддержки",
-    "freeze": "Заморозка",
+    "supportOptions": "Варианты поддержки",
+    "freezing": "Приостановка обучения",
     "accessByPaymentTypes": "Варианты оплаты",
     "areasOfStudy": "Области обучения",
-    "Варианты обучения": "Варианты обучения",
+    "learningVariants": "Варианты обучения",
     "subscription": "Подписка",
     "moneyback": "Гарантия возврата",
     "careerConsultation": "Карьерная консультация",

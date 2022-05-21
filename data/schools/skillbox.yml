@@ -4,9 +4,8 @@ id: skillbox
 name: Скиллбокс (Skillbox)
 address: "Москва, Ленинский проспект, дом 6, строение 20"
 legal:
-  name: |
-    ООО «СКИЛБОКС»
-  address:
+  name: ООО «СКИЛБОКС»
+  address: Москва, Территория инновационного центра Сколково, Большой бульвар, д. 42, стр. 1, этаж 0, пом. 150, раб. 3
 link: "https://skillbox.ru"
 email: hello@skillbox.ru
 foundationDate: 2015
@@ -16,15 +15,16 @@ ceo:
   facebook: "https://www.facebook.com/krutovdv"
 #  vk: ""
 
-support_variants:
-  - name: ""
-    link: ""
+supportOptions:
+  name: "Центр карьеры"
+  link: "https://skillbox.ru/career/"
 
-freezing: true
+freezing:
+  exists: true
 
-access_by_payment_types:
-  - free
-  - paid
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
 
 # bonuses:
 #   -
@@ -35,27 +35,28 @@ access_by_payment_types:
 # when_courses_start:
 #   -
 
-areas_of_study:
+areasOfStudy:
   - Программирование
 
-learning_variants:
-  - individual
+learningVariants:
+  - Индивидуально
+  - В группе
 
 age_restriction:
 
 owner:
-  name: |
-    Skillbox Holding Limited
+  name: Skillbox Holding Limited
   link: "https://skillbox.ru/contacts/"
 
-subscription: false
+subscription:
+  exists: false
 
 moneyback:
-  exists: false
+  exists: true
   description: Полный возврат в течении первых двух недель
 
 installment:
-  exists: false
+  exists: true
   variants:
     - Тинькофф
     - Альфа-Банк
@@ -67,27 +68,31 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
-  - value: 8 (800) 222-12-89
+  - value: 8 800 500 05 22
     description: Контактный центр
+    link: tel:+78005000522
 
 languages:
-  - russian
+  - Русский
 
 resources:
   - name: Отзывы
     link: "https://skillbox.ru/otzyvy/"
 
-
-
-payment_methods:
+paymentMethods:
   - Банковские карты
   - Банковская рассрочка
   - Apple Pay
@@ -107,24 +112,8 @@ profiles:
 #  - link: "https://twitter.com/mkdev_me"
 #    type: twitter
 
-
 images:
   logo: true
-  screenshots:
-    - cabinet
-    - theory
-    - quiz
-    - practice_1
-    - practice_2
-    - practice_linter_errors
-    - practice_3
-    - practice_4
-    - finished_course
-    - course_landing
-    - topics
-    - my_lasted_progress
-    - my_courses
-    - progress_in_programs
 
 programs:
   frontend-developer:

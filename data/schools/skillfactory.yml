@@ -4,8 +4,7 @@ id: skillfactory
 name: Скилфэктори  (Skillfactory)
 address: "Москва, Цветной бульвар, дом 30, строение 1, э 3 пoм 1, к 14, оф 231"
 legal:
-  name: |
-    ООО "СКИЛФЭКТОРИ"
+  name: ООО "СКИЛФЭКТОРИ"
   address:
 link: "https://skillfactory.ru"
 email: info@skillfactory.ru
@@ -16,15 +15,16 @@ ceo:
   facebook: "https://www.facebook.com/aturilin/"
 #  vk: ""
 
-support_variants:
-  - name: ""
-    link: ""
+supportOptions:
+  name: "Блог"
+  link: "https://blog.skillfactory.ru/"
 
-freezing: true
+freezing:
+  exists: true
 
-access_by_payment_types:
-  - free
-  - paid
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
 
 # bonuses:
 #   -
@@ -35,30 +35,33 @@ access_by_payment_types:
 # when_courses_start:
 #   -
 
-areas_of_study:
+areasOfStudy:
   - Программирование
 
-learning_variants:
-  - individual
+learningVariants:
+  - Индивидуально
+  - В группе
 
 age_restriction:
 
 owner:
-  name: |
-    Skillbox Holding Limited
+  name: Skillbox Holding Limited
   link: "https://skillfactory.ru/contacts"
 
-subscription: false
+subscription:
+  exists: false
 
 moneyback:
-  exists: false
-  description: Полный возврат в течении первых двух недель
+  exists: true
+  description: Возврат денежных средств за вычетом расхода компании
 
 installment:
-  exists: false
+  exists: true
   variants:
     - Тинькофф
     - Альфа-Банк
+    - Пoчтa Бaнк
+    - Cбepбанк
 
 mobile:
   exists: false
@@ -67,27 +70,31 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
-  - value: +7 495 291 09 12
+  - value: 8 495 291 09 12
     description: Контактный центр
+    link: tel:+74952910912
 
 languages:
-  - russian
+  - Русский
 
 resources:
   - name: Отзывы
     link: "https://skillfactory.ru/cases-n-reviews"
 
-
-
-payment_methods:
+paymentMethods:
   - Банковские карты
   - Банковская рассрочка
   - Apple Pay
@@ -107,24 +114,8 @@ profiles:
   - link: "https://twitter.com/skillfactoryru"
     type: twitter
 
-
 images:
   logo: true
-  screenshots:
-    - cabinet
-    - theory
-    - quiz
-    - practice_1
-    - practice_2
-    - practice_linter_errors
-    - practice_3
-    - practice_4
-    - finished_course
-    - course_landing
-    - topics
-    - my_lasted_progress
-    - my_courses
-    - progress_in_programs
 
 programs:
    php-developer:
