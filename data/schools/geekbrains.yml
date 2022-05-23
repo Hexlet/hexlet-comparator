@@ -14,15 +14,16 @@ ceo:
   name: Волчек Александр Игоревич
   facebook: "https://www.facebook.com/alexander.volchek.1"
 
-support_variants:
-  - name: База знаний
-    link: "https://geekbrains.usedocs.com/"
+supportOptions:
+  name: База знаний
+  link: "https://geekbrains.usedocs.com/"
 
-freezing: true
+freezing:
+  exists: true
 
-access_by_payment_types:
-  - free
-  - paid
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
 
 # bonuses:
 #   -
@@ -33,19 +34,20 @@ access_by_payment_types:
 # when_courses_start:
 #   -
 
-areas_of_study:
+areasOfStudy:
   - Программирование
 
-learning_variants:
-  - individual
+learningVariants:
+  - В группе
 
 age_restriction:
 
 owner:
   name: Skillbox holding limited (Cyprus)
-  link: ""
+  link: "https://gb.ru/"
 
-subscription: false
+subscription:
+  exists: false
 
 moneyback:
   exists: true
@@ -56,6 +58,8 @@ installment:
   variants:
     - Тинькофф
     - Альфа-Банк
+    - Пoчтa бaнк
+    - Cбepбанк
 
 mobile:
   exists: false
@@ -64,26 +68,31 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
 
 phones:
-  - value: 8 800 700-68-41
+  - value: 8 800 700 68 41
     description: Бесплатный звонок по России
+    link: tel:+78007006841
 
 languages:
-  - russian
+  - Русский
 
 resources:
   - name: Отзывы
     link: "https://gb.ru/feedbacks"
 
-
-payment_methods:
+paymentMethods:
   - Банковские карты
   - Банковская рассрочка
   - Apple Pay
@@ -103,21 +112,6 @@ profiles:
 
 images:
   logo: true
-  screenshots:
-    - cabinet
-    - theory
-    - quiz
-    - practice_1
-    - practice_2
-    - practice_linter_errors
-    - practice_3
-    - practice_4
-    - finished_course
-    - course_landing
-    - topics
-    - my_lasted_progress
-    - my_courses
-    - progress_in_programs
 
 programs:
   frontend-developer:

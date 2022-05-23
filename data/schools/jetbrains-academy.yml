@@ -12,19 +12,20 @@ email: support@jetbrains.com
 foundationDate: 2000
 
 ceo:
-  name: ""
+  name: "Максим Шафиров"
   facebook: ""
   vk: ""
 
-support_variants:
-  - name: ""
-    link: ""
+supportOptions:
+  name: "Поддержка"
+  link: "https://support.hyperskill.org/hc/en-us"
 
-freezing: true
+freezing:
+  exists: true
 
-access_by_payment_types:
-  - free
-  - paid
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
 
 # bonuses:
 #   -
@@ -35,20 +36,20 @@ access_by_payment_types:
 # when_courses_start:
 #   -
 
-areas_of_study:
+areasOfStudy:
   - Программирование
 
-learning_variants:
-  - individual
+learningVariants:
+  - Индивидуально
 
 age_restriction:
 
 owner:
-  name: |
-    JetBrains s.r.o.
-  link: ""
+  name: JetBrains s.r.o.
+  link: "https://www.jetbrains.com/"
 
-subscription: false
+subscription:
+  exists: true
 
 moneyback:
   exists: false
@@ -67,27 +68,31 @@ mobile:
 # confirmations_of_study:
 #   -
 
-internship: true
-career_consultation: true
-preparing_resume: true
+internship:
+  exists: false
+careerConsultation:
+  exists: false
+preparingResume:
+  exists: false
 
-code_review: true
-mentoring: true
+codeReview:
+  exists: false
+mentoring:
+  exists: false
 
 phones:
-  - value: 8 (812) 331-15-74
+  - value: 8 812 380 16 41
     description:
+    link: tel:+78123801641
 
 languages:
-  - russian
+  - Английский
 
 resources:
   - name: Отзывы
     link: "https://www.jetbrains.com/ru-ru/academy/"
 
-
-
-payment_methods:
+paymentMethods:
   - Банковские карты
   - Банковская рассрочка
   - Apple Pay
@@ -110,21 +115,6 @@ profiles:
 
 images:
   logo: true
-  screenshots:
-    - cabinet
-    - theory
-    - quiz
-    - practice_1
-    - practice_2
-    - practice_linter_errors
-    - practice_3
-    - practice_4
-    - finished_course
-    - course_landing
-    - topics
-    - my_lasted_progress
-    - my_courses
-    - progress_in_programs
 
 programs:
   frontend-developer:
