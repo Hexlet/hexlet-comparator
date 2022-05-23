@@ -121,34 +121,37 @@ programs:
       Программа курса
     trial:
       exists: true
-      comment: 4 курса бесплатно
+      comment: 5 курсов бесплатно
     link: "https://ru.hexlet.io/programs/frontend"
     lessonsCount: 134
-    duration: 8
-    price: 98000
+    duration: 10
+    price: 124000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 7780
+        months: 18
     schedule: |
       В своем темпе. Дополнительные вебинары 1-2 раза в неделю по желанию
-    format: online
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: true
 
   php-developer:
     name: PHP-разработчик
