@@ -130,30 +130,33 @@ programs:
     link: "https://htmlacademy.ru/profession/frontender"
     lessonsCount: 134
     duration: 15
-    price: 155000
+    price: 159000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 8830
+        months: 18
     schedule: |
       В группе, несколько занятий в неделю
-    format: online
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: true
 
   php-developer:
     name: Бэкенд-разработчик PHP
@@ -165,27 +168,30 @@ programs:
     link: "https://htmlacademy.ru/profession/backender"
     lessonsCount: 134
     duration: 14
-    price: 19200
+    price: 159000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 8830
+        months: 18
     schedule: |
       В группе, несколько занятий в неделю
-    format: online
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: true

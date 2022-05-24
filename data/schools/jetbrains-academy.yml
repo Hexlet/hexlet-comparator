@@ -123,31 +123,34 @@ programs:
       Программа курса
     trial:
       exists: true
-      comment: 4 курса бесплатно
-    link: ""
-    lessonsCount: 134
-    duration: 15
-    price: 155000
+      comment: 
+    link: "https://hyperskill.org/tracks/5"
+    lessonsCount: 159
+    duration: Индивидуальное количество
+    price: За месяц 5760
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 
+        months: 
     schedule: |
-      В группе, несколько занятий в неделю
-    format: online
+      В своем темпе.
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
-    employment:
+        - online
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: false
+    practice:
       exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
     mentoring:
-      - group
-      - personal
+      exists: false
+      hasGroup: false
+      hasPersonal: false

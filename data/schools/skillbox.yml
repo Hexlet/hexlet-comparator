@@ -122,31 +122,166 @@ programs:
       Программа курса
     trial:
       exists: true
-      comment: 4 курса бесплатно
+      comment: Несколько курсов
     link: "https://skillbox.ru/course/frontend-pro/"
-    lessonsCount: 134
-    duration: 8
-    price: 155000
+    lessonsCount: 130
+    duration: 12
+    price: 225000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 10262
+        months: 22
     schedule: |
       В группе, несколько занятий в неделю
-    format: online
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  php-developer:
+    name: PHP-разработчик
+    trial:
+      exists: true
+      comment: Несколько курсов
+    link: "https://skillbox.ru/course/profession-php-developer/"
+    duration: 12
+    price: 145000
+    installments:
+      - amount: 6556
+        months: 22
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  python-developer:
+    name: Python-разработчик
+    trial:
+      exists: true
+      comment: Несколько курсов
+    link: "https://skillbox.ru/course/profession-python/"
+    duration: 12
+    price: 145000
+    installments:
+      - amount: 6556
+        months: 22
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  go-developer:
+    name: Go-разработчик
+    trial:
+      exists: true
+      comment: Несколько курсов
+    link: "https://skillbox.ru/course/profession-godev/"
+    duration: 12
+    price: 190000
+    installments:
+      - amount: 8734
+        months: 22
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  java-developer:
+    name: Java-разработчик
+    trial:
+      exists: true
+      comment: Несколько курсов
+    link: "https://skillbox.ru/course/profession-java/"
+    duration: 9
+    price: 124000
+    installments:
+      - amount: 7780
+        months: 18
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
