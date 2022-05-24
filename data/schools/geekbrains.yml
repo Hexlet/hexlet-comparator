@@ -124,30 +124,33 @@ programs:
     link: "https://gb.ru/geek_university/frontend"
     lessonsCount: 134
     duration: 12
-    price: 174492
+    price: 172000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 4780
+        months: 36
     schedule: |
-      В группе, несколько занятий в неделю
-    format: online
+      В группе, два занятия в неделю
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: false
 
   python-developer:
     name: Python-разработчик
@@ -159,30 +162,33 @@ programs:
     link: "https://gb.ru/geek_university/python"
     lessonsCount: 134
     duration: 16
-    price: 174636
+    price: 172000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 4780
+        months: 36
     schedule: |
-      В группе, несколько занятий в неделю
-    format: online
+      В группе, два занятия в неделю
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: false
 
   java-developer:
     name: Java-разработчик
@@ -194,63 +200,67 @@ programs:
     link: "https://gb.ru/geek_university/java"
     lessonsCount: 134
     duration: 12
-    price: 139644
+    price: 225000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 6373
+        months: 36
     schedule: |
-      В группе, несколько занятий в неделю
-    format: online
+      В группе, два занятия в неделю
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: false
 
-
-  ruby-developer:
-    name: Ruby-разработчик
+  go-developer:
+    name: Go-разработчик
     syllabus: |
       Программа курса
     trial:
       exists: true
       comment: 4 курса бесплатно
-    link: "https://gb.ru/geek_university/ruby-on-rails"
-    lessonsCount: 134
-    duration: 36
-    price: 159588
+    link: "https://gb.ru/professions/go-developer"
+    duration: 12
+    price: 170000
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 4776
+        months: 36
     schedule: |
-      В группе, несколько занятий в неделю
-    format: online
-    learning:
-      - text
-      - video
-      - webinars
+      В группе, два занятия в неделю
     practice:
-      - simulator
-      - local
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
     internship:
       exists: true
-      types:
-        - internal
-        - partners
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
     employment:
       exists: true
-    mentoring:
-      - group
-      - personal
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true

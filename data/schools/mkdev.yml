@@ -123,32 +123,68 @@ programs:
     syllabus: |
       Программа курса
     trial:
-      exists: true
+      exists: false
       comment: 4 курса бесплатно
     link: ""
-    lessonsCount: 134
-    duration: 15
-    price: 155000
+    lessonsCount: 
+    duration: Индивидуальное количество
+    price: За неделю 8900
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 
+        months:
     schedule: |
-      В группе, несколько занятий в неделю
-    format: online
+      Индивидуально с ментором
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: false
+      hasPersonal: true
+  
+  ruby-developer:
+    name: Разработчик на Ruby on Rails
+    trial:
+      exists: false
+      comment: 5 курсов бесплатно
+    link: "https://lp.mkdev.me/obuchenie-web-razrabotke-na-ruby-on-rails#enroll"
+    duration: Индивидуальное количество
+    price: За месяц 9990
+    installments:
+      - amount: 
+        months:
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true

@@ -118,37 +118,177 @@ images:
   logo: true
 
 programs:
-   php-developer:
-    name: Backend-разработчик
+  frontend-developer:
+    name: Фронтенд-разработчик
     syllabus: |
       Программа курса
     trial:
-      exists: true
-      comment: 4 курса бесплатно
-    link: "https://skillfactory.ru/backend-razrabotka"
+      exists: false
+      comment: 5 курсов бесплатно
+    link: "https://skillfactory.ru/frontend-razrabotchik-pro"
     lessonsCount: 134
-    duration: 8
-    price: 155000
+    duration: 15
+    price: 181500
     installments:
-      - amount: 6433
-        months: 12
+      - amount: 5042
+        months: 36
     schedule: |
-      В группе, несколько занятий в неделю
-    format: online
+      В своем темпе. Дополнительные вебинары 1-2 раза в неделю по желанию
     learning:
-      - text
-      - video
-      - webinars
-    practice:
-      - simulator
-      - local
-    internship:
       exists: true
       types:
-        - internal
-        - partners
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     employment:
       exists: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  php-developer:
+    name: PHP-разработчик
+    trial:
+      exists: false
+      comment: 7 курсов бесплатно
+    link: "https://skillfactory.ru/backend-razrabotchik-na-php"
+    duration: 12
+    price: 193500
+    installments:
+      - amount: 5378
+        months: 36
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  python-developer:
+    name: Python-разработчик
+    trial:
+      exists: false
+      comment: 5 курсов бесплатно
+    link: "https://skillfactory.ru/python-developer"
+    duration: 10
+    price: 170000
+    installments:
+      - amount: 4736
+        months: 36
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  java-developer:
+    name: Java-разработчик
+    trial:
+      exists: false
+      comment: 5 курсов бесплатно
+    link: "https://skillfactory.ru/java-razrabotchik"
+    duration: 14
+    price: 219000
+    installments:
+      - amount: 9130
+        months: 24
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  go-developer:
+    name: Go-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+      comment: 4 курса бесплатно
+    link: "https://skillfactory.ru/backend-razrabotchik-na-golang"
+    lessonsCount: 134
+    duration: 12
+    price: 176000
+    installments:
+      - amount: 4889
+        months: 36
+    schedule: |
+      Индивидуально, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false

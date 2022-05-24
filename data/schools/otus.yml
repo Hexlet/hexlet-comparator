@@ -118,37 +118,107 @@ images:
   logo: true
 
 programs:
-  frontend-developer:
-    name: Фронтенд-разработчик
-    syllabus: |
-      Программа курса
+  php-developer:
+    name: PHP-разработчик
     trial:
       exists: true
-      comment: 4 курса бесплатно
-    link: ""
-    lessonsCount: 134
-    duration: 15
-    price: 155000
+      comment: Вступительное тестирование
+    link: "https://otus.ru/lessons/php-specialization/"
+    duration: 9
+    price: 120000
     installments:
-      - amount: 6433
+      - amount: 10000
         months: 12
     schedule: |
-      В группе, несколько занятий в неделю
-    format: online
-    learning:
-      - text
-      - video
-      - webinars
+      В группе, два занятия в неделю
     practice:
-      - simulator
-      - local
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
     internship:
       exists: true
-      types:
-        - internal
-        - partners
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
     employment:
       exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  python-developer:
+    name: Python-разработчик
+    trial:
+      exists: true
+      comment: Вступительное тестирование
+    link: "https://otus.ru/lessons/python-specialization/"
+    duration: 10
+    price: 140000
+    installments:
+      - amount: 11670
+        months: 12
+    schedule: |
+      В группе, два занятия в неделю
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
     mentoring:
-      - group
-      - personal
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  java-developer:
+    name: Java-разработчик
+    trial:
+      exists: true
+      comment: Вступительное тестирование
+    link: "https://otus.ru/lessons/java-specialization/"
+    duration: 15
+    price: 230000
+    installments:
+      - amount: 12780
+        months: 18
+    schedule: |
+      В группе, два занятия в неделю
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
