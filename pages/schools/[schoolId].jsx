@@ -203,12 +203,8 @@ const School = (props) => {
                 <div className="fs-3 mb-4">
                   {school.profiles.map((p) => <SocialItem profile={p} key={p.type} />)}
                 </div>
-                <Link href="#professions">
-                  <a className="btn btn-primary me-3">{t('school.professions')}</a>
-                </Link>
-                <Link href="#description">
-                  <a className="btn btn-outline-dark">{t('school.describe')}</a>
-                </Link>
+                  <a className="btn btn-primary me-3" href="#professions">{t('school.professions')}</a>
+                  <a className="btn btn-outline-dark" href="#description">{t('school.describe')}</a>
               </div>
               <div className="d-none d-md-block col-sm-5 text-center">
                 <Image layout="responsive" src={assetsRoutes.logoPath(school)} width="200" height="200" alt={school.name} />
@@ -223,7 +219,7 @@ const School = (props) => {
 
         <div className="mb-5">
           <h2 className="mb-3">
-            <a href="#description" className="text-decoration-none link-dark">{t('school.describe')}</a>
+            <a id="description" className="text-decoration-none link-dark">{t('school.describe')}</a>
           </h2>
 
           {descriptionFields.map((f) => <DescriptionField key={f} school={school} name={f} />)}
@@ -231,7 +227,7 @@ const School = (props) => {
 
         <div>
           <h2 className="mb-3">
-            <a href="#professions" className="text-decoration-none link-dark">{t('school.professions')}</a>
+            <a id="professions" className="text-decoration-none link-dark">{t('school.professions')}</a>
           </h2>
 
           <div className="row row-cols-md-2">
