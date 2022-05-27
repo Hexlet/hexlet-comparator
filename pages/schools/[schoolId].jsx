@@ -7,6 +7,7 @@ import { NextSeo } from 'next-seo';
 import Link from 'next/link';
 import cn from 'classnames';
 import Image from 'next/image';
+import ImageBootstrap from 'react-bootstrap/Image';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import { getSchools, getProfessions, getScreenshots } from 'lib/api.js';
@@ -154,7 +155,7 @@ const Screenshot = (props) => {
         {t('school.screenshot')}
       </Modal.Header>
       <Modal.Body className="text-center">
-        <Image layout="responsive" alt={name} width="800" height="450" src={assetsRoutes.screenshotPath(school, name)} />
+        <ImageBootstrap alt={name} src={assetsRoutes.screenshotPath(school, name)} fluid />
       </Modal.Body>
     </Modal>
   );
