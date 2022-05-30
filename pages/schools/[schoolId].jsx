@@ -154,7 +154,7 @@ const Screenshot = (props) => {
         {t('school.screenshot')}
       </Modal.Header>
       <Modal.Body className="text-center">
-        <Image layout="responsive" alt={name} width="800" height="450" src={assetsRoutes.screenshotPath(school, name)} />
+        <Image layout="responsive" alt={name} width="1440" height="900" src={assetsRoutes.screenshotPath(school, name)} />
       </Modal.Body>
     </Modal>
   );
