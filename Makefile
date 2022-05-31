@@ -26,3 +26,6 @@ build:
 
 heroku-logs:
 	heroku logs --tail
+
+deploy:
+	git push heroku main
