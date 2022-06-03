@@ -29,3 +29,4 @@ rules:
   import/extensions: 0 # FIXME: remove when rule will be adjusted for new nodejs version
   no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
   jsx-a11y/anchor-is-valid: 0
+  react/function-component-definition: 0
