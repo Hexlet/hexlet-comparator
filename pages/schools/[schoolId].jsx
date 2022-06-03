@@ -1,7 +1,7 @@
 // @ts-check
 
 import React, { useState } from 'react';
-import Modal from 'react-bootstrap/Modal';
+import { Modal, Carousel } from 'react-bootstrap';
 
 import { NextSeo } from 'next-seo';
 import Link from 'next/link';
@@ -138,14 +138,30 @@ const ProfessionItem = (props) => {
 
 const Screenshot = (props) => {
   const { t } = useTranslation('common');
-  const { name, school, index } = props;
+  const {
+    name,
+    school,
+    index,
+    screenshots,
+  } = props;
 
   const [modalShow, setModalShow] = useState(false);
+
+  const [activeScreenshot, setActiveScreenshot] = useState(index);
+
+  const handleHideModal = () => {
+    setModalShow(false);
+    setActiveScreenshot(index);
+  };
+
+  const handleSelect = (selectedIndex) => {
+    setActiveScreenshot(selectedIndex);
+  };
 
   const modal = (
     <Modal
       show={modalShow}
-      onHide={() => setModalShow(false)}
+      onHide={handleHideModal}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
@@ -154,7 +170,13 @@ const Screenshot = (props) => {
         {t('school.screenshot')}
       </Modal.Header>
       <Modal.Body className="text-center">
-        <Image layout="responsive" alt={name} width="1440" height="900" src={assetsRoutes.screenshotPath(school, name)} />
+        <Carousel activeIndex={activeScreenshot} onSelect={handleSelect}>
+          {screenshots.map((screenName) => (
+            <Carousel.Item key={screenName}>
+              <Image layout="responsive" alt={screenName} width="1440" height="900" src={assetsRoutes.screenshotPath(school, screenName)} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </Modal.Body>
     </Modal>
   );
@@ -203,8 +225,8 @@ const School = (props) => {
                 <div className="fs-3 mb-4">
                   {school.profiles.map((p) => <SocialItem profile={p} key={p.type} />)}
                 </div>
-                  <a className="btn btn-primary me-3" href="#professions">{t('school.professions')}</a>
-                  <a className="btn btn-outline-dark" href="#description">{t('school.describe')}</a>
+                <a className="btn btn-primary me-3" href="#professions">{t('school.professions')}</a>
+                <a className="btn btn-outline-dark" href="#description">{t('school.describe')}</a>
               </div>
               <div className="d-none d-md-block col-sm-5 text-center">
                 <Image layout="responsive" src={assetsRoutes.logoPath(school)} width="200" height="200" alt={school.name} />
@@ -214,7 +236,7 @@ const School = (props) => {
         </div>
 
         <div className="mb-5">
-          {screenshots.map((name, index) => <Screenshot index={index} key={name} school={school} name={name} />)}
+          {screenshots.map((name, index) => <Screenshot index={index} key={name} school={school} name={name} screenshots={screenshots} />)}
         </div>
 
         <div className="mb-5">
