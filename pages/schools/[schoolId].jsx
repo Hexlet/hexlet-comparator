@@ -149,6 +149,11 @@ const Screenshot = (props) => {
 
   const [activeScreenshot, setActiveScreenshot] = useState(index);
 
+  const handleHideModal = () => {
+    setModalShow(false);
+    setActiveScreenshot(index);
+  };
+
   const handleSelect = (selectedIndex) => {
     setActiveScreenshot(selectedIndex);
   };
@@ -156,7 +161,7 @@ const Screenshot = (props) => {
   const modal = (
     <Modal
       show={modalShow}
-      onHide={() => setModalShow(false)}
+      onHide={handleHideModal}
       size="lg"
       aria-labelledby="contained-modal-title-vcenter"
       centered
