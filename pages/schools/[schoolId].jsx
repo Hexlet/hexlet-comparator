@@ -76,6 +76,14 @@ const DescriptionValue = (props) => {
       );
     case 'supportOptions':
       return <Link href={value.link}>{value.name}</Link>;
+    case 'learningVariants':
+      return value.join(', ');
+    case 'languages':
+      return value.join(', ');
+    case 'paymentMethods':
+      return value.join(', ');
+    case 'accessByPaymentTypes':
+      return value.join(', ');
     default:
       return value.toString();
   }
@@ -170,7 +178,7 @@ const Screenshot = (props) => {
         {t('school.screenshot')}
       </Modal.Header>
       <Modal.Body className="text-center">
-        <Carousel activeIndex={activeScreenshot} onSelect={handleSelect}>
+        <Carousel activeIndex={activeScreenshot} onSelect={handleSelect} variant="dark" indicators={false}>
           {screenshots.map((screenName) => (
             <Carousel.Item key={screenName}>
               <Image layout="responsive" alt={screenName} width="1440" height="900" src={assetsRoutes.screenshotPath(school, screenName)} />
