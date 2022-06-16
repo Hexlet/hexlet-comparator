@@ -26,7 +26,7 @@ const descriptionFields = [
 
 const SocialItem = (props) => {
   const { profile } = props;
-  const classLine = `text-secondary bi bi-${profile.type} me-3`;
+  const classLine = `text-secondary fab fa-${profile.type} me-3`;
 
   return (
     <Link href={profile.link}>

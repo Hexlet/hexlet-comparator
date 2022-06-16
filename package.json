@@ -16,6 +16,7 @@
     "pre-push": "npm run lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.1.1",
     "@jest/globals": "^27.5.1",
     "ajv": "^8.11.0",
     "bootstrap": "^5.1.3",
