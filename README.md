@@ -2,22 +2,21 @@
 
 [![github action status](https://github.com/hexlet/hexlet-comparator/workflows/Main/badge.svg)](https://actions-badge.atrox.dev/hexlet/hexlet-comparator/goto?ref=main)
 
-Открытый проект, позволяющий сравнивать обучающие программы по программированию разных школ. Сравнение идет по формальным характеристикам, чтобы избежать искажений. Сравниваются только те школы, у которых есть полноценные профессии, а не просто курсы.
+An open project to compare programming courses from different schools. The comparison is made according to formal characteristics in order to avoid distortions. Only schools that have full professions, not just courses, are compared.
 
-* Информация о всех школах лежит в /data
+* Information about all the schools is in the /data
 
-## Картинки
+## Pictures
 
-Картинки школ лежат в */public/assets/schools*
+The pictures of the schools are in the */public/assets/schools*
 
-* Логотип – Формат svg, прозрачный фон.
-* Скриншот – Формат jpg. Добавляем скрины внутренних экранов, в первую очередь связанных с процессом обучения и взаимодействием. Внешние лендинги не нужны, они не несут ценности. Скриншоты должны быть сделаны на MacBook с дисплеем Retina с соотношением сторон 16:10.
+* Logo - svg format, transparent background
+* Screenshot - jpg format. Add screenshots of internal screens, primarily related to the learning process and interaction. External landings are not needed, they have no value. Screenshots must be taken on a MacBook with a Retina display with a 16:10 aspect ratio.
 
 ---
 
-[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=exercises-javascript)
+[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/assets/master/images/hexlet_logo128.png)](https://hexlet.io/utm_source=github&utm_medium=link&utm_campaign=exercises-javascript)
 
-This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=hexlet-comparator).
+This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet](https://hexlet.io/?utm_source=github&utm_medium=link&utm_campaign=hexlet-comparator).
 
-
-See most active contributers on [hexlet-friends](https://friends.hexlet.io/).
+See most active contributors on [hexlet-friends](https://friends.hexlet.io/).
