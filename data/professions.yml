@@ -8,6 +8,30 @@
     Без frontend-разработчика не получится создать отличный цифровой продукт.
   programmingLanguage: javascript
 
+- id: node.js-developer
+  name: Node.js-разработчик
+  description: > 
+    Node.js-разработчик — специалист, который пишет на языке программирования JavaScript в среде выполнения кода JavaScript вне браузера(Node.js).
+    Node.js — не отдельный язык программирования, а платформа для использования JavaScript на стороне сервера.
+    Благодаря Electron эта технология также применяется для разработки десктопных приложений.
+  programmingLanguage: javascript
+
+- id: fullstack js-developer
+  name: Fullstack-разработчик
+  description: > 
+    Fullstack-разработчик — специалист, который пишет на языке программирования JavaScript.
+    С помощью среды выполнения Node.js реализуется парадигма «JavaScript для всего». 
+    Она предполагает использование одного языка программирования для разработки веб-приложений вместо применения разных языков для работы над фронтендом и бэкендом.
+  programmingLanguage: javascript
+
+- id: layout-designer
+  name: Верстальщик
+  description: > 
+    Верстальщик — специалист, который создаёт страницы с помощью HTML и CSS.
+    Следит за доступностью сайта, создавая семантически правильную разметку.
+    Верстает адаптивные проекты.
+  programmingLanguage: html, css
+
 - id: php-developer
   name: PHP-разработчик
   description: >
