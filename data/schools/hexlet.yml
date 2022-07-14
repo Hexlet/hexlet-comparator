@@ -284,3 +284,117 @@ programs:
       hasTexts: true
       hasVideos: true
       hasWebinars: true
+
+  node.js-developer:
+    name: Node.js-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 5 курсов бесплатно
+    link: "https://ru.hexlet.io/programs/backend"
+    lessonsCount: 340
+    duration: 10
+    price: 124000
+    installments:
+      - amount: 7780
+        months: 18
+    schedule: |
+      В своем темпе. Дополнительные вебинары 1-2 раза в неделю по желанию
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  fullstack js-developer:
+    name: Fullstack-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 5 курсов бесплатно
+    link: "https://ru.hexlet.io/programs/fullstack-javascript"
+    lessonsCount: 450
+    duration: 16
+    price: 198000
+    installments:
+      - amount: 12450
+        months: 18
+    schedule: |
+      В своем темпе. Дополнительные вебинары 1-2 раза в неделю по желанию
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  layout-designer:
+    name: Верстальщик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
+    link: "https://ru.hexlet.io/programs/layout-designer"
+    lessonsCount: 193
+    duration: 5
+    price: 
+    installments:
+      - amount: 
+        months: 
+    schedule: 
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos:  false
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
+      
