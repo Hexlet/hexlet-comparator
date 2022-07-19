@@ -1,0 +1,183 @@
+---
+
+id: kata
+name: КАТА (KATA)
+address: "Санкт-Петербург, Выборгская набережная, 29"
+legal:
+  name: ИП Севостьянов Герман Дмитриевич
+  address:
+link: "https://kata.academy/"
+email: info@kata.academy
+foundationDate: 2017
+
+ceo:
+  name: Севостьянов Герман Дмитриевич
+  facebook: ""
+
+supportOptions:
+  name: Комьюнити
+  link: "https://kata.academy/community"
+
+
+accessByPaymentTypes:
+  - Обучение с оплатой после трудоустройства
+  - Обучение с ежемесячной оплатой
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - В группе
+
+age_restriction:
+
+owner:
+  name: ИП Севостьянов Герман Дмитриевич
+  link: "https://kata.academy/community"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Гарантия трудоустройства прописана в договоре. Иначе - вернем деньги.
+
+# installment:
+#   exists: true
+#   variants:
+#     - Тинькофф
+#     - Альфа-Банк
+#     - Пoчтa бaнк
+#     - Cбepбанк
+
+# mobile:
+#   exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+# internship:
+#   exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value: 8 800 350 32 96
+    description: Отвечаем на все ваши вопросы с понедельника по пятницу с 12.00 до 21.00.
+    link: tel:+78003503296
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://vk.com/board143173387"
+
+# paymentMethods:
+#   - Банковские карты
+#   - Банковская рассрочка
+#   - Apple Pay
+#   - Google Pay
+
+profiles:
+  - link: "https://t.me/kata_academy"
+    type: telegram
+  - link: "https://vk.com/kataacademy"
+    type: vk
+  
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Frontend-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+      # comment: 4 курса бесплатно
+    link: "https://kata.academy/frontend/postpayment"
+    # lessonsCount: 134
+    duration: 12
+    price: 238000
+    # installments:
+    #   - amount: 4780
+    #     months: 36
+    # schedule: |
+    #   В группе, два занятия в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  java-developer:
+    name: Java-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 5 бесплатных рабочих дней
+    link: "https://kata.academy/java/postpayment"
+    # lessonsCount: 134
+    duration: 11
+    price: 238000
+    # installments:
+    #   - amount: 6373
+    #     months: 36
+    # schedule: |
+    #   В группе, два занятия в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+      
