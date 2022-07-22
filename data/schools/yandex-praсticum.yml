@@ -1,0 +1,234 @@
+---
+
+id: yandex-praсticum
+name: Яндекс-Практикум (Yandex-Practicum)
+legal:
+  name: АНО ДПО «ШАД»
+  address: "119021, Россия, г. Москва, ул. Тимура Фрунзе, д. 11, корпус 2"
+link: "https://practicum.yandex.ru/"
+email: praktikum@support.yandex.ru
+foundationDate: 2015
+
+supportOptions:
+  name: '"КОД" - журнал Яндекс Практикума'
+  link: "https://thecode.media/"
+
+freezing:
+  exists: true
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - В группе
+
+age_restriction:
+
+owner:
+  name: АНО ДПО «ШАД»
+  link: "https://academy.yandex.ru/dataschool/"
+
+subscription:
+  exists: true
+
+moneyback:
+  exists: true
+  description: Возврат денежных средств в порядке и на условиях, установленных Офертой.
+
+mobile:
+  exists: true
+  # links:
+
+# confirmations_of_study:
+#   -  
+
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value: 8-800-700-93-29
+    description: Звонок по России бесплатный
+    link: tel:+78007009329
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://practicum.yandex.ru/reviews/"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://vk.com/yandex.practicum"
+    type: vk
+ 
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Веб-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Бесплатный вводный курс 20 часов
+    link: "https://practicum.yandex.ru/web/"
+    lessonsCount: 123
+    duration: 10
+    price: 140000
+    installments:
+      - amount: 7613
+        months: 18
+    schedule: |
+      В группе, примерно 20 часов в неделю.
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  python-developer:
+    name: Python-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Бесплатный вводный курс 20 часов
+    link: "https://practicum.yandex.ru/backend-developer/"
+    lessonsCount: 82
+    duration: 9
+    price: 126000
+    installments:
+      - amount: 6851
+        months: 18
+    schedule: |
+      В группе, примерно 20 часов в неделю.
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  java-developer:
+    name: Java-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Бесплатный вводный курс 30 часов
+    link: "https://practicum.yandex.ru/java-developer/"
+    lessonsCount: 130
+    duration: 10
+    price: 140000
+    installments:
+      - amount: 7613
+        months: 18
+    schedule: |
+      В группе, примерно 20 часов в неделю.
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  go-developer:
+    name: Продвинутый Go-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
+    link: "https://gb.ru/professions/go-developer"
+    duration: 6
+    price: 152000
+    installments:
+      - amount: 26000
+        months: 6
+    schedule: |
+      В группе, примерно 20 часов в неделю.
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
