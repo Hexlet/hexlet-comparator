@@ -1,0 +1,222 @@
+---
+id: skypro
+name: Скайпро (Skypro)
+address: "109004, г. Москва, ул. Александра Солженицына, д. 23А, стр. 1, Эт/Пом/Ком3/Ш/1-7"
+legal:
+  name: ОАНО ДПО «СКАЕНГ»
+  address:
+link: "https://sky.pro/"
+email: oano.dpo@skyeng.ru
+foundationDate: 2018
+
+ceo:
+  name: Гусейнов Камран Зулфугар оглы
+  facebook: ""
+
+supportOptions:
+  name: Карьера
+  link: "https://sky.pro/media/karera/"
+
+freezing:
+  exists: true
+
+accessByPaymentTypes:
+  - Обучение с оплатой после трудоустройства
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additionalServices:
+#   -
+
+# whenCoursesStart:
+#   -
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - В группе
+
+ageRestriction:
+
+owner:
+  name: ООО «СКАЕНГ»
+  link: "https://skyeng.ru/"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Полный возврат в течении первых двух недель
+
+installment:
+  exists: true
+  variants:
+    - Тинькофф
+    - Сбербанк
+    - Альфа-банк
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value: 8 495 137 85 99
+    description:
+    link: tel:+74951378599
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://sky.pro/reviews"
+  - name: СМИ о нас
+    link: "https://sky.pro/massmedia"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://t.me/skyprouniversity?roistat_visit=3282839"
+    type: telegram
+  - link: "https://vk.com/skypro.university?roistat_visit=3282839"
+    type: vk
+  - link: "https://www.youtube.com/channel/UCagarNKSNfxzh1ZhNX8173A"
+    type: youtube
+  - link: "https://www.facebook.com/skypro.university"
+    type: facebook
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Web-разработчик
+    syllabus: |
+      Программа курса
+    schedule: |
+      В группе, несколько занятий в неделю
+    trial:
+      exists: false
+      comment:
+    link: "https://sky.pro/courses/programming/web-developer"
+    duration: 12
+    price: 158641
+    installments:
+      - amount: 5815
+        months: 36
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  java-developer:
+    name: Java-разработчик
+    syllabus: |
+      Программа курса
+    schedule: |
+      В группе, несколько занятий в неделю
+    trial:
+      exists: true
+      comment: 2 урока бесплатно
+    link: "https://sky.pro/courses/programming/java-developer"
+    duration: 11
+    price: 158641
+    installments:
+      - amount: 5815
+        months: 36
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  python-developer:
+    name: Python-разработчик
+    syllabus: |
+      Программа курса
+    schedule: |
+      В группе, несколько занятий в неделю
+    trial:
+      exists: true
+      comment: 4 урока бесплатно
+    link: "https://sky.pro/courses/programming/python-web-course"
+    duration: 10
+    price: 137956
+    installments:
+      - amount: 4955
+        months: 36
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
