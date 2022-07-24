@@ -6,8 +6,7 @@ address: "Калининград, ул. п-ка Ефремова, 4"
 legal:
   name: |
     ИП Шультайс Никита Александрович
-  address: 236001, Россия, Калининградская область, г. Калининград
-ул. п-ка Ефремова, 4
+  address: 236001, Россия, Калининградская область, г. Калининград, ул. п-ка Ефремова, 4
 link: "https://shultais.education/"
 email: info@shultais.education
 foundationDate: 2015
@@ -42,7 +41,7 @@ learningVariants:
   - Индивидуально
   - В группе
 
-age_restriction:
+ageRestriction:
 
 owner:
   name: ИП Шультайс Никита Александрович
