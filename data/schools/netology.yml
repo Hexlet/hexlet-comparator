@@ -1,0 +1,325 @@
+---
+
+id: netology
+name: Нетология (Netology)
+address: ""
+legal:
+  name: ООО «Нетология»
+  address: Москва, Варшавское шоссе, д. 1, стр. 6, 1 этаж, офис 103А
+link: "https://netology.ru"
+email: support@netology.ru
+foundationDate: 2020
+
+ceo:
+  name: "Марианна Снигирева"
+  facebook: "https://facebook.com/msnigireva"
+
+supportOptions:
+  name: Справочный Центр
+  link: "https://netology.ru/?modal=support&type=new-ticket#/steps"
+
+freezing:
+  exists: true
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additionalServices:
+#   -
+
+# whenCoursesStart:
+#   -
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - В группе
+
+ageRestriction:
+
+owner:
+  name:  Grumelon Business Ltd (Cyprus)
+  link: "https://netology.ru/contacts"
+
+subscription:
+  exists: true
+
+moneyback:
+  exists: true
+  description: Полный возврат в течении первых двух недель (если не пройдены первые 3 занятия)
+
+installment:
+  exists: true
+  variants: 
+    - Сбербанк
+    - Тинькофф
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value: 8 800 301 39 69
+    description: Бесплатный звонок по России
+    link: tel:+78003013969
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://netology.ru/otzyvy"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+  - Apple Pay
+  - Google Pay
+
+profiles:
+  - link: "https://t.me/netology_ru"
+    type: telegram
+  - link: "https://vk.com/netology"
+    type: vk
+  - link: "https://www.youtube.com/user/netologytv"
+    type: youtube
+  - link: "https://ok.ru/netology"
+    type: ok
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 1 курс бесплатно
+    link: "https://netology.ru/programs/front-end"
+    duration: 20
+    price: 108000
+    installments:
+      - amount: 4500
+        months: 24
+    schedule: |
+      В группе, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  python-developer:
+    name: Python-разработчик
+    trial:
+      exists: true
+      comment: 1 курс бесплатно
+    link: "https://netology.ru/programs/python"
+    duration: 12
+    price: 99000
+    installments:
+      - amount: 4125
+        months: 24
+    schedule: |
+      В группе, несколько занятий в неделю
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  fullstack python-developer:
+    name: Fullstack Python-разработчик
+    trial:
+      exists: true
+      comment: 1 курс бесплатно
+    link: "https://netology.ru/programs/fullstack-python-dev"
+    duration: 20
+    price: 159000
+    installments:
+      - amount: 6625
+        months: 24
+    schedule: |
+      В группе, несколько занятий в неделю
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  java-developer:
+    name: Java-разработчик
+    trial:
+      exists: true
+      comment: 1 курс бесплатно
+    link: "https://netology.ru/programs/java-developer"
+    duration: 14
+    price: 129000
+    installments:
+      - amount: 5375
+        months: 24
+    schedule: |
+      В группе, несколько занятий в неделю
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  web-developer: 
+    name: Веб-разработчик
+    trial:
+      exists: true
+      comment: 1 курс бесплатно
+    link: "https://netology.ru/programs/web-developer"
+    duration: 23
+    price: 159000
+    installments:
+      - amount: 6625
+        months: 24
+    schedule: |
+      В группе, несколько занятий в неделю
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  fullstack js-developer:
+    name: Fullstack JavaScript-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 1 курс бесплатно
+    link: "https://netology.ru/programs/javascript-fullstack"
+    duration: 21
+    price: 159000
+    installments:
+      - amount: 6625
+        months: 24
+    schedule: |
+      В группе, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
