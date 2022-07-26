@@ -1,0 +1,299 @@
+---
+
+id: brunoyam-school
+name: Школа Бруноям (Brunoyam school)
+address: "Санкт-Петербург,  Спасский переулок 14/35"
+legal:
+  name: ИП Пузиков Сергей Александрович
+  address:
+link: "https://brunoyam.com/"
+email: smile@brunoyam.com 
+foundationDate: 2010
+
+ceo:
+  name: Пузиков Сергей Александрович
+  facebook: ""
+
+supportOptions:
+  name: Чат-бот
+  link: "https://brunoyam.com/"
+
+
+accessByPaymentTypes:
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areasOfStudy:
+  - Программирование
+  - Маркетинг
+  - Дизайн
+  - Аналитика
+  - Soft-skills
+
+learningVariants:
+  - В группе очно/онлайн
+  - Индивидуально очно/онлайн
+
+age_restriction:
+
+owner:
+  name: ИП Пузиков Сергей Александрович
+  link: "https://brunoyam.com/about"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Возврат средств в течение 30 календарных дней с момента начала курса.
+
+installment:
+  exists: true
+  variants:
+    - Тинькофф
+    - Пoчтa бaнк
+    - Cбepбанк
+    - ОТП банк
+
+# mobile:
+#   exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value:  8 (812) 409 35 11
+    description: пн-пт с 10.00 - 19.30, cб-вс с 10.00 - 16.30
+    link: tel:+78124093511
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://tutortop.ru/school-reviews/brunoyam/"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+#   - Apple Pay
+#   - Google Pay
+
+profiles:
+  - link: "https://vk.com/brunoyam"
+    type: vk
+  
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Веб-разработчик с нуля
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comments: Открывается первый модуль курса
+    link: "https://brunoyam.com/kursy-programmirovaniya/s-nulya"
+    duration: 8 #weeks
+    price: 50000
+    # installments:
+    #   - amount: 2908
+    #     months: 12
+    # schedule: |
+    # 
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  java-developer:
+    name: Java-разработчик
+    syllabus: |
+      Программа курса
+    trial: 
+      exists: true
+      comment: Открывается первый модуль курса
+    link: "https://brunoyam.com/kursy-programmirovaniya/java"
+    duration: 8 #weeks
+    price: 50000
+    # installments:
+    #   - amount: 2908
+    #     months: 12
+    # schedule: |
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    
+  python-developer:
+    name: Python-разработчик
+    syllabus: |
+      Программа курса
+    trial: 
+      exists: true
+      comment: Открывается первый модуль курса
+    link: "https://brunoyam.com/kursy-programmirovaniya/python"
+    # lessonsCount: 
+    duration: 8 #weeks
+    price: 50000
+    # installments:
+    #   - amount: 2908
+    #     months: 12
+    # schedule: |
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+      
+  javaScript-developer:
+    name: JavaScript-разработчик
+    syllabus: |
+      Программа курса
+    trial: 
+      exists: true
+      comment: Открывается первый модуль курса
+    link: "https://brunoyam.com/kursy-programmirovaniya/javascript"
+    # lessonsCount: 
+    duration: 6 #weeks
+    price: 42700
+    installments:
+      # - amount: 2491
+      #   months: 12
+    # schedule: |
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  php-developer:
+    name: PHP-разработчик
+    syllabus: |
+      Программа курса
+    trial: 
+      exists: true
+      comment: Открывается первый модуль курса
+    link: "https://brunoyam.com/kursy-programmirovaniya/php"
+    # lessonsCount: 
+    duration: 6 #weeks
+    price: 44000
+    # installments:
+    #   - amount: 2491
+    #     months: 12
+    # schedule: |
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+      
+      
