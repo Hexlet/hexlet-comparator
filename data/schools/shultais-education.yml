@@ -17,6 +17,7 @@ ceo:
 
 supportOptions:
   name: "мини-форум под каждым уроком"
+  link: ""
 
 freezing:
   exists: false
@@ -45,7 +46,7 @@ ageRestriction:
 
 owner:
   name: ИП Шультайс Никита Александрович
-  link: "https://gb.ru/"
+  link: ""
 
 subscription:
   exists: false
@@ -79,7 +80,7 @@ mentoring:
 
 phones:
   - value: 8 981 452 79 72
-    description:
+    description: ""
     link: tel:+79814527972
 
 languages:
@@ -113,7 +114,7 @@ images:
 
 programs:
   mobile-developer:
-    name: Мобильная разработка
+    name: Фронтенд-разработчик
     syllabus: |
       Программа курса
     trial:
@@ -122,12 +123,10 @@ programs:
     link: "https://shultais.education/lms/courses/mobile"
     lessonsCount: 184
     duration: 14 недель
-    price: 69 000
+    price: 69000
     installments:
-      - amount: 17 250
+      - amount: 17250
         months: 4
-      - amount: 17 250 (first) 10 350 (others)
-        months: 6
     schedule: |
       В группе, несколько занятий в неделю
     learning:
