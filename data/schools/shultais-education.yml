@@ -1,0 +1,152 @@
+---
+
+id: shultais-education
+name: Шультайс Эдьюкейшн (Shultais Education)
+address: "Калининград, ул. п-ка Ефремова, 4"
+legal:
+  name: |
+    ИП Шультайс Никита Александрович
+  address: 236001, Россия, Калининградская область, г. Калининград, ул. п-ка Ефремова, 4
+link: "https://shultais.education/"
+email: info@shultais.education
+foundationDate: 2015
+
+ceo:
+  name: Шультайс Никита Александрович
+  facebook: "https://www.facebook.com/shultais"
+
+supportOptions:
+  name: "мини-форум под каждым уроком"
+  link: ""
+
+freezing:
+  exists: false
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - Индивидуально
+  - В группе
+
+ageRestriction:
+
+owner:
+  name: ИП Шультайс Никита Александрович
+  link: ""
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: false
+
+installment:
+  exists: true
+  variants: 
+    - Тинькофф
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: false
+preparingResume:
+  exists: false
+
+codeReview:
+  exists: false
+mentoring:
+  exists: false
+
+phones:
+  - value: 8 981 452 79 72
+    description: ""
+    link: tel:+79814527972
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://shultais.education/reviews"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+  - Yandex Pay
+
+profiles:
+  - link: "https://www.facebook.com/shultaiseducation"
+    type: facebook
+  - link: "https://t.me/shultais_education"
+    type: telegram
+  - link: "https://vk.com/shultais_education"
+    type: vk
+  - link: "https://www.youtube.com/user/ShultaisEducation"
+    type: youtube
+#  - link: ""
+#    type: instagram
+#  - link: ""
+#    type: twitter
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 10 уроков бесплатно
+    link: "https://shultais.education/lms/courses/mobile"
+    lessonsCount: 184
+    duration: 14 недель
+    price: 69000
+    installments:
+      - amount: 17250
+        months: 4
+    schedule: |
+      В группе, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
