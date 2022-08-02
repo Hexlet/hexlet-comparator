@@ -1,35 +1,23 @@
 ---
 
-id: brunoyam-school
+id: brunoyam
 name: Школа Бруноям (Brunoyam school)
-address: "Санкт-Петербург,  Спасский переулок 14/35"
 legal:
-  name: ИП Пузиков Сергей Александрович
-  address:
+  name: ООО «БРУНОЯМ» 
+  address: "Санкт-Петербург,  Спасский переулок 14/35"
 link: "https://brunoyam.com/"
-email: smile@brunoyam.com 
+email: smile@brunoyam.com
 foundationDate: 2010
-
-ceo:
-  name: Пузиков Сергей Александрович
-  facebook: ""
 
 supportOptions:
   name: Чат-бот
   link: "https://brunoyam.com/"
 
+# freezing:
+#   exists: true
 
 accessByPaymentTypes:
   - Платные курсы
-
-# bonuses:
-#   -
-
-# additional_services:
-#   -
-
-# when_courses_start:
-#   -
 
 areasOfStudy:
   - Программирование
@@ -40,13 +28,13 @@ areasOfStudy:
 
 learningVariants:
   - В группе очно/онлайн
-  - Индивидуально очно/онлайн
+  - индивидуально очно/онлайн
 
 age_restriction:
 
 owner:
-  name: ИП Пузиков Сергей Александрович
-  link: "https://brunoyam.com/about"
+   name: ИП Пузиков Сергей Александрович
+   link: "https://brunoyam.com/about"
 
 subscription:
   exists: false
@@ -55,27 +43,20 @@ moneyback:
   exists: true
   description: Возврат средств в течение 30 календарных дней с момента начала курса.
 
-installment:
-  exists: true
-  variants:
-    - Тинькофф
-    - Пoчтa бaнк
-    - Cбepбанк
-    - ОТП банк
-
 # mobile:
-#   exists: false
+#   exists: true
   # links:
 
 # confirmations_of_study:
-#   -
+#   -  
 
 internship:
   exists: true
 careerConsultation:
   exists: true
 preparingResume:
-  exists: true
+  exists: false
+
 codeReview:
   exists: true
 mentoring:
@@ -96,13 +77,11 @@ resources:
 paymentMethods:
   - Банковские карты
   - Банковская рассрочка
-#   - Apple Pay
-#   - Google Pay
 
 profiles:
   - link: "https://vk.com/brunoyam"
     type: vk
-  
+ 
 images:
   logo: true
 
@@ -113,15 +92,16 @@ programs:
       Программа курса
     trial:
       exists: true
-      comments: Открывается первый модуль курса
+      comment: Открывается первый модуль курса
     link: "https://brunoyam.com/kursy-programmirovaniya/s-nulya"
-    duration: 8 #weeks
+    lessonsCount: 123
+    duration: 2
     price: 50000
     # installments:
-    #   - amount: 2908
-    #     months: 12
+    #   - amount: 7613
+    #     months: 18
     # schedule: |
-    # 
+    #   В группе, примерно 20 часов в неделю.
     learning:
       exists: true
       types:
@@ -144,21 +124,61 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: true
+
+  python-developer:
+    name: Python-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Открывается первый модуль курса
+    link: "https://brunoyam.com/kursy-programmirovaniya/python"
+    duration: 2
+    price: 50000
+    # installments:
+    #   - amount: 6851
+    #     months: 18
+    # schedule: |
+    #   В группе, примерно 20 часов в неделю.
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
 
   java-developer:
     name: Java-разработчик
     syllabus: |
       Программа курса
-    trial: 
+    trial:
       exists: true
       comment: Открывается первый модуль курса
     link: "https://brunoyam.com/kursy-programmirovaniya/java"
-    duration: 8 #weeks
+    # lessonsCount: 130
+    duration: 2
     price: 50000
     # installments:
-    #   - amount: 2908
-    #     months: 12
+    #   - amount: 7613
+    #     months: 18
     # schedule: |
+    #   В группе, примерно 20 часов в неделю.
     learning:
       exists: true
       types:
@@ -180,107 +200,23 @@ programs:
     mentoring:
       exists: true
       hasGroup: true
-      hasPersonal: true
-    
-  python-developer:
-    name: Python-разработчик
-    syllabus: |
-      Программа курса
-    trial: 
-      exists: true
-      comment: Открывается первый модуль курса
-    link: "https://brunoyam.com/kursy-programmirovaniya/python"
-    # lessonsCount: 
-    duration: 8 #weeks
-    price: 50000
-    # installments:
-    #   - amount: 2908
-    #     months: 12
-    # schedule: |
-    learning:
-      exists: true
-      types:
-        - online
-        - offline
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: false
-    practice:
-      exists: true
-      hasSimulator: false
-      hasAutomaticCheck: false
-    internship:
-      exists: true
-      hasInternal: false
-      hasPartners: true
-    employment:
-      exists: true
-    mentoring:
-      exists: true
-      hasGroup: true
-      hasPersonal: true
-      
-  javaScript-developer:
-    name: JavaScript-разработчик
-    syllabus: |
-      Программа курса
-    trial: 
-      exists: true
-      comment: Открывается первый модуль курса
-    link: "https://brunoyam.com/kursy-programmirovaniya/javascript"
-    # lessonsCount: 
-    duration: 6 #weeks
-    price: 42700
-    installments:
-      # - amount: 2491
-      #   months: 12
-    # schedule: |
-    learning:
-      exists: true
-      types:
-        - online
-        - offline
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: false
-    practice:
-      exists: true
-      hasSimulator: false
-      hasAutomaticCheck: false
-    internship:
-      exists: true
-      hasInternal: false
-      hasPartners: true
-    employment:
-      exists: true
-    mentoring:
-      exists: true
-      hasGroup: true
-      hasPersonal: true
+      hasPersonal: false
 
   php-developer:
     name: PHP-разработчик
     syllabus: |
       Программа курса
-    trial: 
+    trial:
       exists: true
       comment: Открывается первый модуль курса
     link: "https://brunoyam.com/kursy-programmirovaniya/php"
-    # lessonsCount: 
-    duration: 6 #weeks
+    duration: 1.5
     price: 44000
     # installments:
-    #   - amount: 2491
-    #     months: 12
+    #   - amount: 26000
+    #     months: 6
     # schedule: |
-    learning:
-      exists: true
-      types:
-        - online
-        - offline
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: false
+    #   В группе, примерно 20 часов в неделю.
     practice:
       exists: true
       hasSimulator: false
@@ -289,11 +225,17 @@ programs:
       exists: true
       hasInternal: false
       hasPartners: true
-    employment:
-      exists: true
     mentoring:
       exists: true
       hasGroup: true
       hasPersonal: true
-      
-      
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
