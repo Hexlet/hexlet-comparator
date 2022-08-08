@@ -15,7 +15,7 @@ ceo:
   facebook: "https://facebook.com/msnigireva"
 
 supportOptions:
-  name: Справочный Центр
+  name: "Справочный Центр"
   link: "https://netology.ru/?modal=support&type=new-ticket#/steps"
 
 freezing:
