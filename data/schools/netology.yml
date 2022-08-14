@@ -2,20 +2,19 @@
 
 id: netology
 name: Нетология (Netology)
-address: ""
 legal:
   name: ООО «Нетология»
-  address: Москва, Варшавское шоссе, д. 1, стр. 6, 1 этаж, офис 103А
-link: "https://netology.ru"
+  address: "Москва, Варшавское шоссе, д. 1, стр. 6, 1 этаж, офис 103А"
+link: "https://netology.ru/"
 email: support@netology.ru
 foundationDate: 2020
 
 ceo:
-  name: "Марианна Снигирева"
-  facebook: "https://facebook.com/msnigireva"
+  name: Марианна Снигирева
+  facebook: "https://facebook.com/msnigireva/"
 
 supportOptions:
-  name: "Справочный Центр"
+  name: Нетология-бот
   link: "https://netology.ru/?modal=support&type=new-ticket#/steps"
 
 freezing:
@@ -40,14 +39,14 @@ areasOfStudy:
 learningVariants:
   - В группе
 
-ageRestriction:
+age_restriction:
 
 owner:
   name:  Grumelon Business Ltd (Cyprus)
-  link: "https://netology.ru/contacts"
+  link: "https://netology.ru/contacts/"
 
-subscription:
-  exists: true
+# subscription:
+#  exists: false
 
 moneyback:
   exists: true
@@ -88,7 +87,7 @@ languages:
 
 resources:
   - name: Отзывы
-    link: "https://netology.ru/otzyvy"
+    link: "https://netology.ru/otzyvy/"
 
 paymentMethods:
   - Банковские карты
@@ -97,13 +96,13 @@ paymentMethods:
   - Google Pay
 
 profiles:
-  - link: "https://t.me/netology_ru"
+  - link: "https://t.me/netology_ru/"
     type: telegram
-  - link: "https://vk.com/netology"
+  - link: "https://vk.com/netology/"
     type: vk
-  - link: "https://www.youtube.com/user/netologytv"
+  - link: "https://www.youtube.com/user/netologytv/"
     type: youtube
-  - link: "https://ok.ru/netology"
+  - link: "https://ok.ru/netology/"
     type: ok
 
 images:
@@ -117,7 +116,7 @@ programs:
     trial:
       exists: true
       comment: 1 курс бесплатно
-    link: "https://netology.ru/programs/front-end"
+    link: "https://netology.ru/programs/front-end/"
     duration: 20
     price: 108000
     installments:
@@ -149,10 +148,12 @@ programs:
 
   python-developer:
     name: Python-разработчик
+    syllabus: |
+      Программа курса
     trial:
       exists: true
       comment: 1 курс бесплатно
-    link: "https://netology.ru/programs/python"
+    link: "https://netology.ru/programs/python/"
     duration: 12
     price: 99000
     installments:
@@ -160,6 +161,13 @@ programs:
         months: 24
     schedule: |
       В группе, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
     practice:
       exists: true
       hasSimulator: true
@@ -168,26 +176,22 @@ programs:
       exists: false
       hasInternal: false
       hasPartners: false
+    employment:
+      exists: true
     mentoring:
       exists: true
       hasGroup: true
       hasPersonal: true
-    employment:
-      exists: true
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
+   
 
-  fullstack python-developer:
+  python-developer:
     name: Fullstack Python-разработчик
+    syllabus: |
+      Программа курса
     trial:
       exists: true
       comment: 1 курс бесплатно
-    link: "https://netology.ru/programs/fullstack-python-dev"
+    link: "https://netology.ru/programs/fullstack-python-dev/"
     duration: 20
     price: 159000
     installments:
@@ -195,6 +199,13 @@ programs:
         months: 24
     schedule: |
       В группе, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
     practice:
       exists: true
       hasSimulator: true
@@ -203,22 +214,17 @@ programs:
       exists: false
       hasInternal: false
       hasPartners: false
+    employment:
+      exists: true
     mentoring:
       exists: true
       hasGroup: true
       hasPersonal: true
-    employment:
-      exists: true
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
 
   java-developer:
     name: Java-разработчик
+    syllabus: |
+      Программа курса
     trial:
       exists: true
       comment: 1 курс бесплатно
@@ -230,6 +236,13 @@ programs:
         months: 24
     schedule: |
       В группе, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
     practice:
       exists: true
       hasSimulator: true
@@ -238,26 +251,21 @@ programs:
       exists: false
       hasInternal: false
       hasPartners: false
+    employment:
+      exists: true
     mentoring:
       exists: true
       hasGroup: true
       hasPersonal: true
-    employment:
-      exists: true
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
-
-  web-developer: 
+ 
+  frontend-developer: 
     name: Веб-разработчик
+    syllabus: |
+      Программа курса
     trial:
       exists: true
       comment: 1 курс бесплатно
-    link: "https://netology.ru/programs/web-developer"
+    link: "https://netology.ru/programs/web-developer/"
     duration: 23
     price: 159000
     installments:
@@ -265,6 +273,13 @@ programs:
         months: 24
     schedule: |
       В группе, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
     practice:
       exists: true
       hasSimulator: true
@@ -273,28 +288,21 @@ programs:
       exists: false
       hasInternal: false
       hasPartners: false
+    employment:
+      exists: true
     mentoring:
       exists: true
       hasGroup: true
       hasPersonal: true
-    employment:
-      exists: true
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
 
-  fullstack js-developer:
+  frontend-developer:
     name: Fullstack JavaScript-разработчик
     syllabus: |
       Программа курса
     trial:
       exists: true
       comment: 1 курс бесплатно
-    link: "https://netology.ru/programs/javascript-fullstack"
+    link: "https://netology.ru/programs/javascript-fullstack/"
     duration: 21
     price: 159000
     installments:
