@@ -11,7 +11,8 @@ foundationDate: 2012
 
 ceo:
   name: Дмитрий Вежнин
-  vk: "https://vk.com/vezhnin?ysclid=l74zokt6x359183783/"
+  facebook: ""
+  vk: "https://vk.com/vezhnin"
 
 supportOptions:
   name: Поддержка
@@ -40,26 +41,28 @@ learningVariants:
   - Индивидуально
   - В группе
 
-age_restriction:
+ageRestriction:
 
 owner:
-  name:  HiTech Rush Inc.
+  name: HiTech Rush Inc
   link: "https://javarush.ru/about/contacts"
 
-# subscription:
-#  exists: false
+subscription:
+  exists: true
 
 moneyback:
   exists: true
-  description: Возврат денежных средств в порядке и на условиях, установленных Офертой.
+  description: Возврат денежных средств в порядке и на условиях, установленных Офертой
 
 # installment:
-#  exists: false
-#  variants: 
+#  exists: true
+#  variants:
+#    - Тинькофф
 
 mobile:
   exists: true
   links: "https://play.google.com/store/apps/details?id=com.hitechrush.jaxarush&hl=uk&gl=US&utm_source=eSputnik-$email-welcome-series-1-letter&utm_medium=email&utm_campaign=$email-welcome-series-1-letter&utm_content=1575116121"
+
 
 # confirmations_of_study:
 #   -
@@ -79,7 +82,7 @@ mentoring:
 # phones:
 #  - value: 
 #    description: 
-#    link: tel:+16464800563
+ #   link: 
 
 languages:
   - Русский
@@ -108,26 +111,14 @@ images:
 programs:
   java-developer:
     name: Java-разработчик
-    syllabus: |
-      Программа курса
+    schedule: |
+      В группе, 2 занятия в неделю
     trial:
       exists: true
       comment: 1 курс бесплатно
     link: "https://javarush.ru/programming-course"
     duration: 12
     price: 150000
-    # installments:
-    #  - amount: 5375
-    #    months: 24
-    schedule: |
-      В группе, 2 занятия в неделю
-    learning:
-      exists: true
-      types:
-        - online
-      hasTexts: true
-      hasVideos: true
-      hasWebinars: true
     practice:
       exists: true
       hasSimulator: true
@@ -136,9 +127,17 @@ programs:
       exists: true
       hasInternal: true
       hasPartners: false
-    employment:
-      exists: true
     mentoring:
       exists: true
       hasGroup: true
       hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+      
