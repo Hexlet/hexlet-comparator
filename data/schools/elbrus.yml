@@ -1,0 +1,147 @@
+---
+
+id: elbrus
+name: Эльбрус Кодинг Буткемп (Elbrus coding bootcamp)
+address: "г. Москва, ул.Орджоникидзе, д.11 стр.10 (м. Ленинский проспект)"
+legal:
+  name: ООО "Эльбрус Буткемп"
+  address: "115419, г Москва, ул Орджоникидзе, д 11 стр 10, ком 1"
+link: "https://elbrusboot.camp/"
+email: info@elbrusboot.camp
+foundationDate: 2014
+
+ceo:
+  name: Бабаян Георгий Георгиевич
+  facebook: "https://www.facebook.com/babayan.george"
+
+supportOptions:
+  name: Чаты, телефон 
+  link: "https://elbrusboot.camp/contacts/"
+
+freezing:
+  exists: true
+
+accessByPaymentTypes:
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+when_courses_start:
+  - Каждые 3 недели стартуют группы в Москве, Санкт-Петербурге. Онлайн стартует каждый месяц.
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - В группе
+
+age_restriction:
+  - От 18 лет
+
+owner:
+  name: ИП Бабаян Георгий Георгиевич
+  link: "https://elbrusboot.camp"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Условия прописаны в договоре
+
+installment:
+  exists: true
+  variants:
+    - От банков-партнеров, условия обсуждаются индивидуально
+
+mobile:
+  exists: false
+  # links:
+
+confirmations_of_study:
+  - документ о квалификации
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value: +7 499 938-68-24
+    description: Общий телефон
+    link: tel:+74999386824
+
+languages:
+  - Русский
+
+resources:
+  - name: FAQ
+    link: "https://elbrusboot.camp/faq/"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://www.facebook.com/elbrusbootcamp/"
+    type: facebook
+  - link: "https://t.me/elbrusbootcamp1"
+    type: telegram
+  - link: "https://vk.com/elbrusbootcamp"
+    type: vk
+  - link: "https://www.youtube.com/c/ElbrusCodingBootcamp"
+    type: youtube
+  - link: "https://www.instagram.com/elbrus.bootcamp/?hl=en"
+    type: instagram
+
+images:
+  logo: true
+
+programs:
+  fullstack js-developer:
+    name: Full-stack разработчик (Онлайн)
+    syllabus: |
+     Программа курса
+    trial:
+      exists: true
+      comment: подготовительный курс и бесплатные мастер-классы
+    link: "https://elbrusboot.camp/online/"
+    duration: 4
+    price: 235000
+    installments:
+      - amount: от 21250
+        months: 12
+    schedule: |
+      В группе, каждый день с 9 до 18 часов
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      # hasInternal: false
+      # hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
