@@ -44,8 +44,8 @@ learningVariants:
 ageRestriction:
 
 owner:
-  name: mail.ru
-  link: "https://mail.ru"
+  name: Hexlet Ltd. / ООО “ХЕКСЛЕТ РУС”
+  link: "https://hexlet.io"
 
 subscription:
   exists: true
