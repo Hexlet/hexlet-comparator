@@ -1,0 +1,145 @@
+---
+
+id: javarush
+name: ДжаваРаш (JavaRush)
+legal:
+  name: HiTech Rush Inc.
+  address: "1201 N Orange St Suite 7553 Wilmington, DE 19801-1186, USA"
+link: "https://javarush.ru/"
+email: support@javarush.ru
+foundationDate: 2012
+
+ceo:
+  name: Дмитрий Вежнин
+#  facebook: ""
+  vk: "https://vk.com/vezhnin"
+
+supportOptions:
+  name: Поддержка
+  link: "https://javarush.ru/dialogues/administration"
+
+freezing:
+  exists: true
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additionalServices:
+#   -
+
+# whenCoursesStart:
+#   -
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - Индивидуально
+  - В группе
+
+age_restriction:
+
+owner:
+  name:  HiTech Rush Inc.
+  link: "https://javarush.ru/about/contacts"
+
+# subscription:
+#  exists: false
+
+moneyback:
+  exists: true
+  description: Возврат денежных средств в порядке и на условиях, установленных Офертой.
+
+# installment:
+#  exists: false
+#  variants: 
+
+mobile:
+  exists: true
+  links: "https://play.google.com/store/apps/details?id=com.hitechrush.jaxarush&hl=uk&gl=US&utm_source=eSputnik-$email-welcome-series-1-letter&utm_medium=email&utm_campaign=$email-welcome-series-1-letter&utm_content=1575116121"
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+# phones:
+#  - value: 
+#    description: 
+#    link: tel:+16464800563
+
+languages:
+  - Русский
+  - Английский
+  - Украинский
+
+resources:
+  - name: Отзывы
+    link: "https://javarush.ru/about/reviews"
+
+paymentMethods:
+  - Банковские карты
+  - Электронные деньги
+
+profiles:
+  - link: "https://t.me/javarush_original/"
+    type: telegram
+  - link: "https://vk.com/javarush/"
+    type: vk
+  - link: "https://www.youtube.com/c/JavaRushVideo/featured/"
+    type: youtube
+
+images:
+  logo: true
+
+programs:
+  java-developer:
+    name: Java-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 1 курс бесплатно
+    link: "https://javarush.ru/programming-course"
+    duration: 12
+    price: 150000
+    # installments:
+    #  - amount: 5375
+    #    months: 24
+    schedule: |
+      В группе, 2 занятия в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true

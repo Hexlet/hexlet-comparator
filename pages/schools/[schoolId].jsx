@@ -46,7 +46,7 @@ const DescriptionValue = (props) => {
     case 'owner':
       return <Link href={value.link}>{value.name}</Link>;
     case 'ceo':
-      return <Link href={value.facebook}>{value.name}</Link>;
+      return <Link href={value.facebook || value.facebook === '' ? value.facebook : value.vk}>{value.name}</Link>;
     case 'phones':
       return value.map((p) => <a href={p.link} key={p.value}>{p.value}</a>);
     case 'moneyback':

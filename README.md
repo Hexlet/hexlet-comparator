@@ -5,6 +5,7 @@
 An open project to compare programming courses from different schools. The comparison is made according to formal characteristics in order to avoid distortions. Only schools that have full professions, not just courses, are compared.
 
 * Information about all the schools is in the /data
+* If you fulfill CEO of the school, you can give links to FB or VK (or empty link to any of them)
 
 ## Pictures
 
