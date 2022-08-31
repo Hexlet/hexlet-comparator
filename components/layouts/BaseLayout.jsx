@@ -8,13 +8,22 @@ import Link from 'next/link';
 import {
   Container, Navbar, Nav,
 } from 'react-bootstrap';
-// import Image from 'next/image';
+import Image from 'next/image';
 
 const CustomNavbar = () => {
   const { t } = useTranslation('common');
   return (
-    <Navbar className="flex-shrink-0" bg="light" expand="lg">
+    <Navbar className="flex-shrink-0 border-bottom bg-light" expand="lg">
       <Container>
+        <Navbar.Brand className="mr-4" href="https://ru.hexlet.io" target="_blank">
+          <Image
+            src="https://cdn2.hexlet.io/assets/logo_ru-495f05850e0095ea722a2b583565d492719579c02b0ce61d924e4f895fabf781.svg"
+            alt="Hexlet"
+            loading="lazy"
+            width={100}
+            height={60}
+          />
+        </Navbar.Brand>
         <Navbar.Brand href="/">{t('navbar.brand')}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
