@@ -272,6 +272,7 @@ const School = (props) => {
 export const getStaticPaths = async () => {
   const schools = await getSchools();
   const paths = schools.map((school) => ({
+    // @ts-ignore
     params: { schoolId: school.id },
   }));
 
@@ -281,6 +282,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
   const { params, locale } = context;
   const allSchools = await getSchools();
+  // @ts-ignore
   const school = allSchools.find((s) => s.id === params.schoolId);
   const professions = await getProfessions();
   const screenshots = await getScreenshots(school);

@@ -4,8 +4,8 @@ id: hexlet
 name: Хекслет (Hexlet)
 address: ""
 legal:
-  name: Hexlet Oy
-  address: Legal Address
+  name: ООО «Хекслет Рус»
+  address: 432071, г. Ульяновск, пр-т Нариманова, дом 1Г, оф. 23
 link: "https://ru.hexlet.io"
 email: support@hexlet.io
 foundationDate: 2012
@@ -44,8 +44,8 @@ learningVariants:
 ageRestriction:
 
 owner:
-  name: mail.ru
-  link: "https://mail.ru"
+  name: Hexlet Ltd. / ООО “ХЕКСЛЕТ РУС”
+  link: "https://hexlet.io"
 
 subscription:
   exists: true
