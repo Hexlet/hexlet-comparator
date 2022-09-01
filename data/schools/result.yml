@@ -1,0 +1,146 @@
+---
+
+id: result
+name: Школа Владилена Минина (Result.School)
+# address: ""
+legal:
+  name: ИП Минин Владилен Игоревич
+  address: ""
+link: "https://result.school/"
+email: "support@result.school"
+foundationDate: 2019
+
+ceo:
+  name: Минин Владилен Игоревич
+  vk: "https://vk.com/vladilen.minin"
+
+supportOptions:
+  name: Бот-помощник
+  link: "https://t.me/vladilen_getcourse_bot"
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - Индивидуально
+  - В группе
+
+age_restriction:
+
+owner:
+  name: ИП Минин Владилен Игоревич
+  link: "https://result.school/"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Возврат денежных средств осуществляется на условиях публичной оферты
+
+installment:
+  exists: true
+  variants:
+    - Тинькофф
+    - Альфа-Банк
+    - Cбepбанк
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+# phones:
+#  - value:
+#    description:
+#    link:
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://vladilen.notion.site/473451bd73404585a4939a9eb9f978e5"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+#   - Apple Pay
+#   - Google Pay
+
+profiles:
+  - link: "https://t.me/result_school_it"
+    type: telegram
+  - link: "https://vk.com/result.school"
+    type: vk
+  - link: "https://www.youtube.com/c/VladilenMinin"
+    type: youtube
+  
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Frontend-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Вводный модуль бесплатно
+    link: "https://result.school/products/junior-js"
+    lessonsCount: 293
+    duration: 7
+    price: 149000
+    # installments:
+    #   - amount: 4780
+    #     months: 36
+    # schedule: |
+    #   В группе, два занятия в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+      
