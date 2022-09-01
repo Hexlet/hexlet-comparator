@@ -9,6 +9,9 @@ import {
   Container, Navbar, Nav,
 } from 'react-bootstrap';
 import Image from 'next/image';
+// import logo from 'hexlet-logo.png';
+// import Image from 'react-bootstrap/Image';
+import assetsRoutes from 'lib/assetsRoutes.js';
 
 const CustomNavbar = () => {
   const { t } = useTranslation('common');
@@ -17,11 +20,10 @@ const CustomNavbar = () => {
       <Container>
         <Navbar.Brand className="mr-4" href="https://ru.hexlet.io" target="_blank">
           <Image
-            src="https://cdn2.hexlet.io/assets/logo_ru-495f05850e0095ea722a2b583565d492719579c02b0ce61d924e4f895fabf781.svg"
+            src={assetsRoutes.hexletLogoPath}
             alt="Hexlet"
-            loading="lazy"
+            height={20}
             width={100}
-            height={60}
           />
         </Navbar.Brand>
         <Navbar.Brand href="/">{t('navbar.brand')}</Navbar.Brand>
