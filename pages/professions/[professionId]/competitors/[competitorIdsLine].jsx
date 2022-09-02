@@ -175,15 +175,17 @@ const ComparingBlock = (props) => {
 
 const SchoolHeader = (props) => {
   const { school, profession } = props;
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
 
   const program = school.programs[profession.id];
 
   return (
     <div className="col-4">
-      <Image layout="fixed" src={assetsRoutes.logoPath(school)} width="50" height="50" alt={school.name} />
+      <Image layout="fixed" src={assetsRoutes.logoPath(school)} width="50" height="50" alt={school.name[currentLanguage]} />
       <h2>
         <span className="me-3">
-          <Link href={routes.schoolPath(school.id)}>{school.name}</Link>
+          <Link href={routes.schoolPath(school.id)}>{school.name[currentLanguage]}</Link>
         </span>
         {program && (
           <Link href={program.link}>
@@ -196,12 +198,13 @@ const SchoolHeader = (props) => {
 };
 
 const Home = (props) => {
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
   const { selectedSchools, profession } = props;
+  const currentLanguage = i18n.language;
 
   const fields = ['duration', 'trial', 'price', 'learning', 'practice', 'internship', 'mentoring', 'employment'];
 
-  const header = `${t('home.header')} ${selectedSchools.map((s) => s.name).join(' и ')}`;
+  const header = `${t('home.header')} ${selectedSchools.map((s) => s.name[currentLanguage]).join(' и ')}`;
 
   const canBeCompared = selectedSchools.every((s) => _.has(s.programs, profession.id));
 
@@ -210,13 +213,13 @@ const Home = (props) => {
       <NextSeo
         title={t('titles.title_comparison', {
           profession: profession.name,
-          school_1: selectedSchools[0].name,
-          school_2: selectedSchools[1].name,
+          school_1: selectedSchools[0].name[currentLanguage],
+          school_2: selectedSchools[1].name[currentLanguage],
         })}
         description={t('descriptions.description_comparison', {
           profession: profession.name,
-          school_1: selectedSchools[0].name,
-          school_2: selectedSchools[1].name,
+          school_1: selectedSchools[0].name[currentLanguage],
+          school_2: selectedSchools[1].name[currentLanguage],
         })}
       />
       <div className="lead">
