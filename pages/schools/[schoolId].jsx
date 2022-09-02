@@ -200,8 +200,9 @@ const Screenshot = (props) => {
 };
 
 const School = (props) => {
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
   const { school, professions, screenshots } = props;
+  const currentLanguage = i18n.language;
   const professionIds = Object.keys(school.programs);
   // console.log(professionIds);
   const schoolProgramLine = Object.values(school.programs).map((p) => p.name).join(', ');
@@ -213,8 +214,8 @@ const School = (props) => {
   return (
     <BaseLayout>
       <NextSeo
-        title={t('titles.title_school', { school: school.name })}
-        description={t('descriptions.description_school', { school: school.name })}
+        title={t('titles.title_school', { school: school.name[currentLanguage] })}
+        description={t('descriptions.description_school', { school: school.name[currentLanguage] })}
       />
       <div className="mx-5">
         <div className="card px-5 py-3 mb-4 bg-light border-0 shadow-sm">
@@ -222,7 +223,7 @@ const School = (props) => {
             <div className="row">
               <div className="col-12 col-md-7">
                 <h1 className="mb-3">
-                  <span className="me-3">{school.name}</span>
+                  <span className="me-3">{school.name[currentLanguage]}</span>
                   <Link href={school.link}>
                     <a className="fs-5 align-middle" target="_blank">
                       <i className="bi bi-box-arrow-up-right" />

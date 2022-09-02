@@ -14,11 +14,13 @@ import {
 
 const SchoolItem = (props) => {
   const { school } = props;
+  const { i18n } = useTranslation();
+  const currentLanguage = i18n.language;
 
   return (
     <div className="d-grid gap-2">
       <Button className="mb-3" href={routes.schoolPath(school.id)} variant="outline-secondary" size="lg">
-        {school.name}
+        {school.name[currentLanguage]}
       </Button>
     </div>
   /* <div className="col mb-3">

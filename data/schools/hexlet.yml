@@ -1,7 +1,9 @@
 ---
 
 id: hexlet
-name: Хекслет (Hexlet)
+name: 
+  ru: Хекслет 
+  en: Hexlet
 address: ""
 legal:
   name: ООО «Хекслет Рус»

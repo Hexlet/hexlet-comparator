@@ -1,7 +1,9 @@
 ---
 
 id: netology
-name: Нетология (Netology)
+name: 
+  ru: Нетология
+  en: Netology
 legal:
   name: ООО «Нетология»
   address: "Москва, Варшавское шоссе, д. 1, стр. 6, 1 этаж, офис 103А"

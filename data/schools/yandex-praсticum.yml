@@ -1,7 +1,9 @@
 ---
 
 id: yandex-praсticum
-name: Яндекс-Практикум (Yandex-Practicum)
+name: 
+  ru: Яндекс-Практикум
+  en: Yandex-Practicum
 legal:
   name: АНО ДПО «ШАД»
   address: "119021, Россия, г. Москва, ул. Тимура Фрунзе, д. 11, корпус 2"

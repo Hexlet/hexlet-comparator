@@ -1,7 +1,9 @@
 ---
 
 id: skillbox
-name: Скиллбокс (Skillbox)
+name: 
+  ru: Скиллбокс
+  en: Skillbox
 address: "Москва, Ленинский проспект, дом 6, строение 20"
 legal:
   name: ООО «СКИЛБОКС»

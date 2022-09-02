@@ -1,7 +1,9 @@
 ---
 
 id: skillfactory
-name: Скилфэктори  (Skillfactory)
+name: 
+  ru: Скилфэктори
+  en: Skillfactory
 address: "Москва, Цветной бульвар, дом 30, строение 1, э 3 пoм 1, к 14, оф 231"
 legal:
   name: ООО "СКИЛФЭКТОРИ"

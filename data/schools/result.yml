@@ -1,7 +1,9 @@
 ---
 
 id: result
-name: Школа Владилена Минина (Result.School)
+name: 
+  ru: Школа Владилена Минина
+  en: Result.School
 # address: ""
 legal:
   name: ИП Минин Владилен Игоревич

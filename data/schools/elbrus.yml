@@ -1,7 +1,9 @@
 ---
 
 id: elbrus
-name: Эльбрус Кодинг Буткемп (Elbrus coding bootcamp)
+name: 
+  ru: Эльбрус Кодинг Буткемп 
+  en: Elbrus coding bootcamp
 address: "г. Москва, ул.Орджоникидзе, д.11 стр.10 (м. Ленинский проспект)"
 legal:
   name: ООО "Эльбрус Буткемп"
