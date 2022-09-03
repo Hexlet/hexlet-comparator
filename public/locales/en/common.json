@@ -1,0 +1,84 @@
+{
+    "title": "Programming schools comparison ",
+    "titles": {
+        "title_professions": "Online programming courses comparison",
+        "title_certain_school": "{{profession}} - comparison of programming schools courses",
+        "title_school": "{{school}}: professions, courses, education at {{school}}",
+        "title_comparison": "{{profession}}: comparison of {{school_1}} and {{school_2}}, what is better",
+        "title_error_404": "Page is not found",
+        "title_error_unspecific": "Internal server error"
+    },
+    "descriptions": {
+        "description_professions": "Online service for comparing programming courses from different schools. Comparison of online programming courses - Hexlet Comparator",
+        "description_certain_school": "Overview of courses on profession {{profession}} in popular online schools - Hexlet Comparator",
+        "description_school": "Overview of courses from {{school}}. What professions are there in {{school}}, review and comparison of online school",
+        "description_comparison": "Comparison of courses by profession {{profession}} in online schools {{school_1}} and {{school_2}}. Where should you go to learn profession {{profession}}"
+    },
+    "school": {
+        "descriptions": {
+            "trial": "The opportunity to try learning for free. Usually, it means access to first lessons or even courses.",
+            "duration": "The duration of the training program",
+            "price": "The total cost is based on training duration multiplied by monthly cost, excluding possible discounts",
+            "learning": "Types of presentation of the theoretical part of the training",
+            "practice": "Types of practices used to reinforce theory",
+            "internship": "Providing of internships in company projects, open sources or with partners.",
+            "mentoring": "Availability of mentors for helping the learning process and checking homework",
+            "employment": "Availability of the assistance in the employment process(resume writing, interview preparation, lists of vacancies providing)",
+            "info": "The school was founded in {{foundationDate}}. Teaching in areas: {{schoolProgramLine}}"
+        },
+        "professions": "Professions",
+        "describe": "Descriptiion",
+        "screenshot": "Screenshot"
+    },
+    "navbar": {
+        "brand": "Comparator",
+        "schools": "Schools",
+        "professions": "Professions"
+    },
+    "footer": {
+        "logo": "Hexlet ©",
+        "about": "About",
+        "source_code": "Source code",
+        "slack": "Slack #hexlet-volunteers",
+        "help": "Support",
+        "success_story": "Success stories",
+        "test_tasks": "Test assignments",
+        "employment_course": "Employment course",
+        "additional": "Extra",
+        "basics": "Code basics",
+        "code_battle": "Codebattle (The game for skills improvement)",
+        "guides": "Guides for programmers",
+        "recommended_books": "Recommended books"
+    },
+    "home": {
+        "header": "Choosing between",
+        "cant_be_compared": "At least one of the schools does not have such a profession. There is nothing to compare",
+        "professions": "Professions",
+        "choose_company": "Choose a company that you are interested in",
+        "choose_profession": "Choose a profession inside the company",
+        "compare_company": "Compare companies by chosen profession"
+    },
+    "about_page": {
+        "title": "About",
+        "description": "Hexlet Comparator - is an open-source project created and maintained by the community of Hexlet. Join the community, publish your resumes and leave recommendations to other members. Tell your colleagues and friends about us! The source code of Hexlet Comparator platform is available on GitHub. You can participate in the development process."
+    },
+    "comparing": {
+        "title": "Choose 2 schools for comparing",
+        "compare": "Comparing: ",
+        "button": {
+            "add": "Add",
+            "remove": "Remove"
+        }
+    },
+    "error": {
+        "unspecific": {
+            "title": "Oops, something went wrong!",
+            "message": "We are already fixing the issue"
+        },
+        "404": {
+            "title": "Oops, it seems that there is no such a page!",
+            "message": "But you can",
+            "link": "go to home page"
+        }
+    }
+}

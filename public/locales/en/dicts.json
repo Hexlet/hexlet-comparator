@@ -1,0 +1,34 @@
+{
+    "learning": {
+        "video": "Recorded videos",
+        "webinars": "Webinars",
+        "text": "Text lessons"
+    },
+    "format": {
+        "online": "Online",
+        "offline": "Offline",
+        "hybrid": "Hybrid (Offline + Online)"
+    },
+    "response": {
+        "yes": "Yes",
+        "no": "No"
+    },
+    "period": "Duration: ",
+    "duration": "{{duration}} months",
+    "internship": {
+        "not_present": "No internship",
+        "internal": "Inner: ",
+        "partners": "With partners: "
+    },
+    "price": "{{price}} rubles",
+    "practice": {
+        "not_present": "No practice",
+        "trainer": "Trainer: ",
+        "auto_cheks": "Autochecks: "
+    },
+    "mentoring": {
+        "not_present": "Not present",
+        "group": "Group mentor: ",
+        "personal": "Personal mentor: "
+    }
+}
