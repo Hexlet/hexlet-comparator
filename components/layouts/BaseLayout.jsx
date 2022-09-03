@@ -5,6 +5,7 @@ import routes from 'lib/routes.js';
 import { useTranslation } from 'next-i18next';
 import Head from 'next/head';
 import Link from 'next/link';
+
 import {
   Container, Navbar, Nav,
 } from 'react-bootstrap';
@@ -14,7 +15,17 @@ import Image from 'next/image';
 import assetsRoutes from 'lib/assetsRoutes.js';
 
 const CustomNavbar = () => {
-  const { t } = useTranslation('common');
+  const { t, i18n } = useTranslation('common');
+
+  const langSwitchLink = i18n.language === 'en' ? (
+    <Link href="/" locale="ru">
+      <a className="nav-link text-capitalize">ru</a>
+    </Link>
+  ) : (
+    <Link href="/" locale="en">
+      <a className="nav-link text-capitalize">en</a>
+    </Link>
+  );
   return (
     <Navbar className="flex-shrink-0 border-bottom bg-light" expand="lg">
       <Container>
@@ -36,6 +47,7 @@ const CustomNavbar = () => {
             <Link href={routes.professionsPath()} passHref>
               <Nav.Link>{t('navbar.professions')}</Nav.Link>
             </Link>
+            <li className="nav-item">{langSwitchLink}</li>
           </Nav>
         </Navbar.Collapse>
       </Container>
