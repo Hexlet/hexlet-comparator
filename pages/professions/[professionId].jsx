@@ -15,14 +15,13 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 const ComparingRow = (props) => {
   const { state, profession } = props;
   const { i18n } = useTranslation();
-  const currentLanguage = i18n.language;
   const { t } = useTranslation('common');
 
   if (state.length < 2) {
     return <div className="fs-5 mb-3">{t('comparing.title')}</div>;
   }
 
-  const comparingSchoolsLine = state.map((s) => s.name[currentLanguage]).join(' и ');
+  const comparingSchoolsLine = state.map((s) => s.name[i18n.language]).join(' и ');
   const ids = state.map((s) => s.id);
 
   return (
@@ -65,7 +64,6 @@ const SchoolItem = (props) => {
   } = props;
 
   const { i18n } = useTranslation();
-  const currentLanguage = i18n.language;
 
   // const schoolProfession = getOrError(school.professions, profession.id);
 
@@ -77,7 +75,7 @@ const SchoolItem = (props) => {
         <div className="card-body d-flex align-items-center">
           <h2 className="mb-0">
             <Link href={routes.schoolPath(school.id)}>
-              <a className="link-dark text-decoration-none">{school.name[currentLanguage]}</a>
+              <a className="link-dark text-decoration-none">{school.name[i18n.language]}</a>
             </Link>
           </h2>
           <div className="text-end ms-auto">
