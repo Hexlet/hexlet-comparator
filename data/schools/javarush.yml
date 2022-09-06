@@ -1,7 +1,9 @@
 ---
 
 id: javarush
-name: ДжаваРаш (JavaRush)
+name: 
+  ru: ДжаваРаш 
+  en: JavaRush
 legal:
   name: HiTech Rush Inc.
   address: "1201 N Orange St Suite 7553 Wilmington, DE 19801-1186, USA"

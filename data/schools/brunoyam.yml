@@ -1,7 +1,9 @@
 ---
 
 id: brunoyam
-name: Школа Бруноям (Brunoyam school)
+name: 
+  ru: Школа Бруноям
+  en: Brunoyam school
 legal:
   name: ООО «БРУНОЯМ» 
   address: "Санкт-Петербург,  Спасский переулок 14/35"

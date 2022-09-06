@@ -7,7 +7,7 @@
         "type": "string"
       },
       "name": {
-        "type": "string"
+        "type": "object"
       },
       "link": {
         "type": "string"

@@ -1,7 +1,9 @@
 ---
 
 id: jetbrains-academy
-name: Джетбрейнс Академия (Jetbrains Academy)
+name: 
+  ru: Джетбрейнс Академия 
+  en: Jetbrains Academy
 address: "Санкт-Петербург, Приморский проспект 70, строение 1"
 legal:
   name: |

@@ -1,7 +1,9 @@
 ---
 
 id: loftschool
-name: Лофтскул (Loftschool)
+name: 
+  ru: Лофтскул
+  en: Loftschool
 address: ""
 legal:
   name: ООО «Лофтскул»

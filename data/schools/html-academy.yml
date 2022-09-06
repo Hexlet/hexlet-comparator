@@ -1,7 +1,9 @@
 ---
 
 id: html-academy
-name: HTML Академия (HTML Academy)
+name: 
+  ru: HTML Академия 
+  en: HTML Academy
 address: "Санкт-Петербург, наб. Pеки Карповки, 5 корпус П"
 legal:
   name: |

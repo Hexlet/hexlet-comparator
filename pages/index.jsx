@@ -14,6 +14,7 @@ import assetsRoutes from 'lib/assetsRoutes.js';
 
 const SchoolItem = (props) => {
   const { school } = props;
+  const { i18n } = useTranslation();
 
   const vdom = (
     <div className="col mb-5">
@@ -24,7 +25,7 @@ const SchoolItem = (props) => {
         <div className="card-body text-center">
           <h2 className="h4 m-0">
             <Link href={routes.schoolPath(school.id)}>
-              <a className="link-dark text-decoration-none stretched-link">{ school.name }</a>
+              <a className="link-dark text-decoration-none stretched-link">{ school.name[i18n.language] }</a>
             </Link>
           </h2>
         </div>

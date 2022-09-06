@@ -1,7 +1,9 @@
 ---
 
 id: geekbrains
-name: Гикбрейнс (GeekBrains)
+name: 
+  ru: Гикбрейнс
+  en: GeekBrains
 address: "Москва, Ленинградский просп., 39, стр. 79"
 legal:
   name: ООО «ГикБреинс»
