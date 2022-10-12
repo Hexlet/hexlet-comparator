@@ -19,12 +19,6 @@ const CustomNavbar = () => {
     <Navbar className="flex-shrink-0 border-bottom bg-light" expand="lg">
       <Container>
         <Navbar.Brand className="mr-4" href="https://ru.hexlet.io" target="_blank">
-          <Image
-            src={assetsRoutes.hexletLogoPath}
-            alt="Hexlet"
-            height={20}
-            width={100}
-          />
         </Navbar.Brand>
         <Navbar.Brand href="/">{t('navbar.brand')}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
