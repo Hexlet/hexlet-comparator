@@ -11,7 +11,6 @@ import {
 // import logo from 'hexlet-logo.png';
 // import Image from 'react-bootstrap/Image';
 
-
 const CustomNavbar = () => {
   const { t } = useTranslation('common');
   return (
