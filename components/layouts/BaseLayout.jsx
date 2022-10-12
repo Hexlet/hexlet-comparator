@@ -8,10 +8,9 @@ import Link from 'next/link';
 import {
   Container, Navbar, Nav,
 } from 'react-bootstrap';
-import Image from 'next/image';
 // import logo from 'hexlet-logo.png';
 // import Image from 'react-bootstrap/Image';
-import assetsRoutes from 'lib/assetsRoutes.js';
+
 
 const CustomNavbar = () => {
   const { t } = useTranslation('common');
