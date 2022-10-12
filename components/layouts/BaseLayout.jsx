@@ -16,8 +16,6 @@ const CustomNavbar = () => {
   return (
     <Navbar className="flex-shrink-0 border-bottom bg-light" expand="lg">
       <Container>
-        <Navbar.Brand className="mr-4" href="https://ru.hexlet.io" target="_blank">
-        </Navbar.Brand>
         <Navbar.Brand href="/">{t('navbar.brand')}</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
