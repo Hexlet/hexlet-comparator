@@ -14,4 +14,14 @@ module.exports = {
     );
     return config;
   },
+  async redirects() {
+    return [
+        {
+            source: '/',
+            destination: ' https://schools.hexlet.io/',
+            permanent: true,
+            statusCode: 301,
+        },
+    ]
+},
 };
