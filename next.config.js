@@ -18,7 +18,7 @@ module.exports = {
     return [
         {
             source: '/',
-            destination: 'https://',
+            destination: 'https://frozen-reaches-23903.herokuapp.com/',
             permanent: true,
             statusCode: 301,
         },
