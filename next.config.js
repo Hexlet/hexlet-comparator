@@ -14,4 +14,14 @@ module.exports = {
     );
     return config;
   },
+  async redirects() {
+    return [
+        {
+            source: '/',
+            destination: 'https://safe-harbor-78217.herokuapp.com/',
+            permanent: true,
+            statusCode: 301,
+        },
+    ]
+},
 };
