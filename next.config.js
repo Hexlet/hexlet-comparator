@@ -17,7 +17,7 @@ module.exports = {
   async redirects() {
     return [
         {
-            source: '/',
+            source: 'http://frozen-reaches-23903.herokuapp.com/',
             destination: 'https://frozen-reaches-23903.herokuapp.com/',
             permanent: true,
             statusCode: 301,
