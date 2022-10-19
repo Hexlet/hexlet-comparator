@@ -18,7 +18,7 @@ module.exports = {
     return [
         {
             source: '/',
-            destination: 'https://fsafe-harbor-78217.herokuapp.com/',
+            destination: 'https://safe-harbor-78217.herokuapp.com/',
             permanent: true,
             statusCode: 301,
         },
