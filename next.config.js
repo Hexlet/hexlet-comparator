@@ -18,7 +18,7 @@ module.exports = {
     return [
         {
             source: '/',
-            destination: ' https://schools.hexlet.io/',
+            destination: 'https://schools.hexlet.io/',
             permanent: true,
             statusCode: 301,
         },
