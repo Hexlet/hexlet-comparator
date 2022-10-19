@@ -1,6 +1,9 @@
 {
   "name": "hexlet-comparator",
   "version": "0.1.0",
+  "engines": {
+    "node": "18.x"
+  },
   "private": true,
   "cacheDirectories": [
     ".next/cache"
