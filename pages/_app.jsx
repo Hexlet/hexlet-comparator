@@ -11,19 +11,13 @@ import '../styles/app.scss';
 
 const HexletComparator = ({ Component, pageProps }) => {
   const router = useRouter();
-  const { asPath } = useRouter();
-  useEffect(() => {
-    const origin = typeof window !== 'undefined' && window.location.origin
-      ? window.location.origin
-      : '';
 
-    const URL = `${origin}${asPath}`;
-    const parts = URL.split('//');
-    const protocol = parts[0];
-    const rest = parts[1];
+  useEffect(() => {
+    const url = new URL(window.location.href);
+    const { protocol } = url;
     if (protocol === 'http:') {
-      const newURL = `https://${rest}`;
-      router.push(newURL);
+      url.protocol = 'https:';
+      router.push(url.href);
     }
   });
   const component = (
