@@ -14,12 +14,13 @@ const HexletComparator = ({ Component, pageProps }) => {
 
   useEffect(() => {
     const url = new URL(window.location.href);
-    const { protocol } = url;
-    if (protocol === 'http:') {
+    const { protocol, hostname } = url;
+    if (protocol === 'http:' && hostname !== 'localhost') {
       url.protocol = 'https:';
       router.push(url.href);
     }
   });
+
   const component = (
     <>
       <DefaultSeo {...SEO} />
