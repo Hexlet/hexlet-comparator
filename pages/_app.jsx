@@ -13,13 +13,15 @@ const HexletComparator = ({ Component, pageProps }) => {
   const router = useRouter();
 
   useEffect(() => {
+    const env = process.env.NODE_ENV;
     const url = new URL(window.location.href);
     const { protocol } = url;
-    if (protocol === 'http:') {
+    if (protocol === 'http:' && env === 'production') {
       url.protocol = 'https:';
       router.push(url.href);
     }
   });
+
   const component = (
     <>
       <DefaultSeo {...SEO} />
