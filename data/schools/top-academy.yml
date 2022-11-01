@@ -1,0 +1,290 @@
+---
+
+id: top-academy
+name: 
+  ru: Компьютерная Академия ТОП
+  en: TOP Academy
+legal:
+  name: ООО "Компьютерная Академия ТОП"
+  address: "Москва, Ленинградский пр-кт, д. 80 к. 17, эт 4 пом II ком 1"
+link: "http://msk.top-academy.ru/college-ru"
+email: 	msk.top-academy.ru/college-ru
+foundationDate: 2018
+
+# supportOptions:
+#   name: Чат-бот
+#   link: ""
+
+# freezing:
+#   exists: true
+
+accessByPaymentTypes:
+  - Платные курсы
+
+areasOfStudy:
+  - Программирование
+  - Маркетинг
+  - Дизайн
+  - Аналитика  
+
+learningVariants:
+  - В группе очно/онлайн
+  - индивидуально очно/онлайн
+
+age_restriction:
+
+owner:
+   name: Генеральный директор Специан Павел Леонидович
+   link: "https://www.rusprofile.ru/id/10962053"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: 
+
+# mobile:
+#   exists: true
+  # links:
+
+# confirmations_of_study:
+#   - diploma 
+
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value:  8 (495) 151-19-01
+    description: 9:00-18:00
+    link: tel:+74951511901
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://tutortop.ru/school-reviews/kompyuternaya-akademiya-top/"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://t.me/itacademy_top"
+    type: telegram
+  - link: "https://vk.com/topacademy_online"
+    type: vk
+  - link: "https://www.youtube.com/channel/UCQRZA1Bq1kUbzQTmuKqhwjA"
+    type: youtube
+  - link: "https://ok.ru/group/53947416182977"
+    type: odnoklassniki
+  - link: "https://dzen.ru/id/5e725cd27fd03e050f501e26"
+    type: yandex
+  - link: "https://www.tiktok.com/@it_academy_top"
+    type: tiktok
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Front-end
+    syllabus: |
+      Программа курса
+    # trial:
+    #   exists: false
+    #   comment:
+    link: "https://msk.top-academy.ru/front-end_course"
+    lessonsCount: 192
+    duration: 12
+    price: онлайн 72000, очно 170000
+    installments:
+      - amount: онлайн 6070 / очно 14110
+        months: 12
+    schedule: |
+      В группе, примерно 8 часов в неделю.
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  python-developer:
+    name: Python-разработчик
+    syllabus: |
+      Программа курса
+    # trial:
+    #   exists: false
+    #   comment: 
+    link: "https://msk.top-academy.ru/python_course"
+    lessonsCount: 192
+    duration: 12
+    price: онлайн 72000, очно 170000
+    installments:
+      - amount: онлайн 6070 / очно 14110
+        months: 12
+    schedule: |
+      В группе, примерно 8 часов в неделю.
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  java-developer:
+    name: Java-разработчик
+    syllabus: |
+      Программа курса
+    # trial:
+    #   exists: false
+    #   comment: 
+    link: "https://online.top-academy.ru/java_course"
+    lessonsCount: 192
+    duration: 12
+    price: 28560
+    installments:
+      - amount: 2380
+        months: 12
+    schedule: |
+      Дистанционно, в группе, 2 раза в неделю по 2 пары.
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  php-developer:
+    name: Back-end Разработка
+    syllabus: |
+      Программа курса
+    # trial:
+    #   exists: false
+    #   comment: 
+    link: "https://online.top-academy.ru/back-end-development1"
+    lessonsCount: 192
+    duration: 12
+    price: 28560
+    installments:
+      - amount: 2380
+        months: 12
+    schedule: |
+      Дистанционно, в группе, 2 раза в неделю по 2 пары.
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: true
+
+fullstack-developer:
+    name: WEB разработка Full-stack
+    syllabus: |
+      Программа курса
+    # trial:
+    #   exists: false
+    #   comment:
+    link: "https://online.top-academy.ru/web-master_course"
+    lessonsCount: 192
+    duration: 12
+    price: 28560
+    installments:
+      - amount: 2380
+        months: 12
+    schedule: |
+      Дистанционно, в группе, 2 раза в неделю по 2 пары.
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: true
