@@ -1,0 +1,243 @@
+---
+
+id: productstar
+name: 
+  ru: ProductStar 
+  en: ProductStar
+address: ""
+legal:
+  name: ООО «Тривиум»
+  address: 195279, Россия, Санкт-Петербург, пр. Энтузиастов, дом 30, корп. 2, 217
+link: "https://productstar.ru"
+email: support@productstar.ru
+foundationDate: 2018
+
+ceo:
+  name: Карпов М. А.
+  facebook: "https://www.facebook.com/michail.karpov/"
+
+supportOptions:
+  name: Написать организаторам
+  link: "http://m.me/productstar.ru"
+
+freezing:
+  exists: false
+
+accessByPaymentTypes:
+  - Бесплатные материалы
+  - Платные курсы
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - Индивидуально
+  - В группе
+
+ageRestriction:
+
+owner:
+  name: ООО «Тривиум»
+  link: "https://productstar.ru"
+
+subscription:
+  exists: true
+
+moneyback:
+  exists: true
+  description: Первые 20 дней действует гарантия полного возврата
+
+installment:
+  exists: true
+  variants:
+    - Тинькофф
+    - Т-Финанс
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value: +7 980 900 82 05
+    link: tel:+79809008205
+
+languages:
+  - Русский
+
+resources:
+  - name: ProductCamp Russia&EE
+    link: "https://productcamp.ru"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://vk.com/ps_courses"
+    type: vk
+
+  - link: "https://www.youtube.com/c/Productstar"
+    type: youtube
+
+  - link: "https://t.me/productstar"
+    type: telegram
+
+  - link: "https://www.instagram.com/productstar.ru/"
+    type: instagram
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    trial:
+      exists: true
+    link: "https://productstar.ru/dev-frontend-prof"
+    duration: 10
+    price: 94560
+    installments:
+      - amount: 3940
+        months: 24
+    schedule: |
+      В своем темпе
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+
+  python-developer:
+    name: Python-разработчик
+    trial:
+      exists: true
+    link: "https://productstar.ru/dev-python-prof"
+    duration: 10
+    price: 94560
+    installments:
+      - amount: 3940
+        months: 24
+    schedule: |
+      В своем темпе
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  java-developer:
+    name: Java-разработчик
+    trial:
+      exists: true
+      comment: 5 курсов бесплатно
+    link: "https://productstar.ru/dev-java-prof"
+    duration: 10
+    price: 94560
+    installments:
+      - amount: 3940
+        months: 24
+    schedule: |
+      В своем темпе
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  fullstack js-developer:
+    name: Fullstack-разработчик
+    trial:
+      exists: true
+    link: "https://productstar.ru/dev-prof-fullstack"
+    duration: 10
+    price: 94560
+    installments:
+      - amount: 3940
+        months: 24
+    schedule: |
+      В своем темпе
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
