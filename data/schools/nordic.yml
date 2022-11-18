@@ -1,0 +1,220 @@
+---
+
+id: nordic
+name: 
+  ru: Скандинавская школа 
+  en: Nordic IT School
+address: ""
+legal:
+  name: ЧОУ ДО «Скандинавская школа»
+  address: 129090, Москва, ул. Большая Спасская, дом 12
+link: "https://inordic.ru/"
+email: moscow@inordic.ru
+foundationDate: 2000
+
+ceo:
+  name: Чусов Сергей Владимирович
+  facebook: ""
+
+# supportOptions:
+#  name: Справочный Центр
+#  link: "https://help.hexlet.io"
+
+freezing:
+  exists: false
+
+accessByPaymentTypes:
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additionalServices:
+#   -
+
+# whenCoursesStart:
+#   -
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - В группе
+
+ageRestriction:
+
+owner:
+  name: Санкт-Петербургская общественная организация "Центр гуманитарных программ "Северная столица""
+  link: ""
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Мы вернем вам деньги за ту часть обучения, которую вы не прошли.
+
+installment:
+  exists: true
+  variants:
+  - Тинькофф
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value: 7 495 625 46 00
+    description: WhatsApp
+    link: tel:+79256322157
+
+languages:
+  - Русский
+
+resources:
+  - name: Форум
+    link: "https://forum.inordic.ru/"
+  - name: Блог
+    link: "https://inordic.ru/blog"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://vk.com/nordic_it_school"
+    type: vk
+  - link: "https://www.youtube.com/channel/UCC7CdnD948x6xVTKeyVwtzA"
+    type: youtube
+
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    syllabus: |
+      Программа курса
+    trial: false
+    #  exists: false
+    #  comment:
+    link: "https://inordic.ru/courses/frontend-development#groups"
+  #  lessonsCount: 134
+    duration: 6
+    price: 102600
+    installments:
+      - amount: 9327
+        months: 11
+    schedule: |
+      Занятие проходят в компьютерных классах. В в мини-группах по 6-10 человек.
+    learning:
+      exists: true
+      types:
+        - offline
+      hasTexts: false
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  java-developer:
+    name: Java-разработчик
+    trial: false
+    #  exists: false
+    #  comment:
+    link: "https://inordic.ru/courses/java-course#groups"
+    duration: 6
+    price: 116400
+    installments:
+      - amount: 10581
+        months: 11
+    schedule: |
+     Занятие проходят в компьютерных классах в мини-группах по 6-10 человек.
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - offline
+      hasTexts: false
+      hasVideos: true
+      hasWebinars: true
+
+  layout-designer:
+    name: Вёрстка сайтов
+    syllabus: |
+      Программа курса
+    trial: false
+    #  exists: false
+    #  comment:
+    link: "https://inordic.ru/courses/html-css#groups"
+  #  lessonsCount: 193
+    duration: 6
+    price: 22900
+    installments:
+      - amount: 2081
+        months: 11
+    schedule: |
+     Занятие проходят в компьютерных классах в мини-группах по 6-10 человек.
+    learning:
+      exists: true
+      types:
+        - offline
+      hasTexts: false
+      hasVideos:  true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+      
