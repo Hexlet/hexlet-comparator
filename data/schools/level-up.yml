@@ -1,0 +1,174 @@
+---
+
+id: level-up
+name: 
+  ru: Школа IT-Профессий Левел АП
+  en: Level UP
+legal:
+  name: ИП Ханько Алексей Валерьевич
+  address: г. Санкт-Петербург, 8 Линия В.О., д. 25, Пространство "Линии", Коворкинг "Практик", 4 этаж
+link: "https://levelp.ru/"
+email: levelp@yandex.ru, info@levelp.ru
+foundationDate: 2012
+
+supportOptions:
+  name: Чат-бот
+  link: "https://levelp.ru/"
+
+# freezing:
+#   exists: true
+
+accessByPaymentTypes:
+  - Платные курсы
+
+areasOfStudy:
+  - Аналитика
+  - Инфраструктура
+  - Дизайн
+  - Тестирование ПО
+  - Программирование
+  - Веб-технологии
+  - Мобильные технологии
+  - Data Science
+  - Базы данных
+  - Управление в IT
+  - Soft-skills
+  - Английский для IT
+
+learningVariants:
+  - в группе очно/онлайн
+  - индивидуально онлайн
+
+age_restriction:
+
+owner:
+   name: ИП Пузиков Сергей Александрович
+   link: "https://brunoyam.com/about"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: false
+  description: 
+
+# mobile:
+#   exists: true
+  # links:
+
+# confirmations_of_study:
+#   -  
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: false
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value:  +7 (812) 320-13-03, +7 (812) 925-11-08 
+    description: будни с 11:00 до 22:00
+    link: tel:+78123201303, tel:+78129251108
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://www.yell.ru/spb/com/level-up-tsentr-innovatsionnyih-tehnologiy-i-programmirovaniya_10707641/reviews/"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://vk.com/club46119452"
+    type: vk
+  - link: "https://t.me/levelupspb"
+    type: telegram
+ 
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Фронт-енд разработчик (Junior)
+    syllabus: |
+      Программа курса
+    # trial:
+    #   exists: false
+    #   comment: 
+    link: "https://levelp.ru/courses/veb-tekhnologii/front-end-developer/"
+    lessonsCount: 44
+    duration: 5.5
+    price: 68990
+    installments:
+      - amount: 14500
+        months: 6
+    schedule: |
+      Дистанционно, в группе. Пн, Чт: 19:00 - 21:30
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: false
+      hasVideos: false
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  fullstack js-developer:
+    name: Фулстек-разработчик (Junior)
+    syllabus: |
+      Программа курса
+    # trial:
+    #   exists: false
+    #   comment:
+    link: "https://levelp.ru/courses/veb-tekhnologii/web-developer/"
+    lessonsCount: 52
+    duration: 7
+    price: 78990
+    installments:
+      - amount: 12000
+        months: 7
+    schedule: |
+      Дистанционно, в группе. Пн, Чт: 19:00 - 21:30
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: false
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: false
+      hasVideos: false
+      hasWebinars: true
