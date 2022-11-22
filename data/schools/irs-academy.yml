@@ -1,0 +1,245 @@
+---
+
+id: irs-academy
+name: 
+  ru: IRS Академия
+  en: IRS Academy
+legal:
+  name: ИП Белецкий С.А. 
+  address: 630091, г. Новосибирск, ул. Крылова, дом 34/1
+link: "https://irs.academy/"
+email: support@irs.academy
+foundationDate: 2016
+
+# supportOptions:
+#   name:
+#   link:
+
+# freezing:
+#   exists: true
+
+accessByPaymentTypes:
+  - Платные курсы
+
+areasOfStudy:
+  - Программирование
+  - Маркетинг
+  - Дизайн
+  - Психология
+  - Иностранные языки
+
+learningVariants:
+  - Индивидуально
+  - В группе
+
+age_restriction:
+
+owner:
+   name: ИП Белецкий С.А.
+   link: "https://irs.academy/"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: false
+  description:
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -  
+
+internship:
+  exists: false
+careerConsultation:
+  exists: false
+preparingResume:
+  exists: false
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value:  8 800 300-46-39
+    description: пн-пт с 6.00 - 15.00 (МСК)
+    link: tel:+78003004639
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://tutortop.ru/school-reviews/hedu-irs-academy/"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://vk.com/heduonline"
+    type: vk
+ 
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Онлайн-курс по frontend
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+      # comment:
+    link: "https://irs.academy/kurs_po_frontend"
+    lessonsCount: 9
+    duration: 2
+    price: 5500
+    # installments:
+    #   - amount:
+    #     months:
+    # schedule: |
+    #  
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  python-developer:
+    name: Онлайн-курс по Python
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+      # comment:
+    link: "https://irs.academy/kurs_po_python"
+    lessonsCount: 14
+    duration: 2
+    price: 42650
+    # installments:
+    #   - amount:
+    #     months:
+    # schedule: |
+    # 
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  java-developer:
+    name: Онлайн-курс по Java
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+      # comment:
+    link: "https://irs.academy/kurs_po_java"
+    lessonsCount: 20
+    duration: 2
+    price: 29500
+    # installments:
+    #   - amount:
+    #     months:
+    # schedule: |
+    # 
+    learning:
+      exists: true
+      types:
+        - online
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  php-developer:
+    name: Онлайн-курс по PHP
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+      # comment:
+    link: "https://irs.academy/kurs_php"
+    lessonsCount: 20
+    duration: 3
+    price: 36400
+    # installments:
+    #   - amount:
+    #     months:
+    # schedule: |
+    # 
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: false
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
