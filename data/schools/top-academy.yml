@@ -251,7 +251,7 @@ programs:
       hasVideos: false
       hasWebinars: true
 
-fullstack-developer:
+  fullstack js-developer:
     name: WEB разработка Full-stack
     syllabus: |
       Программа курса
