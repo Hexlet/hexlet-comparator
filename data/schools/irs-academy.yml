@@ -15,8 +15,8 @@ foundationDate: 2016
 #   name:
 #   link:
 
-# freezing:
-#   exists: true
+freezing:
+  exists: false
 
 accessByPaymentTypes:
   - Платные курсы
@@ -43,7 +43,7 @@ subscription:
 
 moneyback:
   exists: false
-  description:
+  # description:
 
 mobile:
   exists: false
@@ -180,10 +180,6 @@ programs:
     #     months:
     # schedule: |
     # 
-    learning:
-      exists: true
-      types:
-        - online
     learning:
       exists: true
       types:
