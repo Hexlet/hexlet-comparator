@@ -1,0 +1,219 @@
+---
+
+id: mshp
+name: 
+  ru: Международная школа профессий 
+address: ""
+legal:
+  name: ИП Портнов Дмитрий Александрович
+  address: г. Санкт-Петербург, Большой пр. ПС. д 43
+link: "https://videoforme.ru/"
+email: info.spb@spbsot.ru
+foundationDate: 2010
+
+ceo:
+  name: Дмитрий Портнов
+  facebook: ""
+
+#supportOptions:
+#  name: Справочный Центр
+#  link: "https://help.hexlet.io"
+
+freezing:
+  exists: false
+
+accessByPaymentTypes:
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additionalServices:
+#   -
+
+# whenCoursesStart:
+#   -
+
+areasOfStudy:
+  - Программирование 
+  - Маркетинг 
+  - Дизайн 
+  - Психология 
+  - Актерское мастерство 
+  - Бизнес и управление 
+  - Медиа 
+  - Рисование 
+  - Фотошкола 
+
+learningVariants:
+  - В группе
+
+ageRestriction:
+
+owner:
+  name: ИП Портнов Дмитрий Александрович
+  link: ""
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Согласно договру оферты
+
+installment:
+  exists: true
+  variants:
+    - Тинькофф
+    - Почта Банк
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: false
+preparingResume:
+  exists: false
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value: 7 812 648 32 79
+    description: Бесплатный звонок по России
+    link: tel:+78126483279
+
+languages:
+  - Русский
+
+resources:
+  - name: Энциклопедия
+    link: "https://videoforme.ru/wiki"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://vk.com/mshp_pro"
+    type: vk
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+    link: "https://videoforme.ru/course/frontend-developer-prof"
+    duration: 3
+    price: 30000
+    installments:
+      - amount: 3400
+        months: 9
+    schedule: |
+      Гибкий график обучения, который вы подбираете сами под себя
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: false
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+  python-developer:
+    name: Python-разработчик
+    trial:
+      exists: true
+    link: "https://videoforme.ru/course/python-courses"
+    duration: 2
+    price: 16200
+    installments:
+      - amount: 2700
+        months: 6
+    schedule: Гибкий график обучения, который вы подбираете сами под себя
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: false
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: false
+      hasVideos: true
+      hasWebinars: true
+
+  layout-designer:
+    name: Верстальщик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+    link: "https://videoforme.ru/course/website-layout-prof"
+    duration: 3
+    price: 20600
+    installments:
+      - amount: 3500
+        months: 6
+    schedule: Гибкий график обучения, который вы подбираете сами под себя
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: false
+      hasVideos:  true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+      
