@@ -1,0 +1,288 @@
+---
+
+id: avenue
+name: 
+  ru: Avenue
+  en: Avenue
+legal:
+  name: ИП Шульга Наталья Сергеевна 
+  address: 115114, г. Москва, Шлюзовая набережная 6, стр. 4, офис 303
+link: "https://msk.avenue.school/"
+email: msk@avenue.school
+foundationDate: 2014
+
+# supportOptions:
+#   name:
+#   link:
+
+freezing:
+  exists: false
+
+accessByPaymentTypes:
+  - Платные курсы
+
+areasOfStudy:
+  - Программирование
+  - Веб-разработка
+  - Мобильная разработка
+  - Тестирование
+  - Маркетинг
+  - Дизайн
+
+learningVariants:
+  - В группе
+
+age_restriction:
+
+owner:
+   name: ИП Шульга Н.С.
+   link: "https://msk.avenue.school/"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: false
+  # description:
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -  
+
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: false
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value:  +7 (495) 927-57-59
+    description: пн-пт с 9.00 - 22.00 (МСК)
+    link: tel:+74959275759
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://moscow.flamp.ru/firm/avenue_uchebnyjj_centr_it_kursov-70000001038013948"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://vk.com/msk.avenue.school"
+    type: vk
+  - link: "https://www.youtube.com/channel/UCZKBalarbkf7IP8AfYSL_-A"
+    type: youtube
+  - link: "https://www.instagram.com/msk.avenue.school/"
+    type: instagram
+ 
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Javascript Front-end разработка
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      # comment:
+    link: "https://msk.avenue.school/courses/javascript-front-end/"
+    lessonsCount: 40
+    duration: 5
+    price: 52450
+    # installments:
+    #   - amount:
+    #     months:
+    # schedule: |
+    #  
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  python-developer:
+    name: Python для анализа данных
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      # comment:
+    link: "https://msk.avenue.school/courses/python-data-scientist/"
+    lessonsCount: 40
+    duration: 5
+    price: 52450
+    # installments:
+    #   - amount:
+    #     months:
+    # schedule: |
+    #  
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  java-developer:
+    name: Java Разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      # comment:
+    link: "https://msk.avenue.school/courses/java-developer/"
+    lessonsCount: 44
+    duration: 5.5
+    price: 57690
+    # installments:
+    #   - amount:
+    #     months:
+    # schedule: |
+    #  
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  fullstack js-developer:
+    name: Javascript Full-stack разработка
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      # comment:
+    link: "https://msk.avenue.school/courses/javascript-full-stack/"
+    lessonsCount: 48
+    duration: 6
+    price: 62940
+    # installments:
+    #   - amount:
+    #     months:
+    # schedule: |
+    #  
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  layout-designer:
+    name: HTML+CSS верстка сайтов
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      # comment:
+    link: "https://msk.avenue.school/courses/html-css-coding/"
+    lessonsCount: 20
+    duration: 2.5
+    price: 26220
+    # installments:
+    #   - amount:
+    #     months:
+    # schedule: |
+    #  
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
