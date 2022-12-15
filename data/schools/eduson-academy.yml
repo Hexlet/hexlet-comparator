@@ -1,0 +1,142 @@
+---
+
+id: eduson-academy
+name: 
+  ru: Академия Eduson
+  en: Eduson Academy
+legal:
+  name: ООО «Эдюсон»
+  address: 115280, г. Москва, Ленинская слобода, д. 19
+link: "https://eduson.academy/"
+email: ask@eduson.tv
+foundationDate: 2013
+
+ceo:
+  name: Елена Масолова
+  facebook: "https://ru-ru.facebook.com/masolova/"
+
+# supportOptions:
+#   name:
+#   link:
+
+freezing:
+  exists: false
+
+accessByPaymentTypes:
+  - Платные курсы
+
+areasOfStudy:
+  - Программирование
+  - Аналитика
+  - Управление и бизнес
+  - Тестирование
+  - Маркетинг
+  - Веб-дизайн
+  - Soft skills
+  - HR
+  - Профессии в образовании
+  - Бухгалтерия
+
+learningVariants:
+  - В группе
+
+age_restriction:
+
+owner:
+   name: ООО «Эдюсон»
+   link: "https://eduson.academy/"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Возврат денежных средств осуществляется на условиях публичной оферты
+
+installment:
+  exists: true
+  variants:
+    - Тинькофф
+    - Cбepбанк
+    - Халва
+
+mobile:
+  exists: false
+  # links:
+
+confirmations_of_study:
+  - удостоверение о повышении квалификации государственного образца
+  - диплом Eduson
+
+# internship:
+#   exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value:  +7 (800) 101-14-04
+    description: 
+    link: tel:+78001011404
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://yandex.ru/maps/org/eduson/64475613644/reviews/?ll=37.652226%2C55.708203&z=14"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://vk.com/eduson_academy"
+    type: vk
+  - link: "https://www.youtube.com/@EdusonTV"
+    type: youtube
+  - link: "https://www.instagram.com/eduson.tv/"
+    type: instagram
+ 
+images:
+  logo: true
+
+programs:
+  python-developer:
+    name: Python-разработчик
+    trial:
+      exists: false
+      # comment: 7 курсов бесплатно
+    link: "https://eduson.academy/python"
+    duration: 9
+    price: 99492
+    installments:
+      - amount: 8291
+        months: 12
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
