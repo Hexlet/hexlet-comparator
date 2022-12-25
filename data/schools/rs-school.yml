@@ -17,8 +17,8 @@ ceo:
   vk: "https://vk.com/dzmitry.varabei"
 
 supportOptions:
-name: Каналы связи
-link: "https://docs.rs.school/#/rs-school-chats"
+  name: Чаты
+  link: "https://docs.rs.school/#/rs-school-chats"
 
 freezing:
   exists: false
@@ -39,7 +39,7 @@ areasOfStudy:
   - Программирование
 
 learningVariants:
-  - В группе
+    - В группе
 
 ageRestriction:
 
@@ -77,7 +77,7 @@ codeReview:
 mentoring:
   exists: true
 
-phones:
+# phones:
 # - value:
 
 languages:
@@ -89,6 +89,10 @@ resources:
     link: "https://rs.school/index.html"
   - name: Общая информация
     link: "https://docs.rs.school/#/README"
+  - name: Отзывы
+    link: "https://docs.google.com/spreadsheets/d/1UZxoOstzqK6NPKvEROS2X86R5yyINC8gj9ypGERwphQ/edit#gid=0"
+  - name: Статья Хабр
+    link: "https://habr.com/ru/post/465463/"
 
 #paymentMethods:
 
@@ -144,7 +148,6 @@ programs:
       hasGroup: true
       hasPersonal: false
 
-  programs:
   node.js-developer:
     name: Node.js-разработчик
     syllabus: |
@@ -158,7 +161,7 @@ programs:
   #  price:
   #  installments:
     schedule: |
-      Cамообучение, вебинары 3 раза в неделю в вечернее время и общение в Discord.
+      Самообучение, вебинары 3 раза в неделю в вечернее время и общение в Discord.
     learning:
       exists: true
       types:
@@ -180,7 +183,7 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: false
-  # programs:
+
   # frontend-developer:
   #   name: React Course (English)
   #   syllabus: |
@@ -217,7 +220,6 @@ programs:
   #     hasGroup: true
   #     hasPersonal: false
 
-  # programs:
   # frontend-developer:
   #   name: Angular Course (English)
   #   syllabus: |
