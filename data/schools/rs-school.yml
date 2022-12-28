@@ -1,0 +1,259 @@
+---
+
+id: rs-school
+name: 
+  ru: Школа Роллинг Скоупс
+  en: The Rolling Scopes School
+address: ""
+legal:
+  name: The Rolling Scopes School
+link: "https://rs.school/"
+email: rolling.scopes@gmail.com
+foundationDate: 2013
+
+ceo:
+  name: Дмитрий Воробей
+  facebook: "https://www.facebook.com/dzmitry.varabei"
+  vk: "https://vk.com/dzmitry.varabei"
+
+supportOptions:
+  name: Чаты
+  link: "https://docs.rs.school/#/rs-school-chats"
+
+freezing:
+  exists: false
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+
+# bonuses:
+#   -
+
+# additionalServices:
+#   -
+
+# whenCoursesStart:
+#   -
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+    - В группе
+
+ageRestriction:
+
+owner:
+  name: Дмитрий Воробей
+  link: "https://www.facebook.com/dzmitry.varabei"
+
+subscription:
+  exists: false
+
+# moneyback:
+#  exists: true
+
+# installment:
+# exists: true
+#  variants:
+
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: false
+preparingResume:
+  exists: false
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+# phones:
+# - value:
+
+languages:
+  - Русский
+  - Английский
+
+resources:
+  - name: Сайт
+    link: "https://rs.school/index.html"
+  - name: Общая информация
+    link: "https://docs.rs.school/#/README"
+  - name: Отзывы
+    link: "https://docs.google.com/spreadsheets/d/1UZxoOstzqK6NPKvEROS2X86R5yyINC8gj9ypGERwphQ/edit#gid=0"
+  - name: Статья Хабр
+    link: "https://habr.com/ru/post/465463/"
+
+#paymentMethods:
+
+profiles:
+  - link: "https://vk.com/therollingscopes"
+    type: vk
+  - link: "https://www.youtube.com/@RollingScopesSchool/featured"
+    type: youtube
+  - link: "https://twitter.com/rollingscopes"
+    type: twitter
+  - link: "https://t.me/therollingchat/"
+    type: telegram
+  - link: "https://www.instagram.com/rollingscopes/"
+    type: instagram
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: подготовительный курс
+    link: "https://rs.school/js/"
+  #  lessonsCount: 
+    duration: 7
+  #  price:
+  #  installments:
+    schedule: |
+      Самообучение, вебинары 3 раза в неделю в вечернее время и общение в Discord.
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  node.js-developer:
+    name: Node.js-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Для успешного обучения на курсе необходимы уверенные знания JavaScript, в том числе ES6.
+    link: "https://rs.school/nodejs/"
+  #  lessonsCount: 
+    duration: 2
+  #  price:
+  #  installments:
+    schedule: |
+      Самообучение, вебинары 3 раза в неделю в вечернее время и общение в Discord.
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  # frontend-developer:
+  #   name: React Course (English)
+  #   syllabus: |
+  #     Программа курса
+  #   trial:
+  #     exists: true
+  #     comment: Для успешного обучения на курсе необходимы знания JavaScript, Typescript, Git, GitHub, npm, webpack, CSS3 / HTML5, Chrome DevTools Figma, Understanding the concept of REST API.
+  #   link: "https://rs.school/react/"
+  # #  lessonsCount: 
+  #   duration: 1
+  # #  price:
+  # #  installments:
+  #   schedule: |
+  #     Самообучение вебинары и общение в Discord.
+  #   learning:
+  #     exists: true
+  #     types:
+  #       - online
+  #     hasTexts: true
+  #     hasVideos: true
+  #     hasWebinars: true
+  #   practice:
+  #     exists: true
+  #     hasSimulator: false
+  #     hasAutomaticCheck: true
+  #   internship:
+  #     exists: false
+  #     hasInternal: false
+  #     hasPartners: false
+  #   employment:
+  #     exists: false
+  #   mentoring:
+  #     exists: true
+  #     hasGroup: true
+  #     hasPersonal: false
+
+  # frontend-developer:
+  #   name: Angular Course (English)
+  #   syllabus: |
+  #     Программа курса
+  #   trial:
+  #     exists: true
+  #     comment: Для успешного обучения на курсе необходимы знания JavaScript, Typescript, Git, GitHub, npm, webpack, CSS3 / HTML5, Chrome DevTools Figma, Understanding the concept of REST API.
+  #   link: "https://rs.school/angular/"
+  # #  lessonsCount: 
+  #   duration: 3
+  # #  price:
+  # #  installments:
+  #   schedule: |
+  #     Cамообучение, вебинары и общение в Discord.
+  #   learning:
+  #     exists: true
+  #     types:
+  #       - online
+  #     hasTexts: true
+  #     hasVideos: true
+  #     hasWebinars: true
+  #   practice:
+  #     exists: true
+  #     hasSimulator: false
+  #     hasAutomaticCheck: true
+  #   internship:
+  #     exists: false
+  #     hasInternal: false
+  #     hasPartners: false
+  #   employment:
+  #     exists: false
+  #   mentoring:
+  #     exists: true
+  #     hasGroup: true
+  #     hasPersonal: false
+      
+      
