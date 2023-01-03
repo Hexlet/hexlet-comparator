@@ -1,0 +1,154 @@
+---
+
+id: sf-education  
+name: 
+  ru: SF Education
+  en: SF Education
+address: "Российская Федерация, город Москва, вн.тер.г. муниципальный округ Сокол, проспект Ленинградский, дом 80Б, корпус 6, офис 304"
+legal:
+  name: |
+    ООО «Современные формы образования»
+  address:
+link: "https://sf.education/"
+email: info@sflearning.org
+foundationDate: 2015
+
+ceo:
+  name: Вальцев Александр Андреевич
+  vk: "https://vk.com/investmentbanker"
+
+# supportOptions:
+#   name: 
+#   link: ""
+
+freezing:
+  exists: true
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+# when_courses_start:
+#   -
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - В группе
+
+age_restriction:
+
+owner:
+  name: |
+    ООО «Современные формы образования»
+  link: "https://sf.education/"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Возврат денежных средств осуществляется на условиях публичной оферты
+
+installment:
+  exists: true
+  variants:
+    - Тинькофф
+    - Cбepбанк
+
+mobile:
+  exists: false
+  # links:
+
+confirmations_of_study:
+  - Удостоверение о повышении квалификации и (или) диплом о профессиональной переподготовке
+  - Международный диплом от Financial Modeling Institute
+  - Международный диплом от International Institute of Business Analysis
+
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value: 8 800 555-14-39
+    description: Бесплатный звонок по России
+    link: tel:+78005551439
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://sf.education/reviews"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://teleg.run/sf_education"
+    type: telegram
+  - link: "https://vk.com/sfeducation"
+    type: vk
+  - link: "https://www.youtube.com/@SFEducationOfficial/featured"
+    type: youtube
+  - link: "https://dzen.ru/sfeducation"
+    type: yandex.dzen
+
+
+images:
+  logo: true
+
+programs:
+  python-developer:
+    name: Бэкэнд-разработчик на Python
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Полный доступ к курсу и заданиям в течение 3 дней
+    link: "https://sf.education/bkpython"
+    duration: 10
+    price: 100000
+    installments:
+      - amount: 4166
+        months: 24
+    schedule: |
+      В группе, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
