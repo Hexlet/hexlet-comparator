@@ -1,0 +1,149 @@
+---
+
+id: karpov-courses
+name: 
+  ru: Карпов Курсы
+  en: Karpov.courses
+address: "123557, г. Москва, вн.тер.г. Муниципальный округ Пресненский, пер. Электрический, д.3/10, стр.1, помещ. 7/5, офис 507"
+legal:
+  name: |
+    ООО «Карпов Курсы»
+  address:
+link: "https://karpov.courses/"
+email: your@team.karpov.courses
+foundationDate: 2021
+
+ceo:
+  name: Карпов Анатолий Дмитриевич
+  vk: "https://vk.com/anatoly1804"
+
+# supportOptions:
+#   name: 
+#   link: ""
+
+freezing:
+  exists: true
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additional_services:
+#   -
+
+when_courses_start:
+  - Каждый месяц
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - В группе
+
+age_restriction:
+
+owner:
+  name: |
+    ООО «Карпов Курсы»
+  link: "https://karpov.courses"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: В течение первых двух недель можно вернуть оплату за весь курс
+
+installment:
+  exists: true
+  variants:
+    - Равными платежами в течение 5 месяцев на сайте школы
+
+mobile:
+  exists: false
+  # links:
+
+confirmations_of_study:
+  - Сертификат с подписями преподавателей курса
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+# phones:
+#   - value: 8 800 555-14-39
+#     description: Бесплатный звонок по России
+#     link: tel:+78005551439
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://karpov.courses/dev/cases"
+  - name: Отзывы экспертов индустрии
+    link: "https://karpov.courses/dev/experts"
+
+paymentMethods:
+  - Банковские карты
+  - Рассрочка
+
+profiles:
+  - link: "https://t.me/KarpovCourses"
+    type: telegram
+  - link: "https://vk.com/karpovcourses"
+    type: vk
+  - link: "https://www.youtube.com/c/KarpovCourses/"
+    type: youtube
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Доступ к 8 урокам демоверсии курса
+    link: "https://karpov.courses/dev/frontend"
+    duration: 5
+    price: 100000
+    installments:
+      - amount: 20000
+        months: 5
+    schedule: |
+      В группе, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
