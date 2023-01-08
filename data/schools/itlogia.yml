@@ -1,0 +1,191 @@
+---
+
+id: itlogia
+name: 
+  ru: Айтилогия 
+  en: Itlogia
+address: ""
+legal:
+  name: ИП Чернова Ольга Андреевна
+  address: 
+link: "https://itlogia.ru"
+email: support@itlogia.ru
+foundationDate: 2020
+
+ceo:
+  name: Чернова Ольга Андреевна
+  vk: "https://vk.com/chernoova_olga"
+
+supportOptions:
+  name: Служба заботы
+  link: "https://t.me/itlogia_bot"
+
+freezing:
+  exists: false
+
+accessByPaymentTypes:
+  - Бесплатные уроки
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additionalServices:
+#   -
+
+# whenCoursesStart:
+#   -
+
+areasOfStudy:
+  - Программирование
+  - UX/UI дизайн
+
+learningVariants:
+    - В группе онлайн
+
+ageRestriction:
+
+owner:
+  name: ИП Чернова Ольга Андреевна
+  link: "https://itlogia.ru"
+
+subscription:
+  exists: true
+
+moneyback:
+  exists: true
+  description: Возврат денежных средств осуществляется на условиях публичной оферты
+
+installment:
+  exists: true
+  variants:
+    - Внутренняя рассрочка
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+# phones:
+#   - 
+#   description:   
+#   link: 
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://itlogia.ru/about?tab=school-reviews"
+  - name: Выпускники
+    link: "https://itlogia.ru/graduates"
+
+paymentMethods:
+  - Банковские карты
+  - Внутренняя рассрочка
+
+profiles:
+  - link: ""
+    type: facebook
+  - link: ""
+    type: twitter
+  - link: "https://vk.com/itlogia_ru"
+    type: vk
+  - link: "https://www.youtube.com/channel/UC64UIQTNaVuV9tJO-vCvjPQ"
+    type: youtube
+  - link: "https://www.instagram.com/itlogia.ru/"
+    type: instagram
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: Фронтенд-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+#      comment: 
+    link: "https://itlogia.ru/front"
+#    lessonsCount: 
+    duration: 10
+    price: 110000
+    installments:
+      - amount: 10834
+        months: 12
+    schedule: |
+      В удобное для вас время суток самостоятельно выполняете домашнее задание и отправляете его на проверку наставнику. По желанию выполняете дополнительные практические задания к урокам для лучшего закрепления материала
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+
+UX/UI-designer:
+    name: UX/UI дизайнер
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+#      comment: 
+    link: "https://itlogia.ru/uxui"
+#    lessonsCount: 
+    duration: 7
+    price: 95000
+    installments:
+      - amount: 9167
+        months: 12
+    schedule: |
+      В удобное для вас время суток самостоятельно выполняете домашнее задание и отправляете его на проверку наставнику. По желанию выполняете дополнительные практические задания к урокам для лучшего закрепления материала
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
