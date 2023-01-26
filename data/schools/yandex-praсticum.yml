@@ -205,12 +205,50 @@ programs:
     trial:
       exists: true
       comment: 4 курса бесплатно
-    link: "https://gb.ru/professions/go-developer"
+    link: "https://practicum.yandex.ru/go-advanced/"
     duration: 6
     price: 152000
     installments:
       - amount: 26000
         months: 6
+    schedule: |
+      В группе, примерно 20 часов в неделю.
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
+  C++-developer:
+    name: Разработчик C++
+    syllabus: |
+      Программа курса
+      Программа курса
+    trial:
+      exists: true
+      comment: 6 уроков бесплатно
+    link: "https://practicum.yandex.ru/cpp/"
+    duration: 9
+    price: 126000
+    installments:
+      - amount: 6481
+        months: 24
     schedule: |
       В группе, примерно 20 часов в неделю.
     practice:
