@@ -9,19 +9,19 @@ legal:
     Computer Science 50
   address:
 link: "https://www.edx.org/cs50"
-Contact: "https://courses.edx.org/support/contact_us" # адрес почты не указан
-foundationDate: 2015 # не точная дата
+Contact: "https://courses.edx.org/support/contact_us"
+foundationDate: 2015
 
 ceo:
   name: David J. Malan
-  # vk: ВК нет
+  # vk: -
 
 # supportOptions:
 #   name:
 #   link: ""
 
 freezing:
-  exists: false # Как я понял этот пункт про академ...
+  exists: false
 
 accessByPaymentTypes:
   - Бесплатные курсы
@@ -62,9 +62,9 @@ installment:
     - Можно начать бесплатно и в процессе купить апгрейд
 
 mobile:
-  exists: true # Курс по разработке мобильных приложений, если я правильно понял этот раздел
+  exists: true
   links: "https://www.edx.org/course/cs50s-mobile-app-development-with-react-native"
-  links: "https://apps.apple.com/us/app/cs50/id1631064453" # Приложение CS50 для apple Tv
+  links: "https://apps.apple.com/us/app/cs50/id1631064453"
 
 confirmations_of_study:
   - Платный сертификат
