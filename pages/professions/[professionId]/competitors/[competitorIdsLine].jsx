@@ -202,7 +202,7 @@ const Home = (props) => {
 
   const fields = ['duration', 'trial', 'price', 'learning', 'practice', 'internship', 'mentoring', 'employment'];
 
-  const header = `${t('home.header')} ${selectedSchools.map((s) => s.name[i18n.language]).join(' и ')}`;
+  const header = `${t('home.comparing_professions')} ${profession.name} ${t('home.in_schools')} ${selectedSchools.map((s) => s.name[i18n.language]).join(' и ')}`;
 
   const canBeCompared = selectedSchools.every((s) => _.has(s.programs, profession.id));
 
