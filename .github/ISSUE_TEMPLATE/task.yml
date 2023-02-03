@@ -10,8 +10,8 @@ body:
       label: "Problem description"
       description: Please enter an explicit description of the problem
       placeholder: Short and explicit description of the problem...
-      validations:
-        required: true
+    validations:
+      required: true
         
   - type: textarea
     id: proposed-solution
