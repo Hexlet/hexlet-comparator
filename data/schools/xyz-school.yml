@@ -115,7 +115,7 @@ profiles:
     type: discord
 
 images:
-  logo: false
+  logo: true
 
 programs:
   indie-developer:
