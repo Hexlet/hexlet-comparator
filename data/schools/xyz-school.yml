@@ -1,0 +1,157 @@
+---
+
+id: xyz-school
+name: 
+  ru: Школа XYZ
+  en: XYZ School
+address: ""
+legal:
+  name: ООО "ИКС ВАЙ ЗЕТ НЕТВОРК"
+  address: 105066, город Москва, ул. Нижняя Красносельская, д. 35, стр. 59, этаж 3
+link: "https://www.school-xyz.com"
+email: help@school-xyz.com
+foundationDate: 2020
+
+ceo:
+  name: Мосейкин Павел Константинович
+  facebook: ""
+
+# supportOptions:
+#   name: 
+#   link: ""
+
+freezing:
+  exists: false
+
+accessByPaymentTypes:
+  - Платные курсы
+
+# bonuses:
+#   -
+
+# additionalServices:
+#   -
+
+# whenCoursesStart:
+#   -
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - В группе
+
+ageRestriction:
+  - c 18 лет
+
+owner:
+  name: ООО "ИКС ВАЙ ЗЕТ НЕТВОРК"
+  link: "https://www.school-xyz.com"
+
+subscription:
+  exists: true
+
+moneyback:
+  exists: false
+  description: 
+
+installment:
+  exists: true
+  variants:
+    - Сбербанк
+    - Альфа-банк
+    - Тинькофф
+    - Банк «Восточный»
+    - ОТП
+    - Почта-Банк
+    - МТС
+    - Кредит Европа Банк
+
+mobile:
+  exists: false
+  # links:
+
+confirmations_of_study:
+  - сертификат об обучении
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: false
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+phones:
+  - value: 8 495 191 21 61
+    description: 
+    link: tel:+74951912161
+
+languages:
+  - Русский
+
+resources:
+  - name: Отзывы
+    link: "https://vk.com/topic-124560669_34868074?offset=0"
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+  
+profiles:
+  - link: "https://www.artstation.com/xyzschool"
+    type: artstation
+  - link: "https://t.me/xyz_podcast"
+    type: telegram
+  - link: "https://vk.com/xyz_gamedev"
+    type: vk
+  - link: "https://www.youtube.com/channel/UCtJsE0SDhyS4ib2evb5k3gg/videos"
+    type: youtube
+  - link: "https://discord.gg/6UwHqeRVFd"
+    type: discord
+
+images:
+  logo: true
+
+programs:
+  indie-developer:
+    name: Инди-разработчик
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+      comment:
+    link: "https://www.school-xyz.com/indi-razrabotchik"
+    lessonsCount: 91
+    duration: 15
+    price: 239085
+    installments:
+      - amount: 9961
+        months: 24
+    schedule: |
+      В своем темпе. 
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: false
+      hasGroup: false
+      hasPersonal: false
