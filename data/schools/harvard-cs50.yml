@@ -14,11 +14,6 @@ foundationDate: 2015
 
 ceo:
   name: David J. Malan
-  # vk: -
-
-# supportOptions:
-#   name:
-#   link: ""
 
 freezing:
   exists: false
@@ -27,22 +22,11 @@ accessByPaymentTypes:
   - Бесплатные курсы
   - Платные курсы
 
-# bonuses:
-#   -
-
-# additional_services:
-#   -
-
-# when_courses_start:
-#   -
-
 areasOfStudy:
   - Программирование
 
 learningVariants:
   - Индивидуально
-
-# age_restriction:
 
 owner:
   name: |
@@ -63,8 +47,8 @@ installment:
 
 mobile:
   exists: true
-  links: "https://www.edx.org/course/cs50s-mobile-app-development-with-react-native"
-  links: "https://apps.apple.com/us/app/cs50/id1631064453"
+  link: "https://www.edx.org/course/cs50s-mobile-app-development-with-react-native"
+  link: "https://apps.apple.com/us/app/cs50/id1631064453"
 
 confirmations_of_study:
   - Платный сертификат
@@ -80,9 +64,6 @@ codeReview:
   exists: true
 mentoring:
   exists: true
-
-# phones:
-#   -
 
 languages:
   - Русский
@@ -118,9 +99,6 @@ programs:
     link: "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x"
     duration: 12 недель
     price: 90$
-    # installments:
-    #   - amount: -
-    #     months: -
     schedule: |
       Индивидуально
     learning:
