@@ -266,3 +266,41 @@ programs:
       hasTexts: true
       hasVideos: true
       hasWebinars: true
+
+  C++-developer:
+    name: Инженер-программист C++
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
+    link: "https://gb.ru/geek_university/developer/programmer/cpp?utm_source=yandex&utm_medium=cpc&utm_campaign=2698_gu-cpp-developer_yandex_cpc_poisk_faculty_ru_it-prog_gizatullin_78760761&utm_content=adg_5039394197|ad_12819893501|ph_41288407181|key_|dev_desktop|pst_premium_2|rgnid_66_%D0%9E%D0%BC%D1%81%D0%BA|placement_none|creative_{creative_name}&utm_term=&etext=2202.CPFvlHtXpJZPvd7h7N9pP6RJyqnM5kTY6QjxnWbXeXhqb2tsc3h6bmdzcmN2bHRs.031060e20ed951271a30d2a027da7d27f3860ebd&yclid=151626728639878249"
+    duration: 12
+    price: 170000
+    installments:
+      - amount: 4857
+        months: 36
+    schedule: |
+      В группе, 12 часов в неделю
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+
