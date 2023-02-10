@@ -48,7 +48,6 @@ installment:
 mobile:
   exists: true
   link: "https://www.edx.org/course/cs50s-mobile-app-development-with-react-native"
-  link: "https://apps.apple.com/us/app/cs50/id1631064453"
 
 confirmations_of_study:
   - Платный сертификат
