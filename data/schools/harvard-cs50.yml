@@ -1,0 +1,123 @@
+---
+
+id: harvard-cs50
+name:
+  en: Harvard Cs50
+address: "Кембридж, Массачусетс, США"
+legal:
+  name: |
+    Computer Science 50
+  address:
+link: "https://www.edx.org/cs50"
+Contact: "https://courses.edx.org/support/contact_us"
+foundationDate: 2015
+
+ceo:
+  name: David J. Malan
+
+freezing:
+  exists: false
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
+
+areasOfStudy:
+  - Программирование
+
+learningVariants:
+  - Индивидуально
+
+owner:
+  name: |
+    Harvard University
+  link: "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: В течение 14 дней можно вернуть оплату за весь курс
+
+installment:
+  exists: half true
+  variants:
+    - Можно начать бесплатно и в процессе купить апгрейд
+
+mobile:
+  exists: true
+  link: "https://www.edx.org/course/cs50s-mobile-app-development-with-react-native"
+
+confirmations_of_study:
+  - Платный сертификат
+
+internship:
+  exists: true
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+languages:
+  - Русский
+
+resources:
+  - name: Ревью
+    link: "https://www.freecodecamp.org/news/cs50-course-review/"
+
+paymentMethods:
+  - Банковские карты
+
+profiles:
+  - link: "http://www.facebook.com/EdxOnline"
+    type: facebook
+  - link: "https://twitter.com/edXOnline"
+    type: twitter
+  - link: "http://www.linkedin.com/company/edx"
+    type: linkedin
+  - link: "http://www.reddit.com/r/edx"
+    type: reddit
+
+images:
+  logo: true
+
+programs:
+  frontend-developer:
+    name: CS50's Introduction to Computer Science
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Бесплатный доступ ко всем материалам курса
+    link: "https://www.edx.org/course/introduction-computer-science-harvardx-cs50x"
+    duration: 12 недель
+    price: 90$
+    schedule: |
+      Индивидуально
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
