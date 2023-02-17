@@ -155,7 +155,7 @@ const ComparingBlock = (props) => {
       <div className="col-8">
         <div className="card">
           <div className="card-header d-flex">
-            <h2 className="fs-4 m-0 my-1">{entities.t(`school.${name}`)}</h2>
+            <h3 className="fs-4 m-0 my-1">{entities.t(`school.${name}`)}</h3>
             <OverlayTrigger trigger="click" placement="top" overlay={popover}>
               <i role="button" aria-label="Справка" className="fs-5 my-auto ms-auto bi bi-question-circle text-muted" />
             </OverlayTrigger>
@@ -190,7 +190,7 @@ const SchoolHeader = (props) => {
           <Link href={program.link}>
             <a target="_blank" className="fs-4"><i className="bi bi-box-arrow-up-right" /></a>
           </Link>
-        ) }
+        )}
       </h2>
     </div>
   );
