@@ -3,7 +3,7 @@
 
 import React, { useEffect } from 'react';
 import { appWithTranslation } from 'next-i18next';
-import { DefaultSeo } from 'next-seo';
+import { NextSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 import SEO from '../next-seo.json';
 
@@ -24,7 +24,7 @@ const HexletComparator = ({ Component, pageProps }) => {
 
   const component = (
     <>
-      <DefaultSeo {...SEO} />
+      <NextSeo {...SEO} />
       <Component {...pageProps} />
     </>
   );
