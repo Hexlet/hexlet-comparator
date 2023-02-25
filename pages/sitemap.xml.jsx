@@ -24,10 +24,10 @@ export const getServerSideProps = async ({ res }) => {
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     ${staticPaths.map((url) => (
     `<url>
-        <loc>${url}</loc>
+        <loc>${url}.html</loc>
         <lastmod>${new Date().toISOString()}</lastmod>
         <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
+        <priority>0.8</priority>
       </url>`
   )).join('')}
   </urlset>
