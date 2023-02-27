@@ -11,6 +11,11 @@ import '../styles/app.scss';
 
 const HexletComparator = ({ Component, pageProps }) => {
   const router = useRouter();
+  const BASE_URL = {
+    development: 'http://localhost:3000',
+    production: 'https://schools.hexlet.io',
+  }[process.env.NODE_ENV];
+  const canonicalUrl = (BASE_URL + (router.asPath === '/' ? '' : router.asPath)).split('?')[0];
 
   useEffect(() => {
     const env = process.env.NODE_ENV;
@@ -24,7 +29,10 @@ const HexletComparator = ({ Component, pageProps }) => {
 
   const component = (
     <>
-      <DefaultSeo {...SEO} />
+      <DefaultSeo
+        {...SEO}
+        canonical={canonicalUrl}
+      />
       <Component {...pageProps} />
     </>
   );
