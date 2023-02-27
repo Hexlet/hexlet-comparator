@@ -11,8 +11,6 @@ import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { getSchools } from 'lib/api.js';
 import routes from 'lib/routes.js';
 import assetsRoutes from 'lib/assetsRoutes.js';
-import { schemaHasRules } from 'ajv/dist/compile/util';
-import School from './schools/[schoolId]';
 
 const SchoolItem = (props) => {
   const { school } = props;
