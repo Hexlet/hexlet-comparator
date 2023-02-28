@@ -11,9 +11,11 @@ import '../styles/app.scss';
 
 const HexletComparator = ({ Component, pageProps }) => {
   const router = useRouter();
-  const BASE_URL = process.env.HOST_NAME || 'http://localhost:3000';
-  const ADDITIONAL_URL = router.asPath === '/' ? '' : router.asPath;
-  const canonicalUrl = [BASE_URL, ADDITIONAL_URL].join('').split('?')[0];
+  const baseUrl = process.env.BASE_URL || 'http://localhost:3000';
+  const url = new URL(router.asPath, baseUrl);
+  const { origin, pathname} = url;
+  const pathToPage = pathname === '/' ? '' : pathname;
+  const canonicalUrl = `${origin}${pathToPage}`;
 
   useEffect(() => {
     const env = process.env.NODE_ENV;
