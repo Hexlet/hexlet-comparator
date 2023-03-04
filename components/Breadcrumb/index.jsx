@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 import { Container, Breadcrumb } from 'react-bootstrap';
-import { upperFirst } from '../../lib/utils.js';
+import { upperFirst, strReplace } from '../../lib/utils.js';
 
 const NextBreadcrumb = () => {
   const router = useRouter();
@@ -26,7 +26,7 @@ const NextBreadcrumb = () => {
             ? breadcrumbs.map((crumb, idx) => {
               const { href, id } = crumb;
               let { text } = crumb;
-              text = text.replaceAll('%20', ' ');
+              text = strReplace(text, '%20', ' ');
               return (
                 <Breadcrumb.Item href={href} key={id} active={idx === breadcrumbs.length - 1}>
                   { upperFirst(text) }
