@@ -8,6 +8,7 @@ import Link from 'next/link';
 import {
   Container, Navbar, Nav,
 } from 'react-bootstrap';
+import NextBreadcrumb from 'components/Breadcrumb';
 // import logo from 'hexlet-logo.png';
 // import Image from 'react-bootstrap/Image';
 
@@ -107,6 +108,7 @@ const BaseLayout = (props) => {
       </Head>
       <div className="min-vh-100 d-flex flex-column">
         <CustomNavbar />
+        <NextBreadcrumb />
         <main className="container my-5 flex-grow-1">
           {children}
         </main>
