@@ -29,5 +29,6 @@
         "height": 300
       }
     ]
-  }
+  },
+  "disableGooglebot": true
 }
