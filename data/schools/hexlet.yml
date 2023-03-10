@@ -93,7 +93,7 @@ resources:
   - name: Отзывы
     link: "https://ru.hexlet.io/testimonials"
   - name: Комьюнити
-    link: "https://slack-ru.hexlet.io/"
+    link: "https://t.me/hexletcommunity/12"
 
 paymentMethods:
   - Банковские карты

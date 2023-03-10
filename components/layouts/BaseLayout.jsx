@@ -54,7 +54,7 @@ const CustomFooter = () => {
                 <a className="link-dark" target="_blank" rel="noreferrer" href="https://github.com/Hexlet/hexlet-comparator">{t('footer.source_code')}</a>
               </li>
               <li>
-                <a className="link-dark" target="_blank" rel="noopener noreferrer" href="https://slack-ru.hexlet.io/">{t('footer.slack')}</a>
+                  <a className="link-dark" target="_blank" rel="noopener noreferrer" href="https://t.me/hexletcommunity/12">{t('footer.telegram')}</a>
               </li>
             </ul>
           </div>
