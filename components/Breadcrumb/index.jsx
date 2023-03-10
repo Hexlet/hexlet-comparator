@@ -1,10 +1,11 @@
+import React from 'react';
 import { useRouter } from 'next/router';
 import { Container, Breadcrumb } from 'react-bootstrap';
-import { upperFirst, strReplace } from '../../lib/utils.js';
+import { upperFirst, strReplace } from 'lib/utils.js';
 
 const NextBreadcrumb = () => {
   const router = useRouter();
-  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   const { pathname } = new URL(router.asPath, baseUrl);
   const getBreadcrumbs = (pathName) => {
     const partsPath = pathName.split('/').filter((part) => part.length);
