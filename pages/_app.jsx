@@ -11,6 +11,10 @@ import '../styles/app.scss';
 
 const HexletComparator = ({ Component, pageProps }) => {
   const router = useRouter();
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const { origin, pathname } = new URL(router.asPath, baseUrl);
+  const pathToPage = pathname === '/' ? '' : pathname;
+  const canonicalUrl = `${origin}${pathToPage}`;
 
   useEffect(() => {
     const env = process.env.NODE_ENV;
@@ -24,7 +28,10 @@ const HexletComparator = ({ Component, pageProps }) => {
 
   const component = (
     <>
-      <NextSeo {...SEO} />
+      <NextSeo
+        {...SEO}
+        canonical={canonicalUrl}
+      />
       <Component {...pageProps} />
     </>
   );
