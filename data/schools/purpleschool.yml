@@ -1,0 +1,313 @@
+---
+id: purpleschool
+name:
+  ru: Школа PurpleSchool
+  en: PurpleSchool
+legal:
+  name: ИП Ларичев Андреевич
+  address: ""
+link: "https://purpleschool.ru"
+email: "purpleschoolofficial@gmail.com"
+foundationDate: 2021
+
+ceo:
+  name: Ларичев Антон Андреевич
+  vk: "https://vk.com/id7735182"
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
+
+areasOfStudy:
+  - Программирование
+  - DevOps
+
+learningVariants:
+  - Индивидуально
+  - В группе
+
+age_restriction:
+
+owner:
+  name: ИП Ларичев Антон Андреевич
+  link: "https://purpleschool.ru"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Возврат денежных средств в течение 30 дней
+
+installment:
+  exists: false
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+languages:
+  - Русский
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://t.me/purple_code_channel"
+    type: telegram
+  - link: "https://vk.com/purpleschool_ru"
+    type: vk
+  - link: "https://www.youtube.com/@PurpleSchool"
+    type: youtube
+
+images:
+  logo: true
+
+programs:
+  javascript-advanced:
+    name: JavaScript Advanced - продвинутые концепции языка и ООП
+    trial:
+      exists: false
+    link: "https://purpleschool.ru/course/javascript-advanced"
+    lessonsCount: 124
+    duration: 2
+    price: 7090
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
+  javascript-basics:
+    name: JavaScript с нуля - основы языка и практика для начинающих
+    trial:
+      exists: false
+    link: "https://purpleschool.ru/course/javascript-basics"
+    lessonsCount: 131
+    duration: 2
+    price: 7090
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
+  docker:
+    name: Docker + Ansible - с нуля, деплой и управление Swarm
+    trial:
+      exists: false
+    link: "https://purpleschool.ru/course/docker"
+    lessonsCount: 115
+    duration: 2
+    price: 7090
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
+  typescript:
+    name: TypeScript с нуля - полный курс и паттерны проектированияTypeScript с нуля - полный курс и паттерны проектированияTypeScript с нуля - полный курс и паттерны проектированияTypeScript с нуля - полный курс и паттерны проектирования
+    trial:
+      exists: false
+    link: "https://purpleschool.ru/course/typescript"
+    lessonsCount: 115
+    duration: 2
+    price: 7090
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
+  nodejs:
+    name: Node.js - с нуля, основы и построение архитектуры приложений
+    trial:
+      exists: false
+    link: "https://purpleschool.ru/course/nodejs"
+    lessonsCount: 105
+    duration: 2
+    price: 7090
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
+  react:
+    name: React + Next.js - с нуля. TypeScript, Hooks, SSR и CSS Grid
+    trial:
+      exists: false
+    link: "https://purpleschool.ru/course/nextjs"
+    lessonsCount: 140
+    duration: 2
+    price: 7090
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
+  nest:
+    name: NestJS - с нуля, современный backend на TypeScript и Node JS
+    trial:
+      exists: false
+    link: "https://purpleschool.ru/course/nestjs"
+    lessonsCount: 80
+    duration: 2
+    price: 7090
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
+  microservices:
+    name: Microservices - паттерны и практика построения микросервисов
+    trial:
+      exists: false
+    link: "https://purpleschool.ru/course/microservices"
+    lessonsCount: 120
+    duration: 2
+    price: 7090
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
