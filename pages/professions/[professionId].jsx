@@ -22,7 +22,7 @@ const ComparingRow = (props) => {
   }
 
   const comparingSchoolsLine = state.map((s) => s.name[i18n.language]).join(' и ');
-  const ids = state.map((s) => s.id);
+  const ids = state.map((s) => s.id).sort();
 
   return (
     <div className="fs-5 mb-3">
