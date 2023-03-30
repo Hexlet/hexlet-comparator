@@ -15,7 +15,7 @@ import { useRouter } from 'next/router';
 
 import { getSchools, getProfessions } from 'lib/api.js';
 // import routes from 'lib/routes.js';
-import { cartesian } from 'lib/utils.js';
+import { cartesian, getPathnameSortedBySchoolNames } from 'lib/utils.js';
 import assetsRoutes from 'lib/assetsRoutes.js';
 import routes from 'lib/routes.js';
 
@@ -207,21 +207,14 @@ const Home = (props) => {
   const router = useRouter();
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
   const { pathname } = new URL(router.asPath, baseUrl);
-  const pathsOfpathname = pathname.split('/');
-  const lastPathOfPathname = _.last(pathsOfpathname);
-  const nameSchools = lastPathOfPathname.split('-vs-').sort();
-  const newLastPathOfPathname = nameSchools.join('-vs-');
-  const newPathsOfPathname = _.dropRight(pathsOfpathname);
-  newPathsOfPathname.push(newLastPathOfPathname);
-  const newPathname = newPathsOfPathname.join('/');
+  const pathnameSortedBySchoolNames = getPathnameSortedBySchoolNames(pathname);
 
   useEffect(() => {
-    const { href } = new URL(newPathname, baseUrl);
-
-    if (pathname !== newPathname) {
+    if (pathname !== pathnameSortedBySchoolNames) {
+      const { href } = new URL(pathnameSortedBySchoolNames, baseUrl);
       router.push(href);
     }
-  }, [router, baseUrl, pathname, newPathname]);
+  }, [router, baseUrl, pathname, pathnameSortedBySchoolNames]);
 
   return (
     <BaseLayout>
