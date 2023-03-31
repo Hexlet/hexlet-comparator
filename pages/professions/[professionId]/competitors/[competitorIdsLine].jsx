@@ -1,6 +1,6 @@
 // @ts-check
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Popover from 'react-bootstrap/Popover';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import _ from 'lodash';
@@ -11,10 +11,11 @@ import Image from 'next/image';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useRouter } from 'next/router';
 
 import { getSchools, getProfessions } from 'lib/api.js';
 // import routes from 'lib/routes.js';
-import { cartesian } from 'lib/utils.js';
+import { cartesian, getPathnameSortedBySchoolNames } from 'lib/utils.js';
 import assetsRoutes from 'lib/assetsRoutes.js';
 import routes from 'lib/routes.js';
 
@@ -199,12 +200,21 @@ const SchoolHeader = (props) => {
 const Home = (props) => {
   const { t, i18n } = useTranslation('common');
   const { selectedSchools, profession } = props;
-
   const fields = ['duration', 'trial', 'price', 'learning', 'practice', 'internship', 'mentoring', 'employment'];
-
   const header = `${t('home.comparing_professions')} ${profession.name} ${t('home.in_schools')} ${selectedSchools.map((s) => s.name[i18n.language]).join(' и ')}`;
-
   const canBeCompared = selectedSchools.every((s) => _.has(s.programs, profession.id));
+
+  const router = useRouter();
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const { pathname } = new URL(router.asPath, baseUrl);
+  const pathnameSortedBySchoolNames = getPathnameSortedBySchoolNames(pathname);
+
+  useEffect(() => {
+    if (pathname !== pathnameSortedBySchoolNames) {
+      const { href } = new URL(pathnameSortedBySchoolNames, baseUrl);
+      router.push(href);
+    }
+  }, [router, baseUrl, pathname, pathnameSortedBySchoolNames]);
 
   return (
     <BaseLayout>
