@@ -11,6 +11,7 @@ import { useRouter } from 'next/router.js';
 import React, { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import SEO from '../../next-seo.json';
 
 const ComparingRow = (props) => {
   const { state, profession } = props;
@@ -97,6 +98,8 @@ const Profession = (props) => {
   return (
     <BaseLayout>
       <NextSeo
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...SEO}
         title={t('titles.title_certain_school', { profession: profession.name })}
         description={t('descriptions.description_certain_school', { profession: profession.name })}
       />
