@@ -10,6 +10,7 @@ import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
 import { NextSeo } from 'next-seo';
 import { useTranslation } from 'next-i18next';
+import SEO from '../../next-seo.json';
 
 const ProfessionItem = (props) => {
   const { profession } = props;
@@ -43,6 +44,8 @@ const ProfessionsHome = (props) => {
   return (
     <BaseLayout>
       <NextSeo
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...SEO}
         title={t('titles.title_professions')}
         description={t('descriptions.description_professions')}
       />
