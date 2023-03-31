@@ -18,6 +18,7 @@ import { getSchools, getProfessions } from 'lib/api.js';
 import { cartesian, getPathnameSortedBySchoolNames } from 'lib/utils.js';
 import assetsRoutes from 'lib/assetsRoutes.js';
 import routes from 'lib/routes.js';
+import SEO from '../../../../next-seo.json';
 
 const Value = (props) => {
   const dicts = useTranslation('dicts');
@@ -219,6 +220,8 @@ const Home = (props) => {
   return (
     <BaseLayout>
       <NextSeo
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...SEO}
         title={t('titles.title_comparison', {
           profession: profession.name,
           school_1: selectedSchools[0].name[i18n.language],

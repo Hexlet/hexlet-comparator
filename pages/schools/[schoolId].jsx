@@ -16,6 +16,7 @@ import assetsRoutes from 'lib/assetsRoutes.js';
 
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { useTranslation } from 'next-i18next';
+import SEO from '../../next-seo.json';
 
 const descriptionFields = [
   'link', 'blog', 'email', 'ceo', 'legal', 'address', 'foundationDate', 'supportOptions',
@@ -213,6 +214,8 @@ const School = (props) => {
   return (
     <BaseLayout>
       <NextSeo
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...SEO}
         title={t('titles.title_school', { school: school.name[i18n.language] })}
         description={t('descriptions.description_school', { school: school.name[i18n.language] })}
       />
