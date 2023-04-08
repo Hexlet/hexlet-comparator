@@ -399,4 +399,42 @@ programs:
       exists: true
       hasGroup: false
       hasPersonal: true
+
+  qa-engineer:
+    name: Инженер по тестированию
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 2 курса бесплатно
+    link: "https://ru.hexlet.io/programs/qa-engineer"
+    lessonsCount: 145
+    duration: 4
+    price: 70000 
+    installments:
+      - amount: 6870 
+        months: 12 
+    schedule: 
+      В своем темпе. Дополнительные вебинары 1-2 раза в неделю по желанию
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos:  false
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
       

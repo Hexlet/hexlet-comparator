@@ -241,3 +241,37 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: true
+
+  qa-engineer:
+    name: Инженер по тестированию с 0 
+    trial:
+      exists: false
+    link: "https://new.productstar.ru/qa-engineer"
+    duration: 6
+    price: 74900
+    installments:
+      - amount: 3121
+        months: 24
+    schedule: |
+      В своем темпе
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true

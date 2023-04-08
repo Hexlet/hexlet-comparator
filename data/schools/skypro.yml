@@ -222,3 +222,40 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: true
+
+  qa-engineer:
+    name: Инженер по тестированию 
+    syllabus: |
+      Программа курса
+    schedule: |
+      В группе, 10–12 часов в неделю 
+    trial:
+      # exists: true
+      # comment: 4 урока бесплатно
+    link: "https://sky.pro/courses/programming/qa-engineer"
+    duration: 6 
+    price: 138744
+    installments:
+      - amount: 3854
+        months: 36
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
