@@ -217,3 +217,37 @@ programs:
       hasGroup: true
       hasPersonal: true
       
+  qa-engineer:
+    name: Курсы ручного тестирования 
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+    link: "https://videoforme.ru/course/manual-testing-courses"
+    duration: 1.5 
+    price: 18300
+    installments:
+      - amount: 3100
+        months: 6
+    schedule: Два занятия в неделю 
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: false
+      hasVideos:  true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true

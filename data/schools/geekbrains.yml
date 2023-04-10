@@ -4,7 +4,7 @@ id: geekbrains
 name: 
   ru: Гикбрейнс
   en: GeekBrains
-address: "Москва, Ленинградский просп., 39, стр. 79"
+address: "125167, г. Москва, Ленинградский пр-кт, д. 39, стр. 79, этаж 23, пом. XXXIV, часть комнаты 1"
 legal:
   name: ООО «ГикБреинс»
   address:
@@ -304,3 +304,39 @@ programs:
       hasVideos: true
       hasWebinars: true
 
+  qa-engineer:
+    name: Инженер по тестированию 
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 4 курса бесплатно
+    link: "https://gb.ru/geek_university/developer/qa-engineer"
+    duration: 12
+    price: 120000
+    installments:
+      - amount: 3330
+        months: 36
+    schedule: |
+      В группе, два занятия в неделю
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true

@@ -172,3 +172,41 @@ programs:
       hasTexts: false
       hasVideos: false
       hasWebinars: true
+
+  qa-engineer:
+    name: Курс Тестировщик ПО (Junior) 
+    syllabus: |
+      Программа курса
+    # trial:
+    #   exists: false
+    #   comment:
+    link: "https://levelp.ru/courses/veb-tekhnologii/web-developer/"
+    lessonsCount: 18
+    duration: 2.25
+    price: 32990
+    installments:
+      - amount: 18900
+        months: 2
+    schedule: |
+      Дистанционно, в группе. Пн, Ср: 19:00 - 21:00
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: false
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: false
+      hasVideos: false
+      hasWebinars: true
