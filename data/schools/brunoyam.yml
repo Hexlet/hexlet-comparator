@@ -241,3 +241,41 @@ programs:
       hasTexts: true
       hasVideos: true
       hasWebinars: false
+
+  qa-engineer:
+    name: Инженер по тестированию 
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Открывается первый модуль курса
+    link: "https://brunoyam.com/online-kursy/testirovsshik-qa"
+    duration: 4 
+    price: 59900
+    installments:
+      - amount: 4991
+        months: 12 
+    schedule: |
+      В группе, примерно 20 часов в неделю.
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false

@@ -222,3 +222,39 @@ programs:
       hasGroup: true
       hasPersonal: true
  
+  qa-engineer:
+    name: Тестировщик 
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+      # comment: 1 курс бесплатно
+    link: "https://netology.ru/programs/qa"
+    duration: 8
+    price: 82500
+    installments:
+      - amount: 3437
+        months: 24
+    schedule: |
+      Занятия проходят два раза в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false

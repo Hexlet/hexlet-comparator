@@ -287,3 +287,36 @@ programs:
       hasTexts: true
       hasVideos: true
       hasWebinars: true
+
+  qa-engineer:
+    name: Инженер по тестированию 
+    trial:
+      exists: true
+      comment: Несколько курсов
+    link: "https://skillbox.ru/course/profession-test-onboarding/"
+    duration: 7
+    price: 135000
+    installments:
+      - amount: 4346
+        months: 31
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true

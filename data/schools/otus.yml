@@ -224,3 +224,38 @@ programs:
       hasTexts: true
       hasVideos: true
       hasWebinars: true
+
+  qa-engineer:
+    name: Java QA Engineer. Basic 
+    trial:
+      exists: true
+      comment: Вступительное тестирование
+    link: "https://otus.ru/lessons/java-qa-basic/"
+    duration: 4
+    price: 62000
+    installments:
+      - amount: 5500
+        months: 12
+    schedule: |
+      Вебинары идут дважды в неделю по 1,5 часа
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+    employment:
+      exists: true
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true

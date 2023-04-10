@@ -5,8 +5,8 @@ name:
   ru: Яндекс-Практикум
   en: Yandex-Practicum
 legal:
-  name: АНО ДПО «ШАД»
-  address: "119021, Россия, г. Москва, ул. Тимура Фрунзе, д. 11, корпус 2"
+  name: АНО ДПО «Образовательные технологии Яндекса»
+  address: "119021, Россия, г. Москва, ул. Льва Толстого, 16"
 link: "https://practicum.yandex.ru/"
 email: praktikum@support.yandex.ru
 foundationDate: 2015
@@ -31,7 +31,7 @@ learningVariants:
 age_restriction:
 
 owner:
-  name: АНО ДПО «ШАД»
+  name: АНО ДПО «Образовательные технологии Яндекса» 
   link: "https://academy.yandex.ru/dataschool/"
 
 subscription:
@@ -272,3 +272,40 @@ programs:
       hasTexts: true
       hasVideos: true
       hasWebinars: true
+  
+  qa-engineer:
+    name: Инженер по тестированию
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: 
+    link: "https://practicum.yandex.ru/qa-engineer/"
+    duration: 4
+    price: 72000 
+    installments:
+      - amount: 3703 
+        months: 24 
+    schedule: 
+      В группе, примерно 15 часов в неделю.
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos:  true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
