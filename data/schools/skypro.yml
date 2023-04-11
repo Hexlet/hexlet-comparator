@@ -259,3 +259,40 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: true
+
+  data-analyst:
+    name: Аналитик данных 
+    syllabus: |
+      Программа курса
+    schedule: |
+      В группе, 10–12 часов в неделю 
+    trial:
+      # exists: true
+      # comment: 4 урока бесплатно
+    link: "https://sky.pro/courses/analytics/data_analytics"
+    duration: 10 
+    price: 169596
+    installments:
+      - amount: 4711
+        months: 36
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true

@@ -275,3 +275,38 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: true
+
+  data-analyst:
+    name: Профессия Аналитик 
+    trial:
+      exists: false
+      comment: Пробный урок
+    link: "https://new.productstar.ru/analytics-prof"
+    duration: 9
+    price: 125000
+    installments:
+      - amount: 5229
+        months: 24
+    schedule: |
+      В своем темпе
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: true
+      hasInternal: false
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
