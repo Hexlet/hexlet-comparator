@@ -152,3 +152,40 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: false
+
+  data-analyst:
+    name: Аналитик данных 
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Полный доступ к курсу и заданиям в течение 3 дней
+    link: "https://sf.education/businessanalyst"
+    duration: 5
+    price: 155970
+    installments:
+      - amount: 7200
+        months: 24
+    schedule: |
+      В группе, несколько занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false

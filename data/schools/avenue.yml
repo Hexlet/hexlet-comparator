@@ -325,3 +325,42 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: false
+
+  data-analyst:
+    name: Python для анализа данных 
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Запись первого занятия бесплатно
+    link: "https://msk.avenue.school/courses/python-data-scientist/"
+    lessonsCount: 36
+    duration: 4
+    price: 45960
+    installments:
+      - amount: 12990
+        months: 4
+    schedule: |
+      В группе, два занятия в неделю
+    learning:
+      exists: true
+      types:
+        - online
+        - offline
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false

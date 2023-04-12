@@ -147,3 +147,40 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: false
+
+  data-analyst:
+    name: Аналитик данных 
+    syllabus: |
+      Программа курса
+    trial:
+      exists: true
+      comment: Доступ к 3 урокам демоверсии курса
+    link: "https://karpov.courses/analytics"
+    duration: 5
+    price: 80000
+    installments:
+      - amount: 18000
+        months: 5
+    schedule: |
+      В группе, три занятий в неделю
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
