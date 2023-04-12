@@ -251,3 +251,38 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: true
+
+  data-analyst:
+    name: Аналитик данных 
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+    link: "https://videoforme.ru/course/analyst-prof"
+    duration: 4 
+    price: 42200
+    installments:
+      - amount: 4500
+        months: 9
+    schedule: Два занятия в неделю 
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: false
+      hasVideos:  true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: false
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: true
