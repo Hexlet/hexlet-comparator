@@ -73,13 +73,13 @@ const SchoolItem = (props) => {
   return (
     <div className="col mb-4">
       <div className="card bg-light border-0 h-100">
-        <div className="card-body d-flex align-items-center">
-          <h2 className="mb-0">
+        <div className="card-body d-flex align-items-center row">
+          <h2 className="mb-0 col col-sm-12 col-md-8 col-lg-9 col-xl-9 text-md-start text-sm-center">
             <Link href={routes.schoolPath(school.id)}>
               <a className="link-dark text-decoration-none">{school.name[i18n.language]}</a>
             </Link>
           </h2>
-          <div className="text-end ms-auto">
+          <div className="text-end ms-auto col col-sm-12 col-md-4 col-lg-3 text-sm-center text-md-end text-center mt-sm-2 mt-md-0 mt-2">
             <ComparingButton school={school} selected={selected} state={state} setState={setState} />
           </div>
         </div>
