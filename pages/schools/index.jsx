@@ -34,14 +34,14 @@ const SchoolItem = (props) => {
 
 const SchoolsHome = (props) => {
   const { schools } = props;
-  const { t } = useTranslation('schools');
+  const { t } = useTranslation('common');
 
   return (
     <BaseLayout>
       <Head>
         <title>{ t('title') }</title>
       </Head>
-      <h1 className="mb-5">{ t('title') }</h1>
+      <h1 className="mb-5">{t('schools_page.title')}</h1>
       <div className="row row-cols-2">
         {schools.map((s) => <SchoolItem school={s} key={s.id} />)}
       </div>

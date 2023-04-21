@@ -49,7 +49,7 @@ const ProfessionsHome = (props) => {
         title={t('titles.title_professions')}
         description={t('descriptions.description_professions')}
       />
-      <h1 className="mb-5">{t('home.professions')}</h1>
+      <h1 className="mb-5">{t('professions_page.title')}</h1>
       <div className="row row-cols-md-2">
         {professions.map((s) => <ProfessionItem profession={s} key={s.id} />)}
       </div>
