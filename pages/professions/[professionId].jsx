@@ -96,7 +96,7 @@ const Profession = (props) => {
   const [state, setState] = useState([].concat(initialState));
 
   return (
-    <BaseLayout>
+    <BaseLayout profession={profession}>
       <NextSeo
         // eslint-disable-next-line react/jsx-props-no-spreading
         {...SEO}

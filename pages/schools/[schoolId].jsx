@@ -212,7 +212,7 @@ const School = (props) => {
   });
 
   return (
-    <BaseLayout>
+    <BaseLayout school={school}>
       <NextSeo
         // eslint-disable-next-line react/jsx-props-no-spreading
         {...SEO}

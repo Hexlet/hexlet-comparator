@@ -10,7 +10,7 @@ import assetsRoutes from '../lib/assetsRoutes';
 const Custom500 = () => {
   const { t } = useTranslation('common');
   return (
-    <BaseLayout>
+    <BaseLayout isErrorPage>
       <Head>
         <title>{ t('titles.title_error_unspecific') }</title>
       </Head>

@@ -97,7 +97,9 @@ const CustomFooter = () => {
 };
 
 const BaseLayout = (props) => {
-  const { children } = props;
+  const {
+    children, school, profession, selectedSchools, isErrorPage,
+  } = props;
   const { t } = useTranslation('common');
 
   return (
@@ -108,7 +110,10 @@ const BaseLayout = (props) => {
       </Head>
       <div className="min-vh-100 d-flex flex-column">
         <CustomNavbar />
-        <NextBreadcrumb />
+        <NextBreadcrumb extra={{
+          school, profession, selectedSchools, isErrorPage,
+        }}
+        />
         <main className="container my-5 flex-grow-1">
           {children}
         </main>

@@ -218,7 +218,7 @@ const Home = (props) => {
   }, [router, baseUrl, pathname, pathnameSortedBySchoolNames]);
 
   return (
-    <BaseLayout>
+    <BaseLayout profession={profession} selectedSchools={selectedSchools}>
       <NextSeo
         // eslint-disable-next-line react/jsx-props-no-spreading
         {...SEO}

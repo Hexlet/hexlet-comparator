@@ -11,7 +11,7 @@ import assetsRoutes from '../lib/assetsRoutes';
 const Custom404 = () => {
   const { t } = useTranslation('common');
   return (
-    <BaseLayout>
+    <BaseLayout isErrorPage>
       <Head>
         <title>{ t('titles.title_error_404') }</title>
       </Head>
