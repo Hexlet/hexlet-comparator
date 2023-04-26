@@ -8,7 +8,9 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { getProfessions } from 'lib/api.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
+import { getBreadcrumbs } from 'lib/utils';
 import { NextSeo } from 'next-seo';
+import { useRouter } from 'next/router';
 import { useTranslation } from 'next-i18next';
 import SEO from '../../next-seo.json';
 
@@ -40,9 +42,11 @@ const ProfessionItem = (props) => {
 const ProfessionsHome = (props) => {
   const { professions } = props;
   const { t } = useTranslation('common');
+  const router = useRouter();
+  const breadcrumbs = getBreadcrumbs(router.asPath);
 
   return (
-    <BaseLayout>
+    <BaseLayout breadcrumbs={breadcrumbs}>
       <NextSeo
         // eslint-disable-next-line react/jsx-props-no-spreading
         {...SEO}

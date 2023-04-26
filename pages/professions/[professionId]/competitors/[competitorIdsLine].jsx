@@ -15,7 +15,7 @@ import { useRouter } from 'next/router';
 
 import { getSchools, getProfessions } from 'lib/api.js';
 // import routes from 'lib/routes.js';
-import { cartesian, getPathnameSortedBySchoolNames } from 'lib/utils.js';
+import { cartesian, getBreadcrumbs, getPathnameSortedBySchoolNames } from 'lib/utils.js';
 import assetsRoutes from 'lib/assetsRoutes.js';
 import routes from 'lib/routes.js';
 import SEO from '../../../../next-seo.json';
@@ -217,8 +217,10 @@ const Home = (props) => {
     }
   }, [router, baseUrl, pathname, pathnameSortedBySchoolNames]);
 
+  const breadcrumbs = getBreadcrumbs(router.asPath);
+
   return (
-    <BaseLayout>
+    <BaseLayout breadcrumbs={breadcrumbs}>
       <NextSeo
         // eslint-disable-next-line react/jsx-props-no-spreading
         {...SEO}

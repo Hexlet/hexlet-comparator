@@ -4,6 +4,7 @@ import _ from 'lodash';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import { getProfessions, getSchools } from 'lib/api.js';
+import { getBreadcrumbs } from 'lib/utils';
 // import { getOrError } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
@@ -94,9 +95,11 @@ const Profession = (props) => {
   const { query } = useRouter();
   const initialState = schools.find((s) => s.id === query.school_id) ?? [];
   const [state, setState] = useState([].concat(initialState));
+  const router = useRouter();
+  const breadcrumbs = getBreadcrumbs(router.asPath);
 
   return (
-    <BaseLayout>
+    <BaseLayout breadcrumbs={breadcrumbs}>
       <NextSeo
         // eslint-disable-next-line react/jsx-props-no-spreading
         {...SEO}
