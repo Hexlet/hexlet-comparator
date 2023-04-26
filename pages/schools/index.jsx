@@ -6,8 +6,10 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import { getSchools } from 'lib/api.js';
+import { getBreadcrumbs } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
+import { useRouter } from 'next/router';
 import {
   Button,
 } from 'react-bootstrap';
@@ -35,9 +37,11 @@ const SchoolItem = (props) => {
 const SchoolsHome = (props) => {
   const { schools } = props;
   const { t } = useTranslation('schools');
+  const router = useRouter();
+  const breadcrumbs = getBreadcrumbs(router.asPath);
 
   return (
-    <BaseLayout>
+    <BaseLayout breadcrumbs={breadcrumbs}>
       <Head>
         <title>{ t('title') }</title>
       </Head>
