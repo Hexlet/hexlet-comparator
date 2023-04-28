@@ -97,7 +97,7 @@ const CustomFooter = () => {
 };
 
 const BaseLayout = (props) => {
-  const { children } = props;
+  const { children, breadcrumbs } = props;
   const { t } = useTranslation('common');
 
   return (
@@ -108,7 +108,7 @@ const BaseLayout = (props) => {
       </Head>
       <div className="min-vh-100 d-flex flex-column">
         <CustomNavbar />
-        <NextBreadcrumb />
+        {breadcrumbs && <NextBreadcrumb breadcrumbs={breadcrumbs} />}
         <main className="container my-5 flex-grow-1">
           {children}
         </main>
