@@ -217,7 +217,7 @@ const Home = (props) => {
     }
   }, [router, baseUrl, pathname, pathnameSortedBySchoolNames]);
 
-  const breadcrumbs = getBreadcrumbs(router.asPath);
+  const breadcrumbs = getBreadcrumbs(router.asPath, t, { profession, selectedSchools });
 
   return (
     <BaseLayout breadcrumbs={breadcrumbs}>

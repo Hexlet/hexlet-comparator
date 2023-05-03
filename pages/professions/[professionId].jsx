@@ -96,7 +96,7 @@ const Profession = (props) => {
   const initialState = schools.find((s) => s.id === query.school_id) ?? [];
   const [state, setState] = useState([].concat(initialState));
   const router = useRouter();
-  const breadcrumbs = getBreadcrumbs(router.asPath);
+  const breadcrumbs = getBreadcrumbs(router.asPath, t, { profession });
 
   return (
     <BaseLayout breadcrumbs={breadcrumbs}>

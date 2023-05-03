@@ -12,7 +12,7 @@ import BaseLayout from '../components/layouts/BaseLayout.jsx';
 const About = () => {
   const { t } = useTranslation('common');
   const router = useRouter();
-  const breadcrumbs = getBreadcrumbs(router.asPath);
+  const breadcrumbs = getBreadcrumbs(router.asPath, t);
 
   return (
     <BaseLayout breadcrumbs={breadcrumbs}>
