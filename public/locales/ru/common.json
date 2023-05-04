@@ -58,7 +58,15 @@
     "professions": "Профессии",
     "choose_company": "Выберите компанию, которая вам интересна",
     "choose_profession": "Выберите профессию, внутри компании",
-    "compare_company": "Сравните компании по выбранной профессии"
+    "compare_company": "Сравните компании по выбранной профессии",
+    "competitors": "Участники",
+    "and": "и"
+  },
+  "schools_page": {
+    "title": "Школы программирования"
+  },
+  "professions_page": {
+    "title": "Профессии"
   },
   "about_page": {
     "title": "О проекте",

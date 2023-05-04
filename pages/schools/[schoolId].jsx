@@ -212,7 +212,7 @@ const School = (props) => {
     foundationDate: school.foundationDate,
     schoolProgramLine,
   });
-  const breadcrumbs = getBreadcrumbs(router.asPath);
+  const breadcrumbs = getBreadcrumbs(router.asPath, t, { school });
 
   return (
     <BaseLayout breadcrumbs={breadcrumbs}>

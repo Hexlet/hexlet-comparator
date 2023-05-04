@@ -43,7 +43,7 @@ const ProfessionsHome = (props) => {
   const { professions } = props;
   const { t } = useTranslation('common');
   const router = useRouter();
-  const breadcrumbs = getBreadcrumbs(router.asPath);
+  const breadcrumbs = getBreadcrumbs(router.asPath, t);
 
   return (
     <BaseLayout breadcrumbs={breadcrumbs}>
