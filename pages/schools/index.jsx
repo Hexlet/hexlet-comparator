@@ -46,7 +46,7 @@ const SchoolsHome = (props) => {
         <title>{ t('schools_page.title') }</title>
       </Head>
       <h1 className="mb-5">{ t('schools_page.title') }</h1>
-      <div className="row row-cols-2">
+      <div className="row row-cols-lg-2 row-cols-sm-1">
         {schools.map((s) => <SchoolItem school={s} key={s.id} />)}
       </div>
     </BaseLayout>
