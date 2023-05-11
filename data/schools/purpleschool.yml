@@ -1,0 +1,110 @@
+---
+id: purpleschool
+name:
+  ru: Школа PurpleSchool
+  en: PurpleSchool
+legal:
+  name: ИП Ларичев Андреевич
+  address: ""
+link: "https://purpleschool.ru"
+email: "purpleschoolofficial@gmail.com"
+foundationDate: 2021
+
+ceo:
+  name: Ларичев Антон Андреевич
+  vk: "https://vk.com/id7735182"
+
+accessByPaymentTypes:
+  - Бесплатные курсы
+  - Платные курсы
+
+areasOfStudy:
+  - Программирование
+  - DevOps
+
+learningVariants:
+  - Индивидуально
+  - В группе
+
+age_restriction:
+
+owner:
+  name: ИП Ларичев Антон Андреевич
+  link: "https://purpleschool.ru"
+
+subscription:
+  exists: false
+
+moneyback:
+  exists: true
+  description: Возврат денежных средств в течение 30 дней
+
+installment:
+  exists: false
+
+mobile:
+  exists: false
+  # links:
+
+# confirmations_of_study:
+#   -
+
+internship:
+  exists: false
+careerConsultation:
+  exists: true
+preparingResume:
+  exists: true
+codeReview:
+  exists: true
+mentoring:
+  exists: true
+
+languages:
+  - Русский
+
+paymentMethods:
+  - Банковские карты
+  - Банковская рассрочка
+
+profiles:
+  - link: "https://t.me/purple_code_channel"
+    type: telegram
+  - link: "https://vk.com/purpleschool_ru"
+    type: vk
+  - link: "https://www.youtube.com/@PurpleSchool"
+    type: youtube
+
+images:
+  logo: true
+
+programs:
+  node.js-developer:
+    name: Backend разработчик на Node.js с нуля
+    trial:
+      exists: false
+    link: "https://purpleschool.ru/profession/backend"
+    lessonsCount: 497
+    duration: 10
+    price: 60000
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: false
+    practice:
+      exists: true
+      hasSimulator: false
+      hasAutomaticCheck: true
+    internship:
+      exists: false
+      hasInternal: false
+      hasPartners: false
+    employment:
+      exists: false
+    mentoring:
+      exists: true
+      hasGroup: false
+      hasPersonal: true
