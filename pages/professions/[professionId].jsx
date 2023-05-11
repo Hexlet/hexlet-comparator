@@ -4,6 +4,7 @@ import _ from 'lodash';
 import Link from 'next/link';
 import { NextSeo } from 'next-seo';
 import { getProfessions, getSchools } from 'lib/api.js';
+import { getBreadcrumbs } from 'lib/utils';
 // import { getOrError } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
@@ -11,6 +12,7 @@ import { useRouter } from 'next/router.js';
 import React, { useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import SEO from '../../next-seo.json';
 
 const ComparingRow = (props) => {
   const { state, profession } = props;
@@ -22,7 +24,7 @@ const ComparingRow = (props) => {
   }
 
   const comparingSchoolsLine = state.map((s) => s.name[i18n.language]).join(' и ');
-  const ids = state.map((s) => s.id);
+  const ids = state.map((s) => s.id).sort();
 
   return (
     <div className="fs-5 mb-3">
@@ -72,13 +74,13 @@ const SchoolItem = (props) => {
   return (
     <div className="col mb-4">
       <div className="card bg-light border-0 h-100">
-        <div className="card-body d-flex align-items-center">
-          <h2 className="mb-0">
+        <div className="card-body d-flex align-items-center row">
+          <h2 className="mb-0 col col-sm-12 col-md-8 col-lg-9 col-xl-9 text-md-start text-sm-center">
             <Link href={routes.schoolPath(school.id)}>
               <a className="link-dark text-decoration-none">{school.name[i18n.language]}</a>
             </Link>
           </h2>
-          <div className="text-end ms-auto">
+          <div className="text-end ms-auto col col-sm-12 col-md-4 col-lg-3 text-sm-center text-md-end text-center mt-sm-2 mt-md-0 mt-2">
             <ComparingButton school={school} selected={selected} state={state} setState={setState} />
           </div>
         </div>
@@ -93,10 +95,14 @@ const Profession = (props) => {
   const { query } = useRouter();
   const initialState = schools.find((s) => s.id === query.school_id) ?? [];
   const [state, setState] = useState([].concat(initialState));
+  const router = useRouter();
+  const breadcrumbs = getBreadcrumbs(router.asPath, t, { profession });
 
   return (
-    <BaseLayout>
+    <BaseLayout breadcrumbs={breadcrumbs}>
       <NextSeo
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...SEO}
         title={t('titles.title_certain_school', { profession: profession.name })}
         description={t('descriptions.description_certain_school', { profession: profession.name })}
       />

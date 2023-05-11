@@ -10,12 +10,14 @@ import Image from 'next/image';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import { getSchools, getProfessions, getScreenshots } from 'lib/api.js';
-import { getOrError } from 'lib/utils.js';
+import { getBreadcrumbs, getOrError } from 'lib/utils.js';
 import routes from 'lib/routes.js';
 import assetsRoutes from 'lib/assetsRoutes.js';
 
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router';
+import SEO from '../../next-seo.json';
 
 const descriptionFields = [
   'link', 'blog', 'email', 'ceo', 'legal', 'address', 'foundationDate', 'supportOptions',
@@ -200,6 +202,7 @@ const Screenshot = (props) => {
 };
 
 const School = (props) => {
+  const router = useRouter();
   const { t, i18n } = useTranslation('common');
   const { school, professions, screenshots } = props;
   const professionIds = Object.keys(school.programs);
@@ -209,10 +212,13 @@ const School = (props) => {
     foundationDate: school.foundationDate,
     schoolProgramLine,
   });
+  const breadcrumbs = getBreadcrumbs(router.asPath, t, { school });
 
   return (
-    <BaseLayout>
+    <BaseLayout breadcrumbs={breadcrumbs}>
       <NextSeo
+        // eslint-disable-next-line react/jsx-props-no-spreading
+        {...SEO}
         title={t('titles.title_school', { school: school.name[i18n.language] })}
         description={t('descriptions.description_school', { school: school.name[i18n.language] })}
       />

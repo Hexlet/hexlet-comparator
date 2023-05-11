@@ -294,3 +294,79 @@ programs:
       exists: true
       hasGroup: true
       hasPersonal: false
+
+  qa-engineer:
+    name: Инженер по ручному тестированию 
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+      # comment: 4 курса бесплатно
+    link: "https://skillfactory.ru/qa-engineer-po-ruchnomu-testirovaniyu"
+    # lessonsCount: 134
+    duration: 4 
+    price: 93600
+    installments:
+      - amount: 3900
+        months: 24
+    schedule: |
+      Занимайтесь без отрыва от работы и выделяйте на учебу столько времени, сколько есть прямо сейчас, — 15 минут или 2 часа в день
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false
+
+  data-analyst:
+    name: Аналитик данных 
+    syllabus: |
+      Программа курса
+    trial:
+      exists: false
+      # comment: 4 курса бесплатно
+    link: "https://skillfactory.ru/data-analyst-pro"
+    # lessonsCount: 134
+    duration: 14 
+    price: 168840
+    installments:
+      - amount: 4690
+        months: 36
+    schedule: |
+      Занимайтесь без отрыва от работы и выделяйте на учебу столько времени, сколько есть прямо сейчас, — 15 минут или 2 часа в день
+    learning:
+      exists: true
+      types:
+        - online
+      hasTexts: true
+      hasVideos: true
+      hasWebinars: true
+    practice:
+      exists: true
+      hasSimulator: true
+      hasAutomaticCheck: true
+    internship:
+      exists: true
+      hasInternal: true
+      hasPartners: true
+    employment:
+      exists: true
+    mentoring:
+      exists: true
+      hasGroup: true
+      hasPersonal: false

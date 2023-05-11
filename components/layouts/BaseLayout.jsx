@@ -8,6 +8,7 @@ import Link from 'next/link';
 import {
   Container, Navbar, Nav,
 } from 'react-bootstrap';
+import NextBreadcrumb from 'components/Breadcrumb';
 // import logo from 'hexlet-logo.png';
 // import Image from 'react-bootstrap/Image';
 
@@ -54,7 +55,7 @@ const CustomFooter = () => {
                 <a className="link-dark" target="_blank" rel="noreferrer" href="https://github.com/Hexlet/hexlet-comparator">{t('footer.source_code')}</a>
               </li>
               <li>
-                <a className="link-dark" target="_blank" rel="noopener noreferrer" href="https://slack-ru.hexlet.io/">{t('footer.slack')}</a>
+                <a className="link-dark" target="_blank" rel="noopener noreferrer" href="https://t.me/hexletcommunity/12">{t('footer.telegram')}</a>
               </li>
             </ul>
           </div>
@@ -96,7 +97,7 @@ const CustomFooter = () => {
 };
 
 const BaseLayout = (props) => {
-  const { children } = props;
+  const { children, breadcrumbs } = props;
   const { t } = useTranslation('common');
 
   return (
@@ -107,6 +108,7 @@ const BaseLayout = (props) => {
       </Head>
       <div className="min-vh-100 d-flex flex-column">
         <CustomNavbar />
+        {breadcrumbs && <NextBreadcrumb breadcrumbs={breadcrumbs} />}
         <main className="container my-5 flex-grow-1">
           {children}
         </main>

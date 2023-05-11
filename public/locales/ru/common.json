@@ -3,7 +3,7 @@
   "titles": {
     "title_professions": "Cравнение онлайн курсов по программированию",
     "title_certain_school": "{{profession}} - сравнение курсов онлайн-школ",
-    "title_school": "{{school}}: профессии, курсы, обучение в {{school}}",
+    "title_school": "Обзор школы {{school}}: профессии, курсы, обучение в {{school}}",
     "title_comparison": "{{profession}}: сравнение {{school_1}} и {{school_2}}, что лучше",
     "title_error_404": "Страница не найдена",
     "title_error_unspecific": "Внутренняя ошибка сервера"
@@ -11,7 +11,7 @@
   "descriptions": {
     "description_professions": "Онлайн сервис для сравнения курсов по программированию от разных школ. Cравнение онлайн курсов по программированию - Hexlet Comparator",
     "description_certain_school": "Обзор курсов по профессии {{profession}} в популярных онлайн-школах - Hexlet Comparator",
-    "description_school": "Обзор курсов от {{school}}. Какие профессии есть в {{school}}, обзор и сравнение онлайн школы",
+    "description_school": "{{school}} - обзор школы",
     "description_comparison": "Сравнение курсов по профессии {{profession}} в онлайн-школах {{school_1}} и {{school_2}}. Куда пойти учиться по профессии {{profession}}"
   },
   "school": {
@@ -48,7 +48,8 @@
     "basics": "Основы программирования",
     "code_battle": "КодБатл (Игра для прокачки)",
     "guides": "Гайды для программистов",
-    "recommended_books": "Рекомендуемые книги"
+    "recommended_books": "Рекомендуемые книги",
+    "telegram": "Telegram канал Волонтеры"
   },
   "home": {
     "comparing_professions": "Сравниваю профессию",
@@ -57,7 +58,15 @@
     "professions": "Профессии",
     "choose_company": "Выберите компанию, которая вам интересна",
     "choose_profession": "Выберите профессию, внутри компании",
-    "compare_company": "Сравните компании по выбранной профессии"
+    "compare_company": "Сравните компании по выбранной профессии",
+    "competitors": "Участники",
+    "and": "и"
+  },
+  "schools_page": {
+    "title": "Школы программирования"
+  },
+  "professions_page": {
+    "title": "Профессии"
   },
   "about_page": {
     "title": "О проекте",

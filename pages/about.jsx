@@ -5,13 +5,17 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import Head from 'next/head.js';
 import { Container, Row } from 'react-bootstrap';
 import { useTranslation } from 'next-i18next';
+import { useRouter } from 'next/router.js';
+import { getBreadcrumbs } from 'lib/utils.js';
 import BaseLayout from '../components/layouts/BaseLayout.jsx';
 
 const About = () => {
   const { t } = useTranslation('common');
+  const router = useRouter();
+  const breadcrumbs = getBreadcrumbs(router.asPath, t);
 
   return (
-    <BaseLayout>
+    <BaseLayout breadcrumbs={breadcrumbs}>
       <Head>
         <title>{t('about_page.title')}</title>
       </Head>

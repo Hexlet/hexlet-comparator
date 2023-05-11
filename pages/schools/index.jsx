@@ -6,8 +6,10 @@ import { useTranslation } from 'next-i18next';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 
 import { getSchools } from 'lib/api.js';
+import { getBreadcrumbs } from 'lib/utils.js';
 import BaseLayout from 'components/layouts/BaseLayout.jsx';
 import routes from 'lib/routes.js';
+import { useRouter } from 'next/router';
 import {
   Button,
 } from 'react-bootstrap';
@@ -34,15 +36,17 @@ const SchoolItem = (props) => {
 
 const SchoolsHome = (props) => {
   const { schools } = props;
-  const { t } = useTranslation('schools');
+  const { t } = useTranslation('common');
+  const router = useRouter();
+  const breadcrumbs = getBreadcrumbs(router.asPath, t);
 
   return (
-    <BaseLayout>
+    <BaseLayout breadcrumbs={breadcrumbs}>
       <Head>
-        <title>{ t('title') }</title>
+        <title>{ t('schools_page.title') }</title>
       </Head>
-      <h1 className="mb-5">{ t('title') }</h1>
-      <div className="row row-cols-2">
+      <h1 className="mb-5">{ t('schools_page.title') }</h1>
+      <div className="row row-cols-lg-2 row-cols-sm-1">
         {schools.map((s) => <SchoolItem school={s} key={s.id} />)}
       </div>
     </BaseLayout>
