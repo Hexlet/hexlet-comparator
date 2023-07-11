@@ -1,16 +1,15 @@
 // @ts-check
+import BaseLayout from "components/layouts/BaseLayout.jsx";
+import { getSchools } from "lib/api.js";
+import assetsRoutes from "lib/assetsRoutes.js";
+import routes from "lib/routes.js";
+import { useTranslation } from "next-i18next";
+import { serverSideTranslations } from "next-i18next/serverSideTranslations";
+import Head from "next/head";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
 
-import React from 'react';
-import Head from 'next/head';
-import Link from 'next/link';
-import Image from 'next/image';
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
-import { useTranslation } from 'next-i18next';
-
-import BaseLayout from 'components/layouts/BaseLayout.jsx';
-import { getSchools } from 'lib/api.js';
-import routes from 'lib/routes.js';
-import assetsRoutes from 'lib/assetsRoutes.js';
 
 const SchoolItem = (props) => {
   const { school } = props;
@@ -20,7 +19,7 @@ const SchoolItem = (props) => {
     <div className="col mb-5">
       <div className="card border-0 shadow-sm bg-light h-100">
         <div>
-          <Image layout="responsive" src={assetsRoutes.logoPath(school)} width="300" height="300" className="card-img-top" alt={school.name} />
+          <Image layout="responsive" src={assetsRoutes.logoPath(school)} width="300" height="300" className="card-img-top p-5" alt={school.name} />
         </div>
         <div className="card-body text-center">
           <h2 className="h4 m-0">
