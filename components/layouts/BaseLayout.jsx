@@ -42,7 +42,7 @@ const CustomFooter = () => {
       <div className="container-xl">
         <div className="row justify-content-lg-around">
           <div className="col-sm-6 col-md-4 col-lg-auto">
-            <a className="d-inline-block text-decoration-none text-body fs-4 mb-2" target="_blank" rel="noopener" href="https://ru.hexlet.io/">Hexlet ©</a>
+            <a className="d-inline-block text-decoration-none text-body fs-4 mb-2" target="_blank" rel="noopener noreferrer" href="https://ru.hexlet.io/">Hexlet ©</a>
             <ul className="list-unstyled">
               <li>
                 <Link href={routes.aboutPath()}>
