@@ -44,11 +44,11 @@ const DescriptionValue = (props) => {
   const { name, value } = props;
   switch (name) {
     case 'link':
-      return <Link href={value}>{value}</Link>;
+      return <Link href={value}><a target="_blank" rel="noopener noreferrer">{value}</a></Link>;
     case 'owner':
-      return <Link href={value.link}>{value.name}</Link>;
+      return <Link href={value.link}><a target="_blank" rel="noopener noreferrer">{value.name}</a></Link>;
     case 'ceo':
-      return <Link href={value.facebook || value.facebook === '' ? value.facebook : value.vk}>{value.name}</Link>;
+      return <Link href={value.facebook || value.facebook === '' ? value.facebook : value.vk}><a target="_blank" rel="noopener noreferrer">{value.name}</a></Link>;
     case 'phones':
       return value.map((p) => <a href={p.link} key={p.value}>{p.value}</a>);
     case 'moneyback':
@@ -68,7 +68,7 @@ const DescriptionValue = (props) => {
       }
       return value.variants.join(', ');
     case 'resources':
-      return value.map((r) => <div key={r.name}><Link href={r.link}>{r.name}</Link></div>);
+      return value.map((r) => <div key={r.name}><Link href={r.link}><a target="_blank" rel="noopener noreferrer">{r.name}</a></Link></div>);
     case 'legal':
       return (
         <div>
@@ -77,7 +77,7 @@ const DescriptionValue = (props) => {
         </div>
       );
     case 'supportOptions':
-      return <Link href={value.link}>{value.name}</Link>;
+      return <Link href={value.link}><a target="_blank" rel="noopener noreferrer">{value.name}</a></Link>;
     case 'learningVariants':
       return value.join(', ');
     case 'languages':
